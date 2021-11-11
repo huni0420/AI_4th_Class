@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        rawinput = prompt("몇 inch를 바꾸겠습니까?(숫자입력)")
+        alert(rawinput+"inch는 "+rawinput*2.54+"cm 입니다")
+        // alert(`${rawinput}inch는 ${rawinput*2.54}cm 입니다`)
+        
+        rawinput = prompt("몇 cm를 바꾸겠습니까?(숫자입력)")
+        alert(rawinput+"cm는 "+rawinput*0.393701+"inch 입니다")
+        // alert(`${rawinput}cm는 ${rawinput*0.393701}inch 입니다`)
+        
+
+        const PI =3.14
+        r =prompt("반지름 입력: ")
+        alert("원의 둘레: "+r*2*PI)
+        // alert(`원의 둘레: ${r*2*PI}`)
+        alert("원의 넓이: "+r*r*PI)
+        // alert(`원의 넓이: ${r*r*PI}`)
+
+
+        $ = prompt("바꿀 달러입력: ")
+        alert($+"달러 일때 원화는"+$*1270+"KRW입니다.")
+        // alert(`${$}달러 일때 원화는 ${$*1270}KRW입니다.`) -->
+
+        
+        const myYear = prompt("태어난 연도 입력")
+        let myOutput = ''
+        const gan = myYear%10
+        if(gan==9){ myOutput += '기'}
+        else if(gan==0){ myOutput += '경'}
+        else if(gan==1){ myOutput += '신'}
+        else if(gan==2){ myOutput += '임'}
+        else if(gan==3){ myOutput += '계'}
+        else if(gan==4){ myOutput += '갑'}
+        else if(gan==5){ myOutput += '을'}
+        else if(gan==6){ myOutput += '병'}
+        else if(gan==7){ myOutput += '정'}
+        else if(gan==8){ myOutput += '무'}
+        
+        const tti = myYear%12
+        switch (tti){
+            case 9:
+                myOutput += '사'
+                break
+            case 10:
+                myOutput += '오'
+                break
+            case 11:
+                myOutput += '미'
+                break
+            case 0:
+                myOutput += '신'
+                break
+            case 1:
+                myOutput += '유'
+                break
+            case 2:
+                myOutput += '술'
+                break
+            case 3:
+                myOutput += '해'
+                break
+            case 4:
+                myOutput += '자'
+                break
+            case 5:
+                myOutput += '축'
+                break
+            case 6:
+                myOutput += '인'
+                break
+            case 7:
+                myOutput += '묘'
+                break
+            case 8:
+                myOutput += '진'
+                break
+            default:
+                break
+        }
+
+        alert(`${myYear}년은 ${myOutput}년 입니다.`)
+
+        // const myYear = prompt("태어난 연도 입력")
+        // const mygan = "경신임계갑을병정무기"
+        // const mytti = "신유술해자축인묘진사오미"
+        // alert(mygan[myYear%10]+mytti[myYear%12])
+   </script>
+</head>
+<body>
+    <img id="12Ji">
+    <script>
+        year = prompt("연도입력: ")
+        let image = document.getElementById('12Ji')
+        ganji = year%12
+        if(ganji==0){
+            image.src="./12지신 png파일/0.png"
+        }
+        else if(ganji==1){
+            image.src="./12지신 png파일/1.png"
+        }
+        else if(ganji==2){
+            image.src="./12지신 png파일/2.png"
+        }
+        else if(ganji==3){
+            image.src="./12지신 png파일/3.png"
+        }
+        else if(ganji==4){
+            image.src="./12지신 png파일/4.png"
+        }
+        else if(ganji==5){
+            image.src="./12지신 png파일/5.png"
+        }
+        else if(ganji==6){
+            image.src="./12지신 png파일/6.png"
+        }
+        else if(ganji==7){
+            image.src="./12지신 png파일/7.png"
+        }
+        else if(ganji==8){
+            image.src="./12지신 png파일/8.png"
+        }
+        else if(ganji==9){
+            image.src="./12지신 png파일/9.png"
+        }
+        else if(ganji==10){
+            image.src="./12지신 png파일/10.png"
+        }
+        else if(ganji==11){
+            image.src="./12지신 png파일/11.png"
+        }
+    </script>
+</body>
+</html>

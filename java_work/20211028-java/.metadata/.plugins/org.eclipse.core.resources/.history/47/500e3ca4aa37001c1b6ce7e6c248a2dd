@@ -1,0 +1,10 @@
+package AA;
+
+public class Circle{
+	public int xPos,yPos,rad;
+	
+	public void showCircleInfo() {
+		System.out.println("["+xPos+","+yPos+"]");
+		System.out.println("원의 반지름 = "+rad);
+	}
+}

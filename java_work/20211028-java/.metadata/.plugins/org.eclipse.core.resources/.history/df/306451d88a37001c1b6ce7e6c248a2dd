@@ -1,0 +1,25 @@
+package AA;
+
+import javax.swing.Spring;
+
+public class aa {
+
+	public int num1;
+	public Spring name;
+
+	public aa(){}
+
+	public aa(int n) {
+		num1 = n;
+	}
+
+	public aa(int n, Spring sn) {
+		num1 = n;
+		name = sn;
+	}
+
+	public void doprint() {
+		System.out.println("num1 = " + num1);
+		System.out.println("name = " + name);
+	}
+}

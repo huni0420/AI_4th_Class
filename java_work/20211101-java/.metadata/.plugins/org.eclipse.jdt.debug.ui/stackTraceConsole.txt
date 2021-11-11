@@ -1,0 +1,4 @@
+	public static void doA() {
+		// TODO Auto-generated method stub
+		
+	}

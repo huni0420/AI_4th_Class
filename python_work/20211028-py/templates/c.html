@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표준 웹 페이지 실습</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: brown;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
+        }
+    </style>
+    <style>
+        #main_header {
+            width: 960px;
+            margin: 0 auto;
+            /* 높이도 주고 부모의 position을 static이외의 것을 주면서 자손태그 absolute를 제대로 적용시키려고함 */
+            height: 100px;
+            position: relative;
+        }
+
+        #main_header>title {
+            position: absolute;
+            left: 20px;
+            top: 30px;
+        }
+
+        #main_header>#main_gnb {
+            position: absolute;
+            right: 0;
+            top: 10px;
+        }
+
+        #main_header>#main_lnb {
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+        }
+    </style>
+    <style>
+        #main_gnb>ul {
+            overflow: hidden;
+        }
+
+        #main_gnb>ul>li {
+            float: left;
+        }
+
+        #main_gnb>ul>li>a {
+            display: block;
+            padding: 2px 10px;
+            border: 1px solid black;
+        }
+
+        #main_gnb>ul>li>a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #main_gnb>ul>li:first-child>a {
+            border-radius: 10px 0 0 10px;
+        }
+
+        #main_gnb>ul>li:last-child>a {
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+    <style>
+        #main_lnb>ul {
+            overflow: hidden;
+        }
+
+        #main_lnb>ul>li {
+            float: left;
+        }
+
+        #main_lnb>ul>li>a {
+            display: block;
+            padding: 10px 20px;
+            border: 1px solid black;
+        }
+
+        #main_lnb>ul>li>a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        #main_lnb>ul>li:first-child>a {
+            border-radius: 10px 0 0 10px;
+        }
+
+        #main_lnb>ul>li:last-child>a {
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+    <style>
+        @font-face {
+            font-family: 'WandohopeB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/WandohopeB.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1 {
+            font-family: 'WandohopeB';
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        h2 {
+            font-family: 'Pacifico', cursive;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <style>
+        #main_header a {
+            font-family: 'Indie Flower', cursive;
+            font-weight: bold;
+        }
+    </style>
+    <style>
+        #content {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #content>#main_section {
+            width: 750px;
+            float: left;
+        }
+
+        #content>#main_aside {
+            width: 200px;
+            float: right;
+        }
+
+        #main_section>article.main_article {
+            margin-bottom: 10px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        #main_section>article.main_article>h1 {
+            @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Brush+Script&family=Pacifico&family=Sacramento&display=swap');
+            font-family: 'Nanum Brush Script', cursive;
+            font-weight: bold;
+        }
+    </style>
+    <style>
+        /* 첫번째 탭 */
+        input:nth-of-type(1) {
+            display: none;
+        }
+
+        /*radio 지우는 것*/
+        input:nth-of-type(1)~div:nth-of-type(1) {
+            display: none;
+        }
+
+        input:nth-of-type(1):checked~div:nth-of-type(1) {
+            display: block;
+        }
+
+        /* 두번째 탭 */
+        input:nth-of-type(2) {
+            display: none;
+        }
+
+        /*radio 지우는 것*/
+        input:nth-of-type(2)~div:nth-of-type(2) {
+            display: none;
+        }
+
+        input:nth-of-type(2):checked~div:nth-of-type(2) {
+            display: block;
+        }
+
+        /* 탭 모양 구성 */
+        section.buttons {
+            overflow: hidden;
+        }
+
+        section.buttons>label {
+            /* 수평정렬 */
+            display: block;
+            float: left;
+            /* 크기 및 글자 위치 지정 */
+            width: 100px;
+            /* 수직 방향 중앙 정렬 */
+            height: 30px;
+            line-height: 30px;
+            /* 수평 방향 중앙 정렬 */
+            text-align: center;
+            /* 테두리 지정 */
+            box-sizing: border-box;
+            border: 1px solid black;
+
+            background-color: black;
+            color: white;
+        }
+
+        /* 첫번째 radio가 체크되었을 때 옆에 있는 라벨들 중 첫번째 라벨 */
+        /* first */
+        input:nth-of-type(1):checked~section.buttons>label:nth-of-type(1) {
+            background-color: white;
+            color: black;
+        }
+
+        /* 두번째 radio가 체크되었을 때 옆에 있는 라벨들 중 두번째 라벨 */
+        /* second */
+        input:nth-of-type(2):checked~section.buttons>label:nth-of-type(2) {
+            background-color: white;
+            color: black;
+        }
+    </style>
+    <style>
+        .item {
+            overflow: hidden;
+            padding: 10px;
+            border: 1px solid black;
+            border-top: none;
+        }
+
+        .thumbnail {
+            float: left;
+        }
+
+        .description {
+            float: left;
+            margin-left: 10px;
+        }
+
+        .description>strong {
+            display: block;
+            width: 120px;
+        }
+
+        .description>strong+p {
+            width: 120px;
+        }
+
+        /* 글자가 너무 길어졌을 때 생략시키는 방법 */
+        .description>strong, .description>strong+p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+    <style>
+        #main_footer{
+            /* 중앙 정렬 */
+            width: 960px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            /* 테두리 */
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid black;
+            /* 글자 정렬 */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main_header">
+        <div id="title">
+            <h1>Standard Web page</h1>
+            <h2>HTML5+CSS3 Basic</h2>
+        </div>
+        <nav id="main_gnb">
+            <ul>
+                <!-- (li>a[href=#]{HTML$}) -->
+                <li><a href="#">HTML1_gnb</a></li>
+                <li><a href="#">HTML2_gnb</a></li>
+                <li><a href="#">HTML3_gnb</a></li>
+                <li><a href="#">HTML4_gnb</a></li>
+                <li><a href="#">HTML5_gnb</a></li>
+            </ul>
+        </nav>
+        <nav id="main_lnb">
+            <ul>
+                <li><a href="#">HTML1</a></li>
+                <li><a href="#">HTML2</a></li>
+                <li><a href="#">HTML3</a></li>
+                <li><a href="#">HTML4</a></li>
+                <li><a href="#">HTML5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <section id="main_section">
+            <article class="main_article">
+                <h1>제목</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex blanditiis eius nam officia natus,
+                    dolores ullam nemo tempore in dolore veniam autem doloribus, incidunt quasi modi vitae libero.
+                    Accusantium, tempore?m100</p>
+            </article>
+            <article class="main_article">
+                <h1>제목</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facere et exercitationem tempore
+                    odit sapiente consequatur corporis labore! Saepe, at obcaecati earum quisquam sequi aliquam tempora
+                    natus dicta veritatis labore!em100</p>
+            </article>
+            <article class="main_article">
+                <h1>제목</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, possimus voluptates dolorum
+                    quaerat maxime soluta ipsam animi deserunt in nesciunt distinctio voluptatum minus deleniti adipisci
+                    libero nihil, voluptas eligendi, suscipit voluptatibus excepturi et ullam sit. Accusamus, officia
+                    distinctio? Nihil, laboriosam reprehenderit, minus sapiente itaque blanditiis iusto velit natus
+                    culpa consectetur nemo aliquid, repellendus eius quidem dolorem ad illum eum. Molestiae, reiciendis?
+                    Possimus laborum qui vitae repudiandae molestias aliquid accusamus, excepturi neque eius culpa. Sed,
+                    error cumque reprehenderit recusandae fugiat expedita quibusdam! Natus sed, nam quasi totam
+                    voluptate a nisi vel omnis maxime consequuntur aut est harum, eligendi repellat atque laboriosam.
+                </p>
+            </article>
+        </section>
+        <aside id="main_aside">
+            <input id="first" type="radio" name="tab" checked="checked">
+            <input id="second" type="radio" name="tab">
+            <section class="buttons">
+                <label for="first">First</label>
+                <label for="second">Second</label>
+            </section>
+            <div class="tab_item">
+                <ul>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/1029/45/45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    second5
+                                </strong>
+                                <p>Base img</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/64/45/45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    HTML5
+                                </strong>
+                                <p>Hello World HTML5 and CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/64/45/45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    HTML5
+                                </strong>
+                                <p>Hello World HTML5 and CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/64/45/45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    HTML5
+                                </strong>
+                                <p>Hello World HTML5 and CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab_item">
+                <ul>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/314/45/45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    HTML2
+                                </strong>
+                                <p>Hello World HTML5 and CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/64/45/45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    HTML5
+                                </strong>
+                                <p>Hello World HTML5 and CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/64/45/45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    HTML5
+                                </strong>
+                                <p>Hello World HTML5 and CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/64/45/45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    HTML5
+                                </strong>
+                                <p>Hello World HTML5 and CSS</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <footer id="main_footer">
+        <h3>HTML5+CSS Basic</h3>
+        <address>WebSite Layout Basic</address>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{counter-increment:rint}
+        p::before{content:counter(rint)"."}
+        p::after{content:"-" attr(data-page)"page"}
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <p data-page="52">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis perspiciatis quibusdam aliquam quam, blanditiis, officiis distinctio, repudiandae a debitis eos asperiores at! Debitis sit ipsa at sunt exercitationem, facere odit?</p>
+    <p data-page="273">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ea cum maxime optio accusantium, maiores illum aliquid repellat magnam unde ratione sed sequi impedit. Officia adipisci excepturi repellat minima voluptas?</p>
+    <p data-page="275">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ea cum maxime optio accusantium, maiores illum aliquid repellat magnam unde ratione sed sequi impedit. Officia adipisci excepturi repellat minima voluptas?</p>
+</body>
+</html>

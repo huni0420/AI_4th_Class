@@ -1,0 +1,12 @@
+package animal;
+
+import zoo.Cat;
+
+public class Dog {
+	public void makeCat() {
+		zoo.Cat yaong = new zoo.Cat();
+	}
+	public void makeDuck() {
+		zoo.Duck quack = new zoo.Duck();//default라서 안된다.
+	}
+}

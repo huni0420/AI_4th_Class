@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 화면의 크기에 따라서 배경색과 글자색을 다르게 하려고 함 -->
+    <style>
+        @media screen and (max-width:767px){
+            body{color: red; background-color: aquamarine;}
+        }
+        @media screen and (min-width:768px) and (max-width:959px) {
+            h1{color: blue;} p{color: crimson;}
+        }
+        @media screen and (min-width:960px){
+            body>*{border: 3px solid darkgreen}
+        }
+        @media print { h1{border: 3px dashed black;} p{border: 5px solid black}}
+    </style>
+    
+</head>
+<body>
+    <h1>Lorem, ipsum.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia facere impedit error dignissimos? Dolor quod id, beatae obcaecati quasi possimus perspiciatis exercitationem enim repellendus dolorem odio dignissimos sit quas qui sapiente asperiores necessitatibus ipsa aliquid adipisci eos rerum cupiditate temporibus inventore. Cupiditate, aliquam at. Amet dignissimos fugit quaerat reiciendis tempora nobis similique maxime, incidunt perferendis cupiditate eum enim odio velit corrupti harum laudantium obcaecati magnam vel nihil, minima inventore aperiam minus. Deleniti nobis debitis, quas ipsum ducimus amet tempore voluptates unde alias nam, officia dolorum minus, voluptatum quo optio consequatur. Id molestias perferendis iste culpa esse quo vel dolorum facere?</p>
+</body>
+</html>

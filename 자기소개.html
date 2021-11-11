@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>자기소개</title>
+    <style>
+        div#one {
+            display: block;
+            margin-top: 3px;
+            border-width: 4px;
+            border-style: solid;
+            border-left: 5px solid;
+            border-right: 5px solid;
+            border-color: rgb(42, 141, 141);
+            border-radius: 50px;
+        }
+        h4.object {
+            display: inline-block;
+            margin-top: 3px;
+            border-width: 4px;
+            border-style: dashed;
+            border-left: 5px solid;
+            border-right: 5px solid;
+            border-color: rgb(42, 141, 141);
+            border-radius: 50px;
+        }
+
+        input {
+            display: none;
+        }
+
+        input[type=checkbox]:checked+div#mbti {
+            height: 500px;
+        }
+
+        div#mbti {
+            overflow: hidden;
+            width: 200px;
+            height: 0px;
+            transition-duration: 1s;
+        }
+
+        body {
+            background-color: rgb(16, 78, 107);
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="one" class="container">
+        <h1 style="color: rgb(42, 141, 141);">Developer, Seunghun`s page </h1>
+
+    </div>
+
+    <div style="margin:40px"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <h4 style="color: rgb(42, 141, 141);"><label for="mbti_intro">MBTI</label></h4>
+                <input type="checkbox" id="mbti_intro">
+                <div id="mbti" class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">My MBTI</h5>
+                        <hr 2px;>
+                        <h6 class="card-subtitle mb-2 text-muted">INTP summary</h6>
+                        <p style="color: darkcyan;" class="card-text">사색가형은 전체 인구의 3% 정도를 차지하는 꽤 흔치 않은 성격 유형으로, 이는 그들
+                            자신도 매우 반기는 일입니다. 왜냐하면, 사색가형
+                            사람보다 '평범함'을 거부하는 이들이 또 없기 때문입니다. 이 유형의 사람은 그들이 가진 독창성과 창의력, 그리고 그들만의 독특한 관점과 왕성한 지적 호기심에 나름의
+                            자부심을 가지고 있습니다. 보통 철학자나 사색가, 혹은 몽상에 빠진 천재 교수로도 많이 알려진 이들은 역사적으로 수많은 과학적 발전을 이끌어 내기도 하였습니다.
+                        </p>
+                        <a href="https://mblogthumb-phinf.pstatic.net/MjAyMDA0MjJfMTUy/MDAxNTg3NTI0MjgxMzY3.7rqb0BK3AF0BzC_-Tc58Tef2x9OXwqTnjBRKPk4hkDIg.jkV9kab2v2jlYbga2Bub6ohvlhWMfhCryWyD7rRSchUg.PNG.goodjob_company/200421_MBTI_%EC%97%A0%EB%B9%84%ED%8B%B0%EC%95%84%EC%9D%B4_%EB%B9%99%EA%B3%A0_1%ED%83%843.png?type=w800"
+                            class="card-link">INTP 성격</a>
+                        <a href="https://img.theqoo.net/img/iBNby.jpg" class="card-link">INTP관련 이미지</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <h4 class="object" style="color: rgb(42, 141, 141);">좋아하는 것</h4>
+                <div class="card-group">
+                    <div class="card">
+                        <img width=100% height="250px" src="https://image.edaily.co.kr/images/photo/files/NP/S/2021/02/PS21021000947.jpg"  class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">게임</h5>
+                            <p class="card-text">가장 좋아하는 게임이고 가장 오래한 게임이다. 그렇게 오래하고도 골드였던게 흠이다...요즘은 롤드컵만 본다</p>                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img width=100% height="250px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0iQcZZJwmpOb_1SlVML9KbucuFmgzL3NZdg&usqp=CAU" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">춘식이</h5>
+                            <p class="card-text">카카오에서 낸 캐릭중에 가장 마음에 든다...이름부터가 춘식이라니 미쳤다...</p>                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img width=100% height="250px" src="./음악짤.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">음악감상</h5>
+                            <p class="card-text">장르는 가리지 않고 듣는다 하지만 발라드와 랩을 주로 듣는편이다.</p>                            
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin:20px"></div>
+
+                <h4 class="object" style="color: rgb(42, 141, 141);">싫어하는 것</h4>
+                <div class="card-group">
+                    <div class="card">
+                        <img width=100% height="250px" src="https://i.ytimg.com/vi/25UEegMSLo8/maxresdefault.jpg"  class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">공부</h5>
+                            <p class="card-text">해야하는건 알지만 하기싫은건 어쩔 수 없나보다..</p>                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img width=100% height="250px" src="https://recipe1.ezmember.co.kr/cache/recipe/2016/06/09/237c538f59aa91ae1c26a62351c595cf1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">콩국수</h5>
+                            <p class="card-text">유일하게 먹을 수 없는 음식이다..먹으면 속에서 소용돌이가 생기는 기분이다</p>                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img width=100% height="250px" src="https://www.fnnews.com/resource/media/image/2020/05/10/202005101548168705_l.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">북적거리는 장소</h5>
+                            <p class="card-text">사람많고 활기찬곳에서 에너지를 뺃기는 기분이든다..적당히 적은 장소에서 뭔가를 하는걸 좋아한다.</p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

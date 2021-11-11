@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Man Fan Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url(https://p4.wallpaperbetter.com/wallpaper/675/260/990/iron-man-wallpaper-preview.jpg);
+            background-repeat: repeat;
+            background-size: 100%;
+            background-position: center;
+        }
+
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
+        }
+    </style>
+    </style>
+    <style>
+        #main_header {
+            width: 960px;
+            margin: 0 auto;
+            height: 100px;
+            position: relative;
+        }
+
+        #main_header>title {
+            position: absolute;
+            left: 20px;
+            top: 30px;
+        }
+
+        #main_header>#main_gnb {
+            position: absolute;
+            right: 0;
+            top: 10px;
+        }
+
+        #main_header>#main_lnb {
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+        }
+    </style>
+    <style>
+        #main_gnb>ul {
+            overflow: hidden;
+        }
+
+        #main_gnb>ul>li {
+            float: left;
+        }
+
+        #main_gnb>ul>li>a {
+            color: rgb(238, 88, 88);
+            display: block;
+            padding: 2px 10px;
+            border: 1px solid rgb(161, 160, 160);
+        }
+
+        #main_gnb>ul>li>a:hover {
+            background-color: rgb(161, 160, 160);
+            color: white;
+        }
+
+        #main_gnb>ul>li:first-child>a {
+            border-radius: 10px 0 0 10px;
+        }
+
+        #main_gnb>ul>li:last-child>a {
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+    <style>
+        #main_lnb>ul {
+            overflow: hidden;
+        }
+
+        #main_lnb>ul>li {
+            float: left;
+        }
+
+        #main_lnb>ul>li>a {
+            color: rgb(238, 88, 88);
+            display: block;
+            padding: 10px 20px;
+            border: 1px solid rgb(161, 160, 160);
+        }
+
+        #main_lnb>ul>li>a:hover {
+            background-color: rgb(161, 160, 160);
+            color: white;
+        }
+
+        #main_lnb>ul>li:first-child>a {
+            border-radius: 10px 0 0 10px;
+        }
+
+        #main_lnb>ul>li:last-child>a {
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+    <style>
+        @font-face {
+            font-family: 'WandohopeB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/WandohopeB.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1 {
+            color: rgb(206, 81, 81);
+            font-family: 'WandohopeB';
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        h2 {
+            color: rgb(177, 189, 111);
+            font-family: 'Pacifico', cursive;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <style>
+        #main_header a {
+            font-family: 'Indie Flower', cursive;
+            font-weight: bold;
+        }
+    </style>
+    <style>
+        #content {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #content>#main_section {
+            width: 750px;
+            float: left;
+        }
+
+        #content>#main_aside {
+            width: 200px;
+            float: right;
+        }
+
+        #main_section>article.main_article {
+            margin-bottom: 10px;
+            padding: 20px;
+            border: 1px solid rgb(161, 160, 160);
+        }
+
+        #main_section>article.main_article>h1 {
+            color: rgb(238, 88, 88);
+            @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Brush+Script&family=Pacifico&family=Sacramento&display=swap');
+            font-family: 'Nanum Brush Script', cursive;
+            font-weight: bold;
+        }
+
+        #main_section>article.main_article>p {
+            color: rgb(241, 217, 217);
+        }
+    </style>
+    <style>
+        input:nth-of-type(1) {
+            display: none;
+        }
+
+
+        input:nth-of-type(1)~div:nth-of-type(1) {
+            display: none;
+        }
+
+        input:nth-of-type(1):checked~div:nth-of-type(1) {
+            display: block;
+        }
+
+
+        input:nth-of-type(2) {
+            display: none;
+        }
+
+        input:nth-of-type(2)~div:nth-of-type(2) {
+            display: none;
+        }
+
+        input:nth-of-type(2):checked~div:nth-of-type(2) {
+            display: block;
+        }
+
+        section.buttons {
+            overflow: hidden;
+        }
+
+        section.buttons>label {
+            display: block;
+            float: left;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            box-sizing: border-box;
+            border: 1px solid black;
+
+            background-color: rgb(241, 86, 86);
+            color: white;
+        }
+
+     
+        input:nth-of-type(1):checked~section.buttons>label:nth-of-type(1) {
+            border-radius: 10px 0 0 0;
+            background-color: rgb(182, 182, 18);
+            color: black;
+        }
+
+        input:nth-of-type(2):checked~section.buttons>label:nth-of-type(2) {
+            border-radius: 0 10px 0 0;
+            background-color: rgb(182, 182, 18);
+            color: black;
+        }
+    </style>
+    <style>
+        .item {
+            overflow: hidden;
+            padding: 10px;
+            border: 1px solid black;
+            border-top: none;
+        }
+
+        .thumbnail {
+            float: left;
+        }
+
+        .description {
+            float: left;
+            margin-left: 10px;
+        }
+
+        .description>strong {
+            color: rgb(177, 189, 111);
+            display: block;
+            width: 120px;
+        }
+
+        .description>strong+p {
+            color: rgb(255, 255, 255);
+            width: 120px;
+        }
+    </style>
+    <style>
+        #main_footer {
+            width: 960px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main_header">
+        <div id="title">
+            <h1>About The Iron Man</h1>
+            <h2>Missed IronMan..</h2>
+        </div>
+        <nav id="main_gnb">
+            <ul>
+                <li><a href="#">명장면</a></li>
+                <li><a href="#">명대사</a></li>
+                <li><a href="#">쿠키</a></li>
+                <li><a href="#">HomePage</a></li>
+                <li><a href="#">추천</a></li>
+            </ul>
+        </nav>
+        <nav id="main_lnb">
+            <ul>
+                <li><a href="#">토니</a></li>
+                <li><a href="#">자비스</a></li>
+                <li><a href="#">페퍼</a></li>
+                <li><a href="#">어벤져스</a></li>
+                <li><a href="#">EndGame</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <section id="main_section">
+            <article class="main_article">
+                <h1>First</h1>
+                <p>아이언맨(영어: Iron Man)은 미국 만화인 마블 코믹스에 등장하는 슈퍼히어로이다. 아이언맨은 1963년 3월 서스펜스 이야기 39호에 처음으로 등장한다.!이후 우리에게 잘
+                    알려진 아이언맨은 2008년 4월 30일 영화로 제작된다. 천재적인 두뇌와재능으로 세계 최강의 무기업체를 이끄는 CEO이자, 타고난 매력으로 셀러브리티 못지않은 화려한
+                    삶을 살아가던 억만장자 토니 스타크. 아프가니스탄에서 자신이 개발한 신무기 발표를 성공리에 마치고 돌아가던 그는 게릴라군의 갑작스런 공격에 의해 가슴에 치명적인
+                    부상을 입고 게릴라군에게 납치된다. 가까스로 목숨을 건진 그에게 게릴라군은 자신들을 위한 강력한 무기를 개발하라며 그를 위협한다. 그러나 그는 게릴라군을 위한 무기
+                    대신, 탈출을 위한 무기가 장착된 철갑수트를 몰래 만드는 데 성공하고, 그의 첫 수트인 ‘Mark1’를 입고 탈출에 성공한다.최강의 하이테크 슈퍼 히어로, ‘아이언맨’의 탄생!
+                    미국으로 돌아온 토니 스타크는 자신이 만든 무기가 많은 사람들의 생명을 위협하고, 세상을 엄청난 위험에 몰아넣고 있다는 사실을 깨닫고 무기사업에서 손 뗄 것을 선언한다.
+                    그리고, Mark1을 토대로 최강의 하이테크 수트를 개발하는 데... 이것이 아이언맨1 첫슈트 MARK-1의 첫 등장이다.</p>
+            </article>
+            <article class="main_article">
+                <h1>Second </h1>
+                <p>
+                    영웅의 패러다임을 바꾼 21세기 형 하이테크 히어로 세계 최강의 무기업체를 이끄는 CEO이자, 타고난 매력으로 셀러브리티 못지않은 화려한 삶을 살아가던 토니 스타크. 기자회견을
+                    통해 자신이 아이언맨이라고 정체를 밝힌 이후, 정부로부터 아이언맨 수트를 국가에 귀속시키라는 압박을 받지만 이를 거부한 채 더욱 화려하고 주목 받는 나날을 보낸다.
+                    아이언맨 2의 시작부분이다. 아이언맨 1의 흥행이후 2번째로 나온 아이언맨 시리즈로 기대를 받지만 2에서는 어벤져스 이야기의 떡밥과 함께 부산물로 아이언맨 토니의 이야기가 나
+                    오는 느낌을 지울 수가 없었다. 하지만 어벤져스의 인기에 힘입어 아이언맨이 더욱 부상하게 된것도 사실이라 어쩔수 없는 전개이기도 했다. 내용면에서는 토니의 과거 아버지와 연관된
+                    이야기와 함께 여러 스토리가 포함되어 있었지만 역시 스토리가 부족한것은 사실이었고 이후 아이언맨 자체 영화에 대한 기대가 많이 걷힌다.
+                </p>
+            </article>
+            <article class="main_article">
+                <h1>Third</h1>
+                <p>아이언맨 슈트들이 폭발하는 장면과 함께 1999년 12월 31일 토니 스타크의 회상[1]으로 영화가 시작된다.토니 스타크는 해피 호건과 함께 스위스 베른의 신년 과학 포럼에
+                    참석했는데, 여기서 호 인센과 우 박사 등 유명한 과학자들을 만난 후 마야 한센과 함께 모임을 빠져 나온다. 그러던 중 추한 절름발이 과학자 킬리언을 만나는데, 킬리언은 토니와
+                    한센에게 자신의 명함을 주면서 자신이 소속된 민간 싱크탱크 A.I.M.(Advanced Idea Mechanics)으로 와 달라고 얘기한다. 토니는 킬리언에게 나중에 옥상에서
+                    만나자며 거짓말을 하고, 킬리언은 그 말을 믿고 아무도 없는 옥상으로 올라가서 한없이 기다리며 새해를 맞이한다. 이로인해 킬리언은 빌런으로 거듭나게 되고 후에 아이언맨에게
+                    위기가 찾아온다.
+                    아이언맨 3에 나오는 빌런 킬리언과의 전투에서는 다수의 아이언 슈트가 등장하는데 여기서 이제껏 영화에서 볼수없었던 원작에서의 슈트가 대량으로 나오면서 사람들에게 기억에 남을
+                    명장면이 탄생하게된다. 대량의 슈트가 적들과의 전투를 벌이면서 선보이는 토니와 자비스의 협동은 영화를 보는내내 흥미진진하게 만들어줬으며 많은 볼거리를 제공했다.
+                    마지막에는 토니가 어벤저스에서 겪었던 휴유증으로 계속되는 미래에 대한 불안과 공포를 이겨내는 장면이 나오는데... 아이언슈트가 터지면서 만들어낸 장관은 보면서 감탄이 나왔다.(슈트
+                    한대가
+                    얼마인데...)아이언맨 3는 여러모로 사람들에게 각인을 남기고 토니의 한층 성장한 모습을 엿볼 수 있었던 영화였다. 이 편을 마지막으로 아이언맨 단일 시리즈는 끝이난다.
+                </p>
+                <img width="700px" height="300px" src="./다수의 슈트등장.jfif">
+            </article>
+        </section>
+        <aside id="main_aside">
+            <input id="first" type="radio" name="tab" checked="checked">
+            <input id="second" type="radio" name="tab">
+            <section class="buttons">
+                <label for="first">IronMan Suit</label>
+                <label for="second">Movie Poster</label>
+            </section>
+            <div class="tab_item">
+                <ul>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img width="175px" height="230px" src="./아이언맨 1.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    아이언맨 1
+                                </strong>
+                                <p>가장 초기버전</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img width="175px" height="230px" src="./아이언맨1 mk3.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    아이언맨1 mk3
+                                </strong>
+                                <p>최초의 정식버전 아이언맨</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img width="175px" height="230px" src="./아이언맨 헐크.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    아이언맨 헐크
+                                </strong>
+                                <p>아이언맨 최초 대형버전</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img width="175px" height="230px" src="./아이언맨 mk. 47 (스파이더맨 홈커밍).jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    아이언맨 mk. 47 (스파이더맨 홈커밍)
+                                </strong>
+                                <p>가장 최신의 아이언맨 버전</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab_item">
+                <ul>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img width="175px" height="230px" src="./아이언맨 영화1.jfif" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    아이언맨 1
+                                </strong>
+                                <p>아이언맨의 등장</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img width="175px" height="230px" src="./아이언맨 영화 2.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    아이언맨 2
+                                </strong>
+                                <p>조금 아쉬웠던 영화</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img width="175px" height="230px" src="./아이언맨 영화3.jpg" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    아이언맨 3
+                                </strong>
+                                <p>명장면이 많았던 영화</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img width="175px" height="230px" src="./엔드게임.jfif" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>
+                                    엔드게임
+                                </strong>
+                                <p>아이언맨의 마지막</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <footer id="main_footer">
+        <h3>Fan Page.product by SeungHun</h3>
+        <address>https://huni0420.github.io/save/20211027-html/webmake.html</address>
+    </footer>
+</body>
+
+</html>

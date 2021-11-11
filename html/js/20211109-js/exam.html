@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        input=[]
+        for(let i= 0;i<5;i++){
+            input[i]=prompt("숫자입력")
+            if(i==0){
+            }
+            if(i==1){
+                if(input[i]==input[i-1]){
+                    i--
+                    alert("다시입력1")
+                }
+            }
+            if(i==2){
+                for(let j=0;j<2;j++){
+                    if(input[i]==input[j]){
+                        i--
+                        alert("다시입력2")
+                        break
+                    }
+                }
+            }
+            if(i==3){
+                for(let j=0;j<3;j++){
+                    if(input[i]==input[j]){
+                        i--
+                        alert("다시입력3")
+                        break
+                    }
+                }
+            }
+            if(i==4){
+                for(let j=0;j<4;j++){
+                    if(input[i]==input[j]){
+                        i--
+                        alert("다시입력4")
+                        break
+                    }
+                }
+            }
+        }
+        for(let i=0;i<5;i++){
+            console.log(input[i])
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

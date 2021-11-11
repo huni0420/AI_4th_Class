@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function season() {
+            let sea = document.getElementById("#season1")
+            let i = document.querySelector("input:nth-of-type(1)").value
+            if (i == 1 || i == 2 || i == 12){
+                sea.src="계절파일/봄.png"
+            }
+            else if (i == 3 || i == 4 || i == 5) {
+                sea.src="계절파일/여름.png"
+            } 
+            else if (i == 6 || i == 7 || i == 8) {
+                sea.src="계절파일/가을.png"
+            } 
+            else if (i == 9 || i == 10 || i == 11) {
+                sea.src="계절파일/겨울.png"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text">
+    <p>태어난 월을 입력</p>
+    <button onclick="season()">계절출력</button>
+    <img id="season1">
+</body>
+
+</html>

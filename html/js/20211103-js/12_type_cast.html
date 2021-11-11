@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("273"+10)//27310
+        console.log("273"-10)//263
+        console.log("273"%10)//3
+        console.log("273"*10)//2730
+        console.log("273"/10)//27.3
+        console.log("273"-"abc")//NaN : Not a Number
+        //명확하게 숫자로 바꾼 다음 연산하고 싶다면 Number로 감싼다!
+        console.log(Number("273")-10)
+
+        let input = prompt("입력해~~")
+        alert(typeof(input)) // 결과 : String(숫자 입력해도)
+        alert(input-100)
+        alert(Number(input)-100)
+        alert(input+100)//빼기를 하게 되면 연산이 되나 더하기는 문자열로써와 숫자로써 연산이 다르므로 타입을 명확하게 해줘야 원하는 결과를 얻을 수 있다.
+        alert(Number(input)+100)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

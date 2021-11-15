@@ -339,5 +339,3 @@ public class javaclassnextproblem {
         }
     }
 }
-
-

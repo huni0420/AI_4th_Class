@@ -11,7 +11,6 @@ class MyApp(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
         self.mex = MExcel()
-        pm = QPixmap()
         self.savebtn.clicked.connect(self.savefn)
         self.loadbtn.clicked.connect(self.loadfn)
         self.createbtn.clicked.connect(self.createfn)

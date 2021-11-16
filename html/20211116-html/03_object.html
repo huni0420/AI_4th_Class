@@ -12,6 +12,7 @@
     <h1></h1>
     <h1></h1>
     <h1></h1>
+    <p></p>
     <script>
         let student = {
             name: "이동준",
@@ -24,15 +25,19 @@
         document.querySelectorAll('h1')[0].innerText = student.name
         document.querySelectorAll('h1')[1].innerText = student.age
         document.querySelectorAll('h1')[2].innerText = student.language
+        document.querySelectorAll('p')[0].innerText = student.language[3]
         student.introduce()
 
-        let students = [{
-            name: "류경문",
-            gender: "여성"
-        }, {
-            name: "이진주",
-            skill: "프로그래밍"
-        }, student]
+        let students = [
+            {
+                name: "류경문",
+                gender: "여성"
+            }, 
+            {
+                name: "이진주",
+                skill: "프로그래밍"
+            },
+                 student]
 
         console.log(students[0].name)
         console.log(students[0].gender)

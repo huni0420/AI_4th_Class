@@ -22,7 +22,7 @@ class MyApp(QMainWindow, form_class):
         self.tableW.setRowCount(10)  # 행갯수 10개 지정
         self.tableW.setColumnCount(5)  # 컬럼개수 4개로 지정
         self.tableW.setFixedSize(676, 300)  # 테이블 크기
-
+        self.raise_()
     def savefn(self):
         ko = self.koedit.text()
         eng = self.engedit.text()

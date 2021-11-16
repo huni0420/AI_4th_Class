@@ -12,17 +12,8 @@
             this.name = name
             this.num = num
             this.age = age
-            alert("gg")
+            alert("등록되었습니다.")
         }
-        function Re_Person(name,num,age) 
-        {
-            for (let i = 0; i < persons.length; i++) {
-                if (num == persons[i].num) {
-                    
-                }
-            }
-        }
-        function Del_Person()
     </script>
 </head>
 
@@ -34,31 +25,60 @@
     <button>수정</button>
     <button>삭제</button>
     <button>조회</button>
+    <button>전체조회</button>
     <script>
-        let i
         persons = []
         let num = document.querySelectorAll('input')[0]
         let name = document.querySelectorAll('input')[1]
         let age = document.querySelectorAll('input')[2]
+       
         let add = document.querySelectorAll('button')[0]
         let re = document.querySelectorAll('button')[1]
         let del = document.querySelectorAll('button')[2]
         let sc = document.querySelectorAll('button')[3]
-
-        add.onclick = function () {
+        let all = document.querySelectorAll('button')[4]
+        add.onclick = function () 
+        {
+            for(let temp of persons)
+            {
+                if(temp.num==num.value)
+                {
+                    alert("중복입니다")
+                    return
+                }
+            }
             let p = new Person(name.value, num.value, age.value)
             persons.push(p)
-            console.log(persons)
+
         }
-        re.onclick = function () {
-            for (let i = 0; i < persons.length; i++) {
-                if (num == persons[i].num) {
-                    
+        re.onclick = function () 
+        {
+            for(let temp of persons)
+            {
+                if(temp.num == num.value)
+                {
+                    temp.name = name.value
+                    temp.age = age.value
                 }
             }
         }
-        del.onclick = function() {
-            
+        del.onclick = function() 
+        {
+            persons.splice(num.value,1)
+        }
+        sc.onclick = function()
+        {
+            for(let temp of persons)
+            {
+                if(temp.num == num.value)
+                {
+                    alert(`번호 ${temp.num}은 ${temp.name}이고, 나이는 ${temp.age}입니다`)
+                }
+            }
+        }
+        all.onclick = function()
+        {
+            console.log(persons)
         }
     </script>
 </body>

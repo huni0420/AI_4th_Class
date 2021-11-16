@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Person(name, num, age) 
+        {
+            this.name = name
+            this.num = num
+            this.age = age
+            alert("gg")
+        }
+        function Re_Person(name,num,age) 
+        {
+            for (let i = 0; i < persons.length; i++) {
+                if (num == persons[i].num) {
+                    
+                }
+            }
+        }
+        function Del_Person()
+    </script>
+</head>
+
+<body>
+    번호:<input type="text"> <br>
+    이름:<input type="text"> <br>
+    나이:<input type="text"> <br>
+    <button>추가</button>
+    <button>수정</button>
+    <button>삭제</button>
+    <button>조회</button>
+    <script>
+        let i
+        persons = []
+        let num = document.querySelectorAll('input')[0]
+        let name = document.querySelectorAll('input')[1]
+        let age = document.querySelectorAll('input')[2]
+        let add = document.querySelectorAll('button')[0]
+        let re = document.querySelectorAll('button')[1]
+        let del = document.querySelectorAll('button')[2]
+        let sc = document.querySelectorAll('button')[3]
+
+        add.onclick = function () {
+            let p = new Person(name.value, num.value, age.value)
+            persons.push(p)
+            console.log(persons)
+        }
+        re.onclick = function () {
+            for (let i = 0; i < persons.length; i++) {
+                if (num == persons[i].num) {
+                    
+                }
+            }
+        }
+        del.onclick = function() {
+            
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Animal(j,n,m,num,age)
+        {
+            this.j = j
+            this.n = n
+            this.m = m
+            this.num = num
+            this.age = age
+            this.str = function () {alert(`종류가 ${j}인 ${n}이(가) 등록되었습니다.`)}
+        }
+    </script>
+</head>
+<body>
+    종류: <input type="text"><br>
+    동물이름: <input type="text"><br>
+    주인이름: <input type="text"><br>
+    고유번호: <input type="text"><br>
+    동물나이: <input type="text"><br>
+    <button id="tab">동물입력</button>
+    <button id="tab2">고유번호 조회</button>
+    <button id="tab3">종류(console) 조회</button>
+    <button id="tab4">이름 조회</button>
+    <script>
+        let animal =[]
+        let j = document.querySelectorAll('input')[0]
+        let n = document.querySelectorAll('input')[1]
+        let m = document.querySelectorAll('input')[2]
+        let num = document.querySelectorAll('input')[3]
+        let age = document.querySelectorAll('input')[4]
+
+        let tab = document.querySelector('#tab')
+        let tab2 = document.querySelector('#tab2')
+        let tab3 = document.querySelector('#tab3')
+
+        tab.onclick = function()
+        {
+            for(let temp of animal)
+            {
+                if(temp.num == num.value)
+                {
+                    alert("이미 등록 되었습니다.")
+                    return
+                }
+            }
+            let temp = new Animal(j.value,n.value,m.value,num.value,age.value)
+            animal.push(temp)
+            animal[animal.length-1].str()
+            console.log(animal)
+        }
+
+        tab2.onclick = function()
+        {
+            for(let temp of animal)
+            {
+                if(temp.num == num.value)
+                {
+                    alert(`${temp.num}번은 종류는 ${temp.j}고, 이름은 ${temp.n}입니다`)
+                }
+            }
+        }
+
+        tab3.onclick = function()
+        {
+            for(let temp of animal)
+            {
+                if(temp.j==j.value)
+                {
+                    console.log(temp.j)
+                }
+            }
+        }
+
+        tab4.onclick = function()
+        {   
+            let a =[]
+            for(let temp of animal)
+            {
+                if(temp.n==n.value)
+                {
+                    // a.push(temp)
+                    a.push(new Animal(temp.j,temp.n,temp.m,temp.num,temp.age))
+                }
+            }
+            alert(a)
+            console.log(a)
+        }
+    </script>
+</body>
+</html>

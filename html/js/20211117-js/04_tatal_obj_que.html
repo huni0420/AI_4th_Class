@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class MyAnimal
+        {
+            constructor(c,n,mst,nm,a)
+            {
+                this.category = c
+                this.name = n
+                this.mst = master
+                this.num =nm
+                this.age = a
+                this.regist = function(){alert(`${nm}번 동물 등록`+`${c},${n},${mst},${a}`)}
+            }
+        }
+    </script>
+</head>
+<body>
+    종류&nbsp;&nbsp;:&nbsp;&nbsp;<input type="text"><br>
+    이름&nbsp;&nbsp;:&nbsp;&nbsp;<input type="text"><br>
+    주인명&nbsp;:&nbsp;<input type="text"><br>
+    번호&nbsp;&nbsp;:&nbsp;&nbsp;<input type="text"><br>
+    나이&nbsp;&nbsp;:&nbsp;&nbsp;<input type="text"><br>
+    <button id="create">등록</button>
+    <button id="nm">번호로조회</button>
+    <button id="n">이름으로 조회</button>
+    <button id="c">종류로 조회</button>
+</body>
+
+</html>

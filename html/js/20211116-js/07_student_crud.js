@@ -41,8 +41,7 @@ window.onload = function()
     }
     read.onclick = function()
     {   
-        for(let item of students)
-        {
+        for(let item of students){
             if(num.value == item.number)
             {
                 alert(`${item.number}번 학생은 ${item.name}이며 ${item.age}입니다`)
@@ -52,8 +51,7 @@ window.onload = function()
     }
     update.onclick = function()
     {
-        for(let item of students)
-        {
+        for(let item of students){
             if(num.value == item.number)
             {
                 item.name = name.value

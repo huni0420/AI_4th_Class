@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let cat = '짬타이거'
+        cat = {
+            name : '땅땅이',
+            age : 3,
+            hairColor : "gray",
+        }
+        console.log(cat)
+        console.log(cat.name)
+        console.log(cat.age)
+        console.log(cat.hairColor)
+    </script>
+    <script>
+        window.onload = function()
+        {
+            // document.getElementById('name').innerText='안녕'
+            document.getElementById('name').innerText = cat.name
+            document.querySelector('#age').innerText = cat.age
+            document.getElementById('hairColor').innerText = cat.hairColor
+        }
+    </script>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <h1 id="age"></h1>
+    <h1 id="hairColor"></h1>
+
+</body>
+</html>

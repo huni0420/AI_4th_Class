@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            display: inline-block;
+            border: 1px solid black;
+            border-radius:  25px 25px 25px 25px;
+        }
+    </style>
+    <script>
+        function Lotto()
+        {
+            
+        }
+    </script>
+</head>
+<body>
+    <input type="text">
+    <button>로또 생성하기</button><br>
+    
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <!-- <br>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <br>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1> -->
+    <script>
+        lotto = []
+        let h1l = document.querySelectorAll('h1')
+        let a = document.querySelector('input')
+        let tab =document.querySelector('button')
+        tab.onclick= function()
+        {
+            
+            for (let i = 0; i < 7; i++) {
+                let num = Math.floor(Math.random() * 45) + 1
+                if (i > 0) {
+                    if (lotto.indexOf(num) != -1) {
+                        i--
+                        continue
+                    }
+                }
+                lotto[i] = Number(num)
+            }
+            let i =0
+            for (let item of h1l) 
+            {
+                item.innerText = lotto[i]
+                for(let i = 0; i < 7; i++)
+                {
+                    if(0<lotto[i]<11)
+                    {
+                        item.style.backgroundColor='yellow'
+                    }
+                    if(10<lotto[i]<21)
+                    {
+                        item.style.backgroundColor='blue'
+                    }
+                    if(20<lotto[i]<31)
+                    {
+                        item.style.backgroundColor='red'
+                    }
+                    if(30<lotto[i]<41)
+                    {
+                        item.style.backgroundColor='gray'
+                    }
+                    if(40<lotto[i]<46)
+                    {
+                        item.style.backgroundColor='green'
+                    }
+                }
+                i++
+            }
+        }
+    </script>
+</body>
+</html>

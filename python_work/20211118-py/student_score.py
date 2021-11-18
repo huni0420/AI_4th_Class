@@ -7,24 +7,25 @@ from studentExcel import StudentExcel
 class MyApp(QWidget):
     def __init__(self):
         super().__init__()
-
         self.se = StudentExcel()
         self.rowIndex = 0
-        self.sum = ""
         self.initUI()
         self.initEvent()
+        self.loadfile()
 
-        # self.loadfile()
-
-    # def loadfile(self):
-    #     rows = self.se.loadrow()
-    #     for row in rows:
-    #         self.qtable.setItem(self.rowIndex, 0, QTableWidgetItem(row[0]))
-    #         self.qtable.setItem(self.rowIndex, 1, QTableWidgetItem(row[1]))
-    #         self.qtable.setItem(self.rowIndex, 2, QTableWidgetItem(row[2]))
-    #         self.qtable.setItem(self.rowIndex, 3, QTableWidgetItem(row[3]))
-    #         self.qtable.setItem(self.rowIndex, 4, QTableWidgetItem(row[4]))
-    #         self.rowIndex += 1
+    def loadfile(self):
+        rows = self.se.loadrow()
+        for row in rows:
+            self.qtable.setItem(self.rowIndex, 0, QTableWidgetItem(row[0]))
+            self.qtable.setItem(self.rowIndex, 1, QTableWidgetItem(row[1]))
+            self.qtable.setItem(self.rowIndex, 2, QTableWidgetItem(row[2]))
+            self.qtable.setItem(self.rowIndex, 3, QTableWidgetItem(row[3]))
+            self.qtable.setItem(self.rowIndex, 4, QTableWidgetItem(row[4]))
+            self.qtable.setItem(self.rowIndex, 5, QTableWidgetItem(row[5]))
+            self.qtable.setItem(self.rowIndex, 6, QTableWidgetItem(row[6]))
+            self.qtable.setItem(self.rowIndex, 7, QTableWidgetItem(row[7]))
+            self.qtable.setItem(self.rowIndex, 8, QTableWidgetItem(row[8]))
+            self.rowIndex += 1
 
     def append(self):
 
@@ -38,32 +39,31 @@ class MyApp(QWidget):
             pro = self.pro_edit.text()
 
             tot = int(adc) + int(que1) + int(que2) + int(mid) + int(las) + int(pro)
-
-            self.qtable.setItem(self.rowIndex, 0, QTableWidgetItem(num))
-            self.qtable.setItem(self.rowIndex, 1, QTableWidgetItem(adc))
-            self.qtable.setItem(self.rowIndex, 2, QTableWidgetItem(que1))
-            self.qtable.setItem(self.rowIndex, 3, QTableWidgetItem(que2))
-            self.qtable.setItem(self.rowIndex, 4, QTableWidgetItem(mid))
-            self.qtable.setItem(self.rowIndex, 5, QTableWidgetItem(las))
-            self.qtable.setItem(self.rowIndex, 6, QTableWidgetItem(pro))
-            self.qtable.setItem(self.rowIndex, 7, QTableWidgetItem(str(tot)))
+            b = int(num) - 1
+            self.qtable.setItem(b, 0, QTableWidgetItem(num))
+            self.qtable.setItem(b, 1, QTableWidgetItem(adc))
+            self.qtable.setItem(b, 2, QTableWidgetItem(que1))
+            self.qtable.setItem(b, 3, QTableWidgetItem(que2))
+            self.qtable.setItem(b, 4, QTableWidgetItem(mid))
+            self.qtable.setItem(b, 5, QTableWidgetItem(las))
+            self.qtable.setItem(b, 6, QTableWidgetItem(pro))
+            self.qtable.setItem(b, 7, QTableWidgetItem(str(tot)))
             a = int(adc)
             if a > 4:
                 if tot > 90:
-                    self.qtable.setItem(self.rowIndex, 8, QTableWidgetItem("A"))
+                    self.qtable.setItem(b, 8, QTableWidgetItem("A"))
                 elif tot > 80:
-                    self.qtable.setItem(self.rowIndex, 8, QTableWidgetItem("B"))
+                    self.qtable.setItem(b, 8, QTableWidgetItem("B"))
                 elif tot > 70:
-                    self.qtable.setItem(self.rowIndex, 8, QTableWidgetItem("C"))
+                    self.qtable.setItem(b, 8, QTableWidgetItem("C"))
                 elif tot <= 70:
-                    self.qtable.setItem(self.rowIndex, 8, QTableWidgetItem("D"))
+                    self.qtable.setItem(b, 8, QTableWidgetItem("D"))
             elif a <= 4:
-                self.qtable.setItem(self.rowIndex, 8, QTableWidgetItem("F"))
-
-            self.rowIndex += 1
+                self.qtable.setItem(b, 8, QTableWidgetItem("F"))
         except Exception as e:
             print(e)
 
+        self.se.appendrow(num, adc, que1, que2, mid, las, pro, tot)
 
     def correction(self):
         num = self.num_edit.text()
@@ -76,42 +76,61 @@ class MyApp(QWidget):
 
         tot = int(adc) + int(que1) + int(que2) + int(mid) + int(las) + int(pro)
 
-        if num != "":
-            b = int(num)
-            self.qtable.setItem(b-1, 0, QTableWidgetItem(num))
-            self.qtable.setItem(b-1, 2, QTableWidgetItem(que1))
-            self.qtable.setItem(b-1, 1, QTableWidgetItem(adc))
-            self.qtable.setItem(b-1, 3, QTableWidgetItem(que2))
-            self.qtable.setItem(b-1, 4, QTableWidgetItem(mid))
-            self.qtable.setItem(b-1, 5, QTableWidgetItem(las))
-            self.qtable.setItem(b-1, 6, QTableWidgetItem(pro))
-            self.qtable.setItem(b-1, 7, QTableWidgetItem(str(tot)))
+        b = int(num) - 1
+        self.qtable.setItem(b, 0, QTableWidgetItem(num))
+        self.qtable.setItem(b, 1, QTableWidgetItem(adc))
+        self.qtable.setItem(b, 2, QTableWidgetItem(que1))
+        self.qtable.setItem(b, 3, QTableWidgetItem(que2))
+        self.qtable.setItem(b, 4, QTableWidgetItem(mid))
+        self.qtable.setItem(b, 5, QTableWidgetItem(las))
+        self.qtable.setItem(b, 6, QTableWidgetItem(pro))
+        self.qtable.setItem(b, 7, QTableWidgetItem(str(tot)))
+        a = int(adc)
+        if a > 4:
+            if tot > 90:
+                self.qtable.setItem(b, 8, QTableWidgetItem("A"))
+                self.c = "A"
+                return self.c
+            elif tot > 80:
+                self.qtable.setItem(b, 8, QTableWidgetItem("B"))
+                self.c = "B"
+                return self.c
+            elif tot > 70:
+                self.qtable.setItem(b, 8, QTableWidgetItem("C"))
+                self.c = "C"
+                return self.c
+            elif tot <= 70:
+                self.qtable.setItem(b, 8, QTableWidgetItem("D"))
+                self.c = "D"
+                return self.c
+        elif a <= 4:
+            self.qtable.setItem(b, 8, QTableWidgetItem("F"))
+            self.c = "F"
+            return self.c
+        self.se.correction(num, adc, que1, que2, mid, las, pro, tot, self.c)
 
-            a = int(adc)
-            if a > 4:
-                if tot > 90:
-                    self.qtable.setItem(a, 8, QTableWidgetItem("A"))
-                elif tot > 80:
-                    self.qtable.setItem(a, 8, QTableWidgetItem("B"))
-                elif tot > 70:
-                    self.qtable.setItem(a, 8, QTableWidgetItem("C"))
-                elif tot <= 70:
-                    self.qtable.setItem(a, 8, QTableWidgetItem("D"))
-            elif a <= 4:
-                self.qtable.setItem(a, 8, QTableWidgetItem("F"))
-            self.se.correction(b)
+    def delete(self):
+        num = self.num_edit.text()
 
-    # def delete(self):
-    #     pass
+        b = int(num) - 1
+        self.qtable.setItem(b, 0, QTableWidgetItem(""))
+        self.qtable.setItem(b, 1, QTableWidgetItem(""))
+        self.qtable.setItem(b, 2, QTableWidgetItem(""))
+        self.qtable.setItem(b, 3, QTableWidgetItem(""))
+        self.qtable.setItem(b, 4, QTableWidgetItem(""))
+        self.qtable.setItem(b, 5, QTableWidgetItem(""))
+        self.qtable.setItem(b, 6, QTableWidgetItem(""))
+        self.qtable.setItem(b, 7, QTableWidgetItem(""))
+        self.qtable.setItem(b, 8, QTableWidgetItem(""))
+        self.se.delete(num)
+    def create(self):
+        self.se.createfile()
 
-    # def create(self):
-    #     self.se.createfile()
-    #
     def initEvent(self):
         self.add_btn.clicked.connect(self.append)
         self.cor_btn.clicked.connect(self.correction)
-        # self.del_btn.clicked.connect(self.delete)
-    #     self.create_btn.clicked.connect(self.create)
+        self.del_btn.clicked.connect(self.delete)
+        self.create_btn.clicked.connect(self.create)
 
     def initUI(self):
         self.qtable = QTableWidget(self)
@@ -119,7 +138,7 @@ class MyApp(QWidget):
         self.qtable.setRowCount(10)
         self.qtable.setColumnCount(9)
 
-        self.qtable.setHorizontalHeaderLabels(['학번', '출석', '퀴즈1', '퀴즈2', '중간고사', '기말고사', '프로젝트','총점','학점'])
+        self.qtable.setHorizontalHeaderLabels(['학번', '출석', '퀴즈1', '퀴즈2', '중간고사', '기말고사', '프로젝트', '총점', '학점'])
         self.qtable.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
 
         self.qtable.move(10, 190)

@@ -6,13 +6,15 @@ class StudentExcel:
     def __init__(self):
         print("생성자")
 
-    def deleterow(self,rowIndex):
+    def correction(self,rowIndex):
         wb = load_workbook('scores.xlsx')
         ws = wb.active
 
         ws.delete_rows(rowIndex-1)
         wb.save('scores.xlsx')
         wb.close()
+
+    def deleterow(self, rowIndex):
 
     def loadrow(self):
         print("asdad")

@@ -5,6 +5,7 @@ from studentExcel import StudentExcel
 
 
 class MyApp(QWidget):
+
     def __init__(self):
         super().__init__()
         self.se = StudentExcel()
@@ -29,43 +30,40 @@ class MyApp(QWidget):
 
     def append(self):
 
-        try:
-            num = self.num_edit.text()
-            adc = self.adc_edit.text()
-            que1 = self.que1_edit.text()
-            que2 = self.que2_edit.text()
-            mid = self.mid_edit.text()
-            las = self.las_edit.text()
-            pro = self.pro_edit.text()
-
-            tot = int(adc) + int(que1) + int(que2) + int(mid) + int(las) + int(pro)
-            b = int(num) - 1
-            self.qtable.setItem(b, 0, QTableWidgetItem(num))
-            self.qtable.setItem(b, 1, QTableWidgetItem(adc))
-            self.qtable.setItem(b, 2, QTableWidgetItem(que1))
-            self.qtable.setItem(b, 3, QTableWidgetItem(que2))
-            self.qtable.setItem(b, 4, QTableWidgetItem(mid))
-            self.qtable.setItem(b, 5, QTableWidgetItem(las))
-            self.qtable.setItem(b, 6, QTableWidgetItem(pro))
-            self.qtable.setItem(b, 7, QTableWidgetItem(str(tot)))
-            a = int(adc)
-            if a > 4:
-                if tot > 90:
-                    self.qtable.setItem(b, 8, QTableWidgetItem("A"))
-                elif tot > 80:
-                    self.qtable.setItem(b, 8, QTableWidgetItem("B"))
-                elif tot > 70:
-                    self.qtable.setItem(b, 8, QTableWidgetItem("C"))
-                elif tot <= 70:
-                    self.qtable.setItem(b, 8, QTableWidgetItem("D"))
-            elif a <= 4:
-                self.qtable.setItem(b, 8, QTableWidgetItem("F"))
-        except Exception as e:
-            print(e)
+        num = self.num_edit.text()
+        adc = self.adc_edit.text()
+        que1 = self.que1_edit.text()
+        que2 = self.que2_edit.text()
+        mid = self.mid_edit.text()
+        las = self.las_edit.text()
+        pro = self.pro_edit.text()
+        tot = int(adc) + int(que1) + int(que2) + int(mid) + int(las) + int(pro)
+        b = int(num) - 1
+        self.qtable.setItem(b, 0, QTableWidgetItem(num))
+        self.qtable.setItem(b, 1, QTableWidgetItem(adc))
+        self.qtable.setItem(b, 2, QTableWidgetItem(que1))
+        self.qtable.setItem(b, 3, QTableWidgetItem(que2))
+        self.qtable.setItem(b, 4, QTableWidgetItem(mid))
+        self.qtable.setItem(b, 5, QTableWidgetItem(las))
+        self.qtable.setItem(b, 6, QTableWidgetItem(pro))
+        self.qtable.setItem(b, 7, QTableWidgetItem(str(tot)))
+        a = int(adc)
+        if a > 4:
+            if tot > 90:
+                self.qtable.setItem(b, 8, QTableWidgetItem("A"))
+            elif tot > 80:
+                self.qtable.setItem(b, 8, QTableWidgetItem("B"))
+            elif tot > 70:
+                self.qtable.setItem(b, 8, QTableWidgetItem("C"))
+            elif tot <= 70:
+                self.qtable.setItem(b, 8, QTableWidgetItem("D"))
+        elif a <= 4:
+            self.qtable.setItem(b, 8, QTableWidgetItem("F"))
 
         self.se.appendrow(num, adc, que1, que2, mid, las, pro, tot)
 
     def correction(self):
+
         num = self.num_edit.text()
         adc = self.adc_edit.text()
         que1 = self.que1_edit.text()
@@ -123,6 +121,7 @@ class MyApp(QWidget):
         self.qtable.setItem(b, 7, QTableWidgetItem(""))
         self.qtable.setItem(b, 8, QTableWidgetItem(""))
         self.se.delete(num)
+
     def create(self):
         self.se.createfile()
 
@@ -133,6 +132,7 @@ class MyApp(QWidget):
         self.create_btn.clicked.connect(self.create)
 
     def initUI(self):
+
         self.qtable = QTableWidget(self)
 
         self.qtable.setRowCount(10)

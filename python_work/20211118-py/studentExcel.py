@@ -2,9 +2,9 @@ from openpyxl import load_workbook, Workbook
 
 
 class StudentExcel:
-    # 생성자
+
     def __init__(self):
-        print("생성자")
+        pass
 
     def appendrow(self, num, adc, que1, que2, mid, las, pro, tot):
         wb = load_workbook('student_scores.xlsx')
@@ -38,6 +38,7 @@ class StudentExcel:
     def correction(self, num, adc, que1, que2, mid, las, pro, tot, c):
         wb = load_workbook('student_scores.xlsx')
         ws = wb.active
+
 
         ws.cell(row=int(num), column=1).value = num
         ws.cell(row=int(num), column=2).value = adc

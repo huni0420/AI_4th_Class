@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25d2d95d-14bc-47c9-9cbe-2b9afaf9e356" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../20211118-py/음악짤.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/20211119-py.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EX01.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EX02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exexcel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/score.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java_work/20211105-java/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java_work/20211105-java/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java_work/20211105-java/out/production/untitled/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java_work/20211105-java/out/production/untitled/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../20211118-py/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../20211118-py/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../20211118-py/studentExcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/../20211118-py/studentExcel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../20211118-py/student_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/../20211118-py/student_score.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../20211118-py/student_scores.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../20211118-py/student_scores.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html/js/20211117-js/que3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../html/js/20211117-js/que3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/score.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/score.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

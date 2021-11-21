@@ -1,99 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1 {
+        h1.hln1{
+            display: inline-block;
+            border: 1px solid white;
+        }
+        h1.hl1{
             display: inline-block;
             border: 1px solid black;
-            border-radius:  25px 25px 25px 25px;
+            border-radius: 25px 25px 25px 25px;
+        }
+        h1.hln2{
+            display: inline-block;
+            border: 1px solid white;
+        }
+        h1.hl2{
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 25px 25px 25px 25px;
+        }
+        h1.hln3{
+            display: inline-block;
+            border: 1px solid white;
+        }
+        h1.hl3{
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 25px 25px 25px 25px;
         }
     </style>
     <script>
-        function Lotto()
+        function Lotto(num) 
         {
-            
+            this.num = num
+            sunseo++
         }
+
     </script>
 </head>
+
 <body>
-    <input type="text">
-    <button>로또 생성하기</button><br>
-    
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
-    <!-- <br>
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
+    <input id="inp" type="text">
+    <button>로또 생성하기</button>
+    <button>번호별로 색상 다르게</button>
     <br>
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
-    <h1></h1>
-    <h1></h1> -->
+    <h1 class="hln1"></h1>
+    <h1 class="hl1"></h1>
+    <h1 class="hl1"></h1>
+    <h1 class="hl1"></h1>
+    <h1 class="hl1"></h1>
+    <h1 class="hl1"></h1>
+    <h1 class="hl1"></h1>
+    <h1 class="hl1"></h1>
+    <br>
+    <h1 class="hln2"></h1>
+    <h1 class="hl2"></h1>
+    <h1 class="hl2"></h1>
+    <h1 class="hl2"></h1>
+    <h1 class="hl2"></h1>
+    <h1 class="hl2"></h1>
+    <h1 class="hl2"></h1>
+    <h1 class="hl2"></h1>
+    <br>
+    <h1 class="hln3"></h1>
+    <h1 class="hl3"></h1>
+    <h1 class="hl3"></h1>
+    <h1 class="hl3"></h1>
+    <h1 class="hl3"></h1>
+    <h1 class="hl3"></h1>
+    <h1 class="hl3"></h1>
+    <h1 class="hl3"></h1>
     <script>
-        lotto = []
-        let h1l = document.querySelectorAll('h1')
-        let a = document.querySelector('input')
-        let tab =document.querySelector('button')
-        tab.onclick= function()
-        {
-            
-            for (let i = 0; i < 7; i++) {
-                let num = Math.floor(Math.random() * 45) + 1
-                if (i > 0) {
-                    if (lotto.indexOf(num) != -1) {
-                        i--
+        let sunseo=-1
+        lotto =[]
+        let hln1 = document.querySelector('h1.hln1')
+        let hln2 = document.querySelector('h1.hln2')
+        let hln3 = document.querySelector('h1.hln3')
+        let hl1 = document.querySelectorAll('h1.hl1')
+        let hl2 = document.querySelectorAll('h1.hl2')
+        let hl3 = document.querySelectorAll('h1.hl3')
+        let number = document.getElementById('inp')
+        let tab = document.querySelectorAll('button')
+        tab[0].onclick = function () 
+        {   
+            if(number.value==""){
+                alert("값을 입력하세요")
+                return
+            }
+            else if(number.value != ""){
+                if(lotto.length>0)
+                {
+                    for(let temp of lotto)
+                    {
+                        if(temp.num==number.value)
+                        {
+                            alert("같은 회차가 존재합니다.")
+                            return
+                        }
+                    }
+                }
+                lotto.push(new Lotto(number.value))
+                
+                alert(sunseo)
+                let lotto1 =[]
+                for (let i = 0; i < 7; i++) 
+                {
+                    let num = Math.floor(Math.random() * 45) + 1
+                    if (i > 0)
+                    {
+                        if (lotto1.indexOf(num) != -1) 
+                        {
+                            i--
+                            continue
+                        }
+                    }
+                    lotto1[i] = Number(num)
+                }
+                for (let i = 0; i < 6; i++) 
+                {
+                    if (lotto1[i] > lotto1[i + 1])
+                    {
+                        let gong = 0
+                        gong = lotto1[i]
+                        lotto1[i] = lotto1[i + 1]
+                        lotto1[i + 1] = gong
+                        i = -1
                         continue
                     }
                 }
-                lotto[i] = Number(num)
-            }
-            let i =0
-            for (let item of h1l) 
-            {
-                item.innerText = lotto[i]
-                for(let i = 0; i < 7; i++)
+                if(Lotto.length>0)
                 {
-                    if(0<lotto[i]<11)
-                    {
-                        item.style.backgroundColor='yellow'
-                    }
-                    if(10<lotto[i]<21)
-                    {
-                        item.style.backgroundColor='blue'
-                    }
-                    if(20<lotto[i]<31)
-                    {
-                        item.style.backgroundColor='red'
-                    }
-                    if(30<lotto[i]<41)
-                    {
-                        item.style.backgroundColor='gray'
-                    }
-                    if(40<lotto[i]<46)
-                    {
-                        item.style.backgroundColor='green'
+                    switch(sunseo%3){
+                        case 0:
+                            hln1.innerText = lotto[sunseo].num + "회차 :"
+                            hl1[1].innerText = lotto1[0]
+                            hl1[2].innerText = lotto1[1]
+                            hl1[3].innerText = lotto1[2]
+                            hl1[4].innerText = lotto1[3]
+                            hl1[5].innerText = lotto1[4]
+                            hl1[6].innerText = lotto1[5]
+                            hl1[7].innerText = lotto1[6]
+                            break
+                        case 1:
+                            hln2.innerText = lotto[sunseo].num+ "회차 :"
+                            hl2[1].innerText = lotto1[0]
+                            hl2[2].innerText = lotto1[1]
+                            hl2[3].innerText = lotto1[2]
+                            hl2[4].innerText = lotto1[3]
+                            hl2[5].innerText = lotto1[4]
+                            hl2[6].innerText = lotto1[5]
+                            hl2[7].innerText = lotto1[6]
+                            break
+                        case 2:
+                            hln3.innerText = lotto[sunseo].num+ "회차 :"
+                            hl3[1].innerText = lotto1[0]
+                            hl3[2].innerText = lotto1[1]
+                            hl3[3].innerText = lotto1[2]
+                            hl3[4].innerText = lotto1[3]
+                            hl3[5].innerText = lotto1[4]
+                            hl3[6].innerText = lotto1[5]
+                            hl3[7].innerText = lotto1[6]
+                            break
+                        default:
+                            break
                     }
                 }
-                i++
-            }
+            }    
         }
     </script>
 </body>
+
 </html>

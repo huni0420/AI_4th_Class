@@ -1,41 +1,88 @@
 class Movies:
-    def SisSelect(TS,TIME):
-        Ts = TS
+
+    def Prime_Theater(MS,TIME):
+        Ms  = MS
         time = TIME
 
 
+    def Nomal_Theater(MS, TIME):
+        Ms = MS
+        time = TIME
 
 
-    def TimeSelect(TS):
-        Ts = TS
-        if Ts == "a":
+    def SisSelect(MS,TIME):
+        Ms = MS
+        time = TIME
+        if Ms == "a":
+            if time == "14:00" or time=="16:00":
+                Movies.Prime_Theater(Ms,time)
+            elif time == "18:00" or time=="21:00":
+                Movies.Nomal_Theater(Ms,time)
+        elif Ms == "b":
+            if time == "14:00" or time=="16:00":
+                Movies.Nomal_Theater(Ms,time)
+            elif time == "18:00" or time=="21:00":
+                Movies.Prime_Theater(Ms,time)
+        elif Ms == "c":
+            if time == "14:00" or time=="16:00":
+                Movies.Prime_Theater(Ms,time)
+            elif time == "18:00" or time=="21:00":
+                Movies.Nomal_Theater(Ms,time)
+        elif Ms == "d":
+            if time == "14:00" or time=="16:00":
+                Movies.Nomal_Theater(Ms,time)
+            elif time == "18:00" or time=="21:00":
+                Movies.Prime_Theater(Ms,time)
+        elif Ms == "e":
+            if time == "14:00" or time=="16:00":
+                Movies.Prime_Theater(Ms,time)
+            elif time == "18:00" or time=="21:00":
+                Movies.Nomal_Theater(Ms,time)
+        elif Ms == "f":
+            if time == "14:00" or time=="16:00":
+                Movies.Nomal_Theater(Ms,time)
+            elif time == "18:00" or time=="21:00":
+                Movies.Prime_Theater(Ms,time)
+        elif Ms == "g":
+            if time == "14:00" or time=="16:00":
+                Movies.Prime_Theater(Ms,time)
+            elif time == "18:00" or time=="21:00":
+                Movies.Prime_Theater(Ms,time)
+
+
+
+
+
+    def TimeSelect(MS):
+        Ms = MS
+        if Ms == "a":
             print("14:00  16:00  18:00  21:00")
             time = input("시간 선택 ")
-            Movies.SisSelect(Ts,time)
-        elif Ts == "b":
+            Movies.SisSelect(Ms,time)
+        elif Ms == "b":
             print("14:00  16:00  18:00  21:00")
             time = input("시간 선택 ")
-            Movies.SisSelect(Ts,time)
-        elif Ts == "c":
+            Movies.SisSelect(Ms,time)
+        elif Ms == "c":
             print("14:00  16:00  18:00  21:00")
             time = input("시간 선택 ")
-            Movies.SisSelect(Ts,time)
-        elif Ts == "d":
+            Movies.SisSelect(Ms,time)
+        elif Ms == "d":
             print("14:00  16:00  18:00  21:00")
             time = input("시간 선택 ")
-            Movies.SisSelect(Ts,time)
-        elif Ts == "e":
+            Movies.SisSelect(Ms,time)
+        elif Ms == "e":
             print("14:00  16:00  18:00  21:00")
             time = input("시간 선택 ")
-            Movies.SisSelect(Ts,time)
-        elif Ts == "f":
+            Movies.SisSelect(Ms,time)
+        elif Ms == "f":
             print("14:00  16:00  18:00  21:00")
             time = input("시간 선택 ")
-            Movies.SisSelect(Ts,time)
-        elif Ts == "g":
+            Movies.SisSelect(Ms,time)
+        elif Ms == "g":
             print("14:00  16:00  18:00  21:00")
             time = input("시간 선택 ")
-            Movies.SisSelect(Ts,time)
+            Movies.SisSelect(Ms,time)
 
     def MovieSelect(self):
         A = "a"

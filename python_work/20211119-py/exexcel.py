@@ -69,6 +69,18 @@ def 성적():
     ws = wb.active
 
     ws['I1'] = "성적"
+    for col in ws.iter_cols(min_col=8, min_row=2, max_col=8):
+        for idx, cell in enumerate(col, start=2):
+            if int(cell.value) >= 90:
+                ws['I' + str(idx)] = 'A'
+            elif int(cell.value) >= 80:
+                ws['I' + str(idx)] = 'B'
+            elif int(cell.value) >= 70:
+                ws['I' + str(idx)] = 'C'
+            elif int(cell.value) >= 60:
+                ws['I' + str(idx)] = 'D'
+            else:
+                ws['I' +str(idx)] ='F'
 
     wb.save('score.xlsx')
     wb.close()

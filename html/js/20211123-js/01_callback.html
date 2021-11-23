@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1 = [10,5,20,3,40]
+        let arr2 = ['10','5','20','3','40']
+        let arr3 = ['b','f','a','s','d']
+        let orederbyNum = function(a,b){
+            return a-b
+        }
+        let orderbyNumDesc = (a,b) =>{return b-a}
+        console.log(arr1.sort())
+        console.log(arr1.sort(orederbyNum))
+        console.log(arr1.sort(orderbyNumDesc))
+        console.log(arr2.sort())
+        console.log(arr3.sort())
+    </script>
+</body>
+</html>

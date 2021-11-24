@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function nextRandomInteger(limit){
+            return Math.round(Math.random()*limit)
+        }
+
+        let randomAlphabet = (
+            function(){
+                let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+                let hangle = '가나다라마바사아자차카타파하'
+                let japan = 'にしてもらえますか'
+                const lang = [alphabet,hangle,japan]
+                return function(){
+                    const mylang = lang[nextRandomInteger(2)]
+                    return mylang.charAt(nextRandomInteger(mylang.length-1))
+                }
+            }
+        )()
+        function randomSpeed(maxSpeed){
+            return Math.random()*maxSpeed - Math.random()*maxSpeed
+        }
+    </script>
+    <script>
+        let canvasWidth = 700
+        let canvasHeight = 400
+        function MovingText(param){
+            this.x = nextRandomInteger(canvasWidth)
+            this.y = nextRandomInteger(canvasHeight)
+            this.vx = randomSpeed(10)
+            this.vy = randomSpeed(10)
+            this.b = document.createElement('h1')
+            
+            console.log(param)
+            
+            if(!param)
+                this.b.innerText = randomAlphabet()
+            else
+                this.b.innerText = param
+
+            this.b.style.position = 'fixed'
+            //appendChild 해줘야 body에 실제로 들어감
+            document.body.appendChild(this.b)
+            this.move = function(){
+            if(this.x<0 || this.x>canvasWidth)
+                this.vx *= -1
+            if(this.y<0 || this.y>canvasHeight)
+                this.vy *= -1
+                this.x += this.vx
+                this.y += this.vy
+                    
+                this.b.style.left =this.x+'px'
+                this.b.style.top = this.y+'px'
+            }
+        }
+    </script>
+    <script>
+        window.onload = function(){
+            let adder =document.querySelector('button')
+            let input =document.querySelector('input')
+            adder.onclick = () => {
+                movingTexts.push(new MovingText(input.value))
+            }
+            let movingTexts = []
+            for(let i = 0; i<100; i++){
+                movingTexts.push(new MovingText())
+            }
+            setInterval(function()
+            {
+                for(let i in movingTexts)
+                {
+                    movingTexts[i].move()
+                    // movingTexts[i].b.style.color=
+                    // `rgb(${nextRandomInteger(255)},
+                    // ${nextRandomInteger(255)},
+                    // ${nextRandomInteger(255)})`
+                    // document.body.style.backgroundColor=
+                    // `rgb(${nextRandomInteger(255)},
+                    // ${nextRandomInteger(255)},
+                    // ${nextRandomInteger(255)})`
+                }
+            }, 1000/30) 
+        }                  
+    </script>
+    <style>
+        button,input{
+            left: 0px;
+            top: 500px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <input id="input" type="text">
+    <button id="adder">입력</button>
+    <script>
+        
+    </script>
+</body>
+</html>

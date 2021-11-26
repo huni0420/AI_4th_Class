@@ -4,12 +4,14 @@ import pyautogui
 from PyQt5.QtWidgets import *
 import pyperclip
 
+from openpyxl import Workbook
 
 class MyApp(QWidget):
 
     def __init__(self):
         super().__init__()
         self.initUI()
+
 
     def doms(self):
         pyautogui.hotkey("win", "r")
@@ -24,15 +26,38 @@ class MyApp(QWidget):
         pyautogui.move(10, 200, duration=1)
         pyautogui.click()
 
-        time.sleep(3)
+        time.sleep(2)
 
         t = "참잘했어요"
         pyperclip.copy(t)
         pyautogui.hotkey("ctrl", "v")
 
-        pyautogui.sleep(3)
-        pyautogui.hotkey("alt", "f4")
-        pyautogui.press("n")
+        pyautogui.sleep(2)
+        mywindow = pyautogui.getActiveWindow()
+        mywindow.close()
+
+        time.sleep(1)
+        pyautogui.write('n')
+
+        # pyautogui.hotkey("alt", "f4")
+        # pyautogui.press("n")
+
+        wb = Workbook()
+        ws = wb.active
+
+        count = ws['A1'].value
+        if count == None:
+            count = '1'
+        else:
+            count = int(count)+1
+
+
+        ws['A1'] = count
+
+        ws['B1'] = count + 'did'
+
+        wb.save('log.xlsx')
+        wb.close()
 
     def initUI(self):
         self.mpaintbtn = QPushButton("그림판", self)

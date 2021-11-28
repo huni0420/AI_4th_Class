@@ -2,7 +2,7 @@ from Movie import *
 
 class Movie:
     movie_list = []
-    def MovieStart(self):
+    def MovieStart():
         while 1:
             start = input("영화를 선택 하시겠습니까 (1.시작 2.취소)")
             if start == "1":
@@ -13,4 +13,4 @@ class Movie:
                 print("잘못입력하셨습니다.")
                 continue
 
-Movie.MovieStart(self=0)
+Movie.MovieStart()

@@ -1,18 +1,25 @@
 import sys
-from PyQt5.QtWidgets import *
 from PyQt5 import uic
-from PyQt5.QtGui import *
-form_class = uic.loadUiType('window1.ui')[0]
+from PyQt5 import QtWidgets
+from xlsx import Customer_Email
+from PyQt5.QtWidgets import *
 
-class Window1(QMainWindow,form_class):
+form_class2 = uic.loadUiType('window1.ui')[0]
+
+class Window1(QMainWindow,form_class2):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        self.le = None
+        self.xl = Customer_Email()
         self.pushButton.clicked.connect(self.customer)
 
-    def customer(self):
-        self.
-        print(self.text1)
+
+    def customer(self):#라인텍스트 안글자가 출력
+        self.le = self.lineEdit.text()
+        self.xl.SaveEmail(self.le)
+        self.close()
+
 
 
 if __name__ == '__main__':

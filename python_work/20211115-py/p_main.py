@@ -6,7 +6,6 @@ from PyQt5.QtGui import * #라벨써서 배경넣을때
 
 form_class = uic.loadUiType("a.ui")[0]
 
-
 class MyApp(QMainWindow, form_class):
     def __init__(self):
         super().__init__()

@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25d2d95d-14bc-47c9-9cbe-2b9afaf9e356" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../java_work/20211122-java/.idea/.idea/.idea.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java_work/20211122-java/.idea/20211122-java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java_work/20211122-java/src/src.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java_work/20211122-java/src/src/EX01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java_work/20211122-java/src/src/EX02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java_work/20211122-java/src/src/EX03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java_work/20211122-java/src/src/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java_work/20211122-java/src/src/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../20211122-py/.idea/20211122-py.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exexcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/exexcel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/score.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/score.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/Movie.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/Movie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../html/js/20211124-js/01_moving_text_again2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../html/js/20211124-js/01_moving_text_again2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20211115-py/p_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../20211115-py/p_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20211118-py/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../20211118-py/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20211118-py/student_scores.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../20211118-py/student_scores.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/MovieTiket.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/MovieTiket.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

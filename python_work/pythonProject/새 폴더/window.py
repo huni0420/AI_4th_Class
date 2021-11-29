@@ -5,8 +5,10 @@ from PyQt5.QtWidgets import *
 from openpyxl import Workbook
 from openpyxl import load_workbook
 from PyQt5.QtGui import *
-
-import window1
+import requests
+import re
+import Dialog1
+import Dialog2
 from xlsx import Customer_Email
 
 form_class = uic.loadUiType('MainWindow.ui')[0]
@@ -18,18 +20,18 @@ class MainWindow(QMainWindow, form_class):
         self.setupUi(self)
         self.le =None
         self.xl = Customer_Email()
-        self.pushButton.clicked.connect(self.window1)
+        self.pushButton.clicked.connect(self.Dialog1)
+        self.pushButton_3.clicked.connect(self.Dialog2)
         self.pushButton_5.clicked.connect(self.makexl)
 
-    def window1(self):#버튼으로 아이디 입력창 호출
-        self.ap = QtWidgets.QMainWindow()
-        self.ui = window1.Window1()
-        self.ui.setupUi(self.ap)
-        self.ui.show()
-        # self.ui.exec_()
-        le = self.ui.le
-        self.xl.SaveEmail(le)
+    def Dialog1(self):  # 버튼으로 아이디 입력창 호출
+        try:
+            Dialog1.Dialog1(self)
+        except Exception as e:
+            print(e)
 
+    def Dialog2(self):
+        Dialog2.Dialog2(self)
 
     def makexl(self):
         self.xl.CreateEmail_xl()

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{user-select: none;} /*글자선택되는거 방지*/
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <script>
+        let counter = 0
+        let flag = 0
+        const myh1 = document.querySelector('h1')
+        setInterval(function(){
+            flag += 5
+            if(flag%255<125){
+                counter+=10
+                myh1.style.color = `rgb(${counter},0,0)`
+            }
+            else if(flag%255>125)
+            {
+                counter-=10
+                myh1.style.color = `rgb(${counter},0,0)`
+            }
+        },100)
+    </script>
+</body>
+</html>

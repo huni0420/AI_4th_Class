@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>515</width>
+    <width>554</width>
     <height>412</height>
    </rect>
   </property>
@@ -17,9 +17,9 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>390</x>
       <y>40</y>
-      <width>111</width>
+      <width>140</width>
       <height>31</height>
      </rect>
     </property>
@@ -30,9 +30,9 @@
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>390</x>
       <y>80</y>
-      <width>111</width>
+      <width>140</width>
       <height>31</height>
      </rect>
     </property>
@@ -43,35 +43,35 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>390</x>
       <y>120</y>
-      <width>111</width>
+      <width>140</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>상품 검색</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>390</x>
       <y>160</y>
-      <width>111</width>
+      <width>140</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>이메일 보내기</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
-      <x>360</x>
+      <x>390</x>
       <y>200</y>
-      <width>111</width>
+      <width>140</width>
       <height>31</height>
      </rect>
     </property>
@@ -79,12 +79,12 @@
      <string>엑셀</string>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="mmmmmmmmmmmmmmmmmmmmmmmmmmmm">
+   <widget class="QTextBrowser" name="list">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>341</width>
+      <width>361</width>
       <height>351</height>
      </rect>
     </property>
@@ -95,8 +95,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>515</width>
-     <height>21</height>
+     <width>554</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>

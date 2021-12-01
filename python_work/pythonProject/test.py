@@ -1,7 +1,7 @@
 import sys
 from PyQt5 import QtWidgets
 from PyQt5 import uic
-from xlsx import Customer_Email
+from CostomerEmail_xl import Customer_Email
 from PyQt5.QtWidgets import *
 
 class Test(QDialog):

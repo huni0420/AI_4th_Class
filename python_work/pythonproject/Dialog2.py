@@ -1,19 +1,19 @@
 # from PyQt5 import QtWidgets
 import sys
 import requests
+import re
 from PyQt5 import uic
 from bs4 import BeautifulSoup
 import math
 from PyQt5.QtWidgets import *
-
 from Main_Gui import Excelseat
 
 
 class Dialog2(QDialog):
-    def __init__(self,parent):
+    def __init__(self, parent):
         super(Dialog2, self).__init__(parent)
         product_ui = './dialog2.ui'
-        uic.loadUi(product_ui,self)
+        uic.loadUi(product_ui, self)
         self.search = None
         self.Lpricecut = None
         self.Upricecut = None

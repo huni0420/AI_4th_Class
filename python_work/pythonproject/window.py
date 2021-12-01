@@ -1,12 +1,6 @@
 import sys
 from PyQt5 import uic
-from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import *
-from openpyxl import Workbook
-from openpyxl import load_workbook
-from PyQt5.QtGui import *
-import requests
-import re
 import Dialog1
 import Dialog2
 from xlsx import Customer_Email
@@ -31,8 +25,10 @@ class MainWindow(QMainWindow, form_class):
             print(e)
 
     def Dialog2(self):
-        Dialog2.Dialog2(self)
-
+        try:
+            Dialog2.Dialog2(self)
+        except Exception as e:
+            print(e)
     def makexl(self):
         self.xl.CreateEmail_xl()
 

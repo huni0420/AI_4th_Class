@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let color = ['red','orange','yellow','green','blue','darkblue','purple']
+        let output = ''
+        const size = 7
+        let t = -1
+        for (let i = 1; i <= size; i++) {
+            //space bar
+            for (let j = size; j > i; j--) {
+                let space = document.createElement('span')
+                space.innerText = '\u00a0'
+                document.body.appendChild(space)
+            }
+            //star
+            for (let k = 0; k < 2 * i - 1; k++) {
+                t += 1
+                let star = document.createElement('span')
+                star.innerText = '*'
+                star.style.color = color[t%7]
+                document.body.appendChild(star)
+            }
+            //한줄띄우기
+            // let br = document.createElement('br')
+            // document.body.appendChild(br) 이렇게 두줄쓰거나 밑에 거쓰거나...
+            document.body.appendChild(document.createElement('br'))
+        }
+        for (let i = size - 1; i > 0; i--) {
+            for (let j = size; j > i; j--) {
+                let space = document.createElement('span')
+                space.innerText = '\u00a0'
+                document.body.appendChild(space)
+            }
+            for (let k = 0; k < 2 * i - 1; k++) {
+                t+=1
+                let star = document.createElement('span')
+                star.innerText = '*'
+                star.style.color = color[t%7]
+                document.body.appendChild(star)
+            }
+            document.body.appendChild(document.createElement('br'))
+        }
+    </script>
+</body>
+</html>

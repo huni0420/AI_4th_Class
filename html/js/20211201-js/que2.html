@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="one"></h1>
+    <h1 id="two"></h1>
+    <h1 id="three"></h1>
+    <h1 id="four"></h1>
+    <h1 id="five"></h1>
+    <h1 id="six"></h1>
+    <h1 id="seven"></h1>
+    <script>
+        let myh1 = document.querySelector('#one')
+        let myh2 = document.querySelector('#two')
+        let myh3 = document.querySelector('#three')
+        let myh4 = document.querySelector('#four')
+        let myh5 = document.querySelector('#five')
+        let myh6 = document.querySelector('#six')
+        let myh7 = document.querySelector('#seven')
+    
+        myh1.style.color = 'red'
+        myh2.style.color = 'orange'
+        myh3.style.color = 'yellow'
+        myh4.style.color = 'green'
+        myh5.style.color = 'blue'
+        myh6.style.color = 'Indigo'
+        myh7.style.color = 'purple'
+        for(let i =0; i<10; i++)
+        {
+            setTimeout(function(){
+                myh1.innerText='*'
+            },1000/20)
+            setTimeout(function(){
+                myh1.parentNode.removeChild(myh1)
+            },2000/20)
+            setTimeout(function(){
+                myh2.innerText='*'
+            },3000/20)
+            setTimeout(function(){
+                myh2.parentNode.removeChild(myh2)
+            },4000/20)
+            setTimeout(function(){
+                myh3.innerText='*'
+            },5000/20)
+            setTimeout(function(){
+                myh3.parentNode.removeChild(myh3)
+            },6000/20)
+            setTimeout(function(){
+                myh4.innerText='*'
+            },7000/20)
+            setTimeout(function(){
+                myh4.parentNode.removeChild(myh4)
+            },8000/20)
+            setTimeout(function(){
+                myh5.innerText='*'
+            },9000/20)
+            setTimeout(function(){
+                myh5.parentNode.removeChild(myh5)
+            },10000/20)
+            setTimeout(function(){
+                myh6.innerText='*'
+            },11000/20)
+            setTimeout(function(){
+                myh6.parentNode.removeChild(myh6)
+            },12000/20)
+            setTimeout(function(){
+                myh7.innerText='*'
+            },13000/20)
+            setTimeout(function(){
+                myh7.parentNode.removeChild(myh7)
+            },14000/20)
+        }
+    </script>
+</body>
+</html>

@@ -36,7 +36,8 @@ class Customer_Email:
         rows = []
         wb = load_workbook("Customer_Mail.xlsx")
         ws = wb.active
-
+        if email == "":
+            return
         for row in ws.iter_rows():
             rows.append(row[0].value)
         if len(rows) >= 1:

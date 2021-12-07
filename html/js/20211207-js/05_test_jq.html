@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="myjq.js"></script>
+</head>
+
+<body>
+    <script>
+        $().ready(
+            function () {
+                $('#aaa').css('color', 'red')
+                let aaa = $('#aaa')
+                //JQ의 click = js의 onclick
+                aaa.click(function () {
+                    alert('aaaa')
+                })
+                let bbb = $('#bbb')
+                //JQ의 on = JS의 addEventListner
+                bbb.on('click', function () {
+                    alert('bbb')
+                })
+            }
+        )
+    </script>
+    <h1 id="aaa">Lorem ipsum dolor sit amet.</h1>
+    <h2 id="bbb">Lorem ipsum dolor sit amet consectetur.</h2>
+</body>
+
+</html>

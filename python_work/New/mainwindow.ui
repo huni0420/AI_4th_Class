@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>554</width>
+    <height>412</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AI04B</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>아이콘.png</normaloff>아이콘.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+	color: rgb(0, 255, 255);
+	background-color:  rgb(0, 135, 255);
+	border: 2px solid rgb(0, 204, 100);
+	border-radius: 5px;
+}
+QPushButton:pressed { background-color:rgb(35, 200, 100) }
+
+#centralwidget
+{
+	background:url(&quot;C:/Users/KB/Desctop/New/배경11.png&quot;)
+	
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>40</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>고객 추가/삭제</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>80</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>고객 자동관리</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>120</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>상품 검색</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>160</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>이메일 보내기</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>200</y>
+      <width>140</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>엑셀</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="list">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>361</width>
+      <height>351</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -40,13 +40,8 @@
             $(`h1.${i}`).text(`${num1}`) 
             list.push($(`h1.${i}`).text(`${num1}`))
         }
-        for(let i =1;i<7;i++){
-            if(list.max()==$(`h1.${i}`).text(`${num1}`))
-            {
-                $(`h1.${i}`).text(`${num1}`).addClass('max')
-            } 
-        }
-
+        let b = Math.max.apply(null,list)
+        
     </script>
 </body>
 </html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class information {
+            constructor(name, gen, num) {
+                this.name = name
+                this.gen = gen
+                this.num = num
+            }
+            toString() {
+                return `${this.name}은 ${this.gen}학생입니다`
+            }
+        }
+    </script>
+</head>
+
+<body>
+    이름<input type="text" id="name">
+    성별<input type="text" id="gen">
+    번호<input type="text" id="num">
+    <button>출력</button>
+    <button>리셋</button>
+    <button>번호순으로 출력</button>
+    <script>
+        let name = document.querySelector('#name')
+        let gen = document.querySelector('#gen')
+        let num = document.querySelector('#num')
+        let btn = document.querySelectorAll('button')
+        btn[0].onclick = () => {
+            let inform = []
+            inform.push(new information(name.value, gen.value, num.value))
+            for (let item of inform) {
+                if (item.gen == '남') {
+                    let h = document.createElement('h1')
+                    h.style.color = 'blue'
+                    h.style.backgroundColor = 'green'
+                    h.innerHTML = item.toString()
+                    document.body.appendChild(h)
+                } else if (item.gen == '여') {
+                    let h = document.createElement('h1')
+                    h.style.color = 'pink'
+                    h.style.backgroundColor = 'black'
+                    h.innerHTML = item.toString()
+                    document.body.appendChild(h)
+                }
+            }
+        }
+        btn[2].onclick = ()=>{
+            let inform = []
+            inform.push(new information(name.value, gen.value, num.value))
+            for(let item of inform){
+                if(item.gen == '남'){
+                    let h = document.createElement('h1')
+                    h.style.color = 'blue'
+                    h.style.backgroundColor = 'green'
+                    h.innerHTML = item.toString()
+                    document.body.appendChild(h)
+                } else if(item.gen == '여'){
+                    let h = document.createElement('h1')
+                    h.style.color = 'pink'
+                    h.style.backgroundColor = 'black'
+                    h.innerHTML = item.toString()
+                    document.body.appendChild(h)
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

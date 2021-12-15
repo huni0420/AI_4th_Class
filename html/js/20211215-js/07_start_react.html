@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        //이렇게 생긴 코드를 쓸 수 있는 건 babel이라는 라이브러리 덕분
+        
+        //이런식으로 변수를 <태그>내용<태그>로 하는걸 'JSX'라고 함
+
+        //babel의 역할은 JSX를 JS(자바스크립트)로 변환시켜줌
+        
+        const component = <h1>리엑트 시작</h1>
+        const container = document.getElementById('root')
+        //container한테 component를 그림
+        ReactDOM.render(component,container)
+    </script>
+</body>
+</html>

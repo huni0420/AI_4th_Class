@@ -124,11 +124,6 @@
                     myUl.appendChild(myLi);
                 });
             }).catch(()=>{console.log("error")})
-
-
-
-
-
     });
 
 </script>

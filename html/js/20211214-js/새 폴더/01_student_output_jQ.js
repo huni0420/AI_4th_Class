@@ -33,8 +33,8 @@ function()
             newStudentInfo.css('background-color','springgreen').css('color','blue')
             //newStudentInfo.style.backgroundColor = 'green'
             //newStudentInfo.style.color = 'blue'
-            
         }
+
         else
         {
             newStudentInfo.css('background-color','black').css('color','pink')
@@ -72,14 +72,14 @@ function()
         for(let i = 0; i<students.length; i++)
         {
             let newStudentInfo = $('<h1></h1>')
-            newStudentInfo.text(student[i].toString())
+            newStudentInfo.text(students[i].toString())
             if(students[i].gender == "남")
             {
             newStudentInfo.css('background-color','springgreen').css('color','blue')
             //newStudentInfo.style.backgroundColor = 'green'
             //newStudentInfo.style.color = 'blue'
-            
             }
+
             else
             {
             newStudentInfo.css('background-color','black').css('color','pink')

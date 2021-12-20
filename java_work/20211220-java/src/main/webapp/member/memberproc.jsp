@@ -13,22 +13,24 @@
     <title>Title</title>
 </head>
 <body>
+<jsp:useBean id="m1" class="com.example._1220.dto.Member"></jsp:useBean>
+<jsp:setProperty name="m1" property="*"></jsp:setProperty>
 <%
-    String email = request.getParameter("email");
-    String pwd = request.getParameter("pwd");
-    String gender = request.getParameter("gender");
+//    String email = request.getParameter("email");
+//    String pwd = request.getParameter("pwd");
+//    String gender = request.getParameter("gender");
     // Java Bean...클래스..
-    Member m1 = new Member();
-    m1.setEmail(email);
-    m1.setPwd(pwd);
-    m1.setGender(gender);
+//    Member m1 = new Member();
+//    m1.setEmail(email);
+//    m1.setPwd(pwd);
+//    m1.setGender(gender);
 
     MemberDao md =new MemberDao();
     md.insertmember(m1);
 %>
-<%=email%>
-<%=pwd%>
-<%=gender%>
+<%--<%=email%>--%>
+<%--<%=pwd%>--%>
+<%--<%=gender%>--%>
 <br>
 <%=m1%>
 </body>

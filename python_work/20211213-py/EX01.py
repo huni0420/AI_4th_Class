@@ -27,4 +27,4 @@ print(np.unique(arr3))
 # np.savez('saved.npz',array = array, array1=array1)
 #
 # print(np.load('saved.npz')['array'])
-# print(np.load('saved.npz')['array1'])
+print(np.load('saved.npz')['array1'])

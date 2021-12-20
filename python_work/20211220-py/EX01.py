@@ -12,13 +12,15 @@ def doA(x):
 
 
 # img = np.zeros((300, 200, 3), np.uint8)
-img = np.full((300, 200, 3), 255, np.uint8)
+img = np.full((300, 300, 3), 255, np.uint8)
 
 cv2.namedWindow('Image')
 
 cv2.createTrackbar('R', 'Image', 0, 255, doA)
 cv2.createTrackbar('G', 'Image', 0, 255, doA)
 cv2.createTrackbar('B', 'Image', 0, 255, doA)
+
+cv2.line(img,(0,0),(100,100),(100,100,100),10)
 
 cv2.imshow("Image", img)
 cv2.waitKey(0)

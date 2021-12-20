@@ -1,5 +1,4 @@
 import cv2
-import cv2
 
 catimg = cv2.imread("cat.jpg")
 print(catimg.shape)

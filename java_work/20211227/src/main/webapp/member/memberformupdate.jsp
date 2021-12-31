@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="com.example._20211227.member.MemberDao" %>
-<%@ page import="com.example._20211227.member.MemberDto" %>
+<%@ page import="com.example.member.MemberDao" %>
+<%@ page import="com.example.member.MemberDto" %>
 <%
     int idx = Integer.parseInt(request.getParameter("idx"));
     MemberDao dao = new MemberDao();
@@ -14,7 +14,7 @@
 <body>
 <%@ include file="../nav.jsp" %>
 <div class="container">
-    <form action="memberproc.jsp">
+    <form action="memberupdateproc.jsp">
         <input type="hidden" name="idx" value="<%=dto.getIdx()%>">
         <div class="form-group">
             <label for="email">email </label>

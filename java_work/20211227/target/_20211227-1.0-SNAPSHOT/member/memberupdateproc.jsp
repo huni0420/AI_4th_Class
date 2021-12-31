@@ -8,7 +8,7 @@
 <%
     // db 저장 로직...
     MemberDao dao = new MemberDao();
-    dao.memberset(dto);
+    dao.memberset(dto,true);
 
     response.sendRedirect("/20211227_war_exploded/index.jsp");
 %>

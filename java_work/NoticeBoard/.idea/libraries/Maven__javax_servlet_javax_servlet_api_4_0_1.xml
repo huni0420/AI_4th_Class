@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Maven: javax.servlet:javax.servlet-api:4.0.1">
+    <CLASSES />
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../jsp_ppt/은노기의 JSP 웹프로그래밍 입문(4th)/program/mysql-connector-java-5.1.29.zip!/mysql-connector-java-5.1.29/src" />
+    </SOURCES>
+  </library>
+</component>

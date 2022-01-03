@@ -47,7 +47,7 @@ public class MemberDao {
     }
 
     // db update
-    public void memberset(MemberDto dto, boolean update){
+    public String memberset(MemberDto dto, boolean update){
         PreparedStatement pstmt = null;
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -66,6 +66,7 @@ public class MemberDao {
         }catch (Exception e){
             e.printStackTrace();
         }
+        return null;
     }
 
     // db insert...

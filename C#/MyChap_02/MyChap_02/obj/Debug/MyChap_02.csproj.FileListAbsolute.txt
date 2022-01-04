@@ -1,0 +1,8 @@
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyChap_02\bin\Debug\MyChap_02.exe.config
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyChap_02\bin\Debug\MyChap_02.exe
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyChap_02\bin\Debug\MyChap_02.pdb
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyChap_02\obj\Debug\MyChap_02.csproj.AssemblyReference.cache
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyChap_02\obj\Debug\MyChap_02.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyChap_02\obj\Debug\MyChap_02.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyChap_02\obj\Debug\MyChap_02.exe
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyChap_02\obj\Debug\MyChap_02.pdb

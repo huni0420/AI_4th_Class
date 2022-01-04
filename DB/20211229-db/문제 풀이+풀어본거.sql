@@ -71,8 +71,85 @@ on buytbl2.userid = usertbl2.userid group by username having sum(price*amount)>1
 
 
 
+create table Univ_major
+(
+    code char(3) primary key,
+    hakgwaname varchar2(20)
+);
+--학번을 저장할 시퀀스 먼저 만들기
+create sequence univ_hakbeon_seq;
+
+create table Univ_student
+(   hakbeon int primary key,
+    name varchar2(40),
+    hakgwacode char(3),
+    hakjeom number,
+    foreign key(hakgwacode) references univ_major(code)
+);
+
+insert into univ_student values(univ_hakbeon_seq.nextval, 
+'이동준', '001', 1.2);
+insert into univ_student values(univ_hakbeon_seq.nextval, 
+'류경문', '002', 3.5);
+insert into univ_student values(univ_hakbeon_seq.nextval, 
+'권용규', '001', 4.0);
+insert into univ_student values(univ_hakbeon_seq.nextval, 
+'김민아', '003', 3.5);
+insert into univ_student values(univ_hakbeon_seq.nextval, 
+'이진주', '003', 2.0);
+insert into univ_student values(univ_hakbeon_seq.nextval, 
+'권도균', '004', 3.3);
+insert into univ_student values(univ_hakbeon_seq.nextval, 
+'권승연', '005', 4.2);
+insert into univ_student values(univ_hakbeon_seq.nextval, 
+'박명회', '001', 4.3);
+insert into univ_student values(univ_hakbeon_seq.nextval, 
+'이원만', '001', 4.1);
+insert into univ_student values(univ_hakbeon_seq.nextval, 
+'허동화', '001', 4.15);
+
+--insert into univ_student VALUES(1,'이동준','001',1.2);
+--insert into univ_student VALUES(2,'류경문','002',3.5);
+--insert into univ_student VALUES(3,'권용규','001',4);
+--insert into univ_student VALUES(4,'김민아','003',3.5);
+--insert into univ_student VALUES(5,'이진주','003',2);
+--insert into univ_student VALUES(6,'권도균','004',3.3);
+--insert into univ_student VALUES(7,'권승연','005',4.2);
+--insert into univ_student VALUES(8,'박명회','001',4.3);
+--insert into univ_student VALUES(9,'이원만','001',4.1);
+--insert into univ_student VALUES(10,'허동화','001',4.15);
 
 
+insert into univ_major VALUES('001','아동가족학');
+insert into univ_major VALUES('002','컴공');
+insert into univ_major VALUES('003','전자공학');
+insert into univ_major VALUES('004','심리학');
+insert into univ_major VALUES('005','전기공학');
+
+select * from univ_student;
+select * from univ_major;
+
+--1
+select s.hakbeon, s.name, m.hakgwaname, hakjeom
+from univ_student s join univ_major m on s.hakgwacode = m.code;
+
+--select hakbeon, name, hakgwaname, hakjeom from univ_student join univ_major on univ_student.hakgwacode = univ_major.code;
+
+--2
+select m.hakgwaname, avg(hakjeom)
+from univ_student s join univ_major m on s.hakgwacode = m.code;
+
+
+
+--select hakgwaname, AVG(hakjeom) as 학과평균학점 from univ_student join univ_major on univ_student.hakgwacode = univ_major.code group by hakgwaname;
+
+--3
+
+
+
+
+
+---------------------------------------------------------------------------------------------
 /*
 create table userTbl
 (

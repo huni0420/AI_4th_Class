@@ -1,0 +1,8 @@
+C:\Users\KB\Desktop\sss\C#\MyHellowCHarp\MyHellowCHarp\bin\Debug\MyHellowCHarp.exe.config
+C:\Users\KB\Desktop\sss\C#\MyHellowCHarp\MyHellowCHarp\bin\Debug\MyHellowCHarp.exe
+C:\Users\KB\Desktop\sss\C#\MyHellowCHarp\MyHellowCHarp\bin\Debug\MyHellowCHarp.pdb
+C:\Users\KB\Desktop\sss\C#\MyHellowCHarp\MyHellowCHarp\obj\Debug\MyHellowCHarp.csproj.AssemblyReference.cache
+C:\Users\KB\Desktop\sss\C#\MyHellowCHarp\MyHellowCHarp\obj\Debug\MyHellowCHarp.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\sss\C#\MyHellowCHarp\MyHellowCHarp\obj\Debug\MyHellowCHarp.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\sss\C#\MyHellowCHarp\MyHellowCHarp\obj\Debug\MyHellowCHarp.exe
+C:\Users\KB\Desktop\sss\C#\MyHellowCHarp\MyHellowCHarp\obj\Debug\MyHellowCHarp.pdb

@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "092f11d0-0a9b-4c81-8c90-748f9aebc8a5": {
+      "ProjectGuid": "092f11d0-0a9b-4c81-8c90-748f9aebc8a5",
+      "DisplayName": "20220104_que1",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "기타 파일",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

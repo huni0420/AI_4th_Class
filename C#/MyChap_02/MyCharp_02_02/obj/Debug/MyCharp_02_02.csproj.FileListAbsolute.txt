@@ -1,0 +1,8 @@
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyCharp_02_02\bin\Debug\MyCharp_02_02.exe.config
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyCharp_02_02\bin\Debug\MyCharp_02_02.exe
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyCharp_02_02\bin\Debug\MyCharp_02_02.pdb
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyCharp_02_02\obj\Debug\MyCharp_02_02.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyCharp_02_02\obj\Debug\MyCharp_02_02.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyCharp_02_02\obj\Debug\MyCharp_02_02.exe
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyCharp_02_02\obj\Debug\MyCharp_02_02.pdb
+C:\Users\KB\Desktop\sss\C#\MyChap_02\MyCharp_02_02\obj\Debug\MyCharp_02_02.csproj.AssemblyReference.cache

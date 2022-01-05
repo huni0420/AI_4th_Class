@@ -1,0 +1,8 @@
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\20220105que\bin\Debug\20220105que.exe.config
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\20220105que\bin\Debug\20220105que.exe
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\20220105que\bin\Debug\20220105que.pdb
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\20220105que\obj\Debug\20220105que.csproj.AssemblyReference.cache
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\20220105que\obj\Debug\20220105que.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\20220105que\obj\Debug\20220105que.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\20220105que\obj\Debug\20220105que.exe
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\20220105que\obj\Debug\20220105que.pdb

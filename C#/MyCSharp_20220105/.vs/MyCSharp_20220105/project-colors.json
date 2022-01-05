@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1c07ebd0-482e-4615-a80e-0d1834e50525": {
+      "ProjectGuid": "1c07ebd0-482e-4615-a80e-0d1834e50525",
+      "DisplayName": "MyCSharp_20220105",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "기타 파일",
+      "ColorIndex": -1
+    },
+    "3020dcac-c3a4-4dc9-9256-aeb442556497": {
+      "ProjectGuid": "3020dcac-c3a4-4dc9-9256-aeb442556497",
+      "DisplayName": "MyCSharp_20220105_2",
+      "ColorIndex": 1
+    },
+    "a5117e64-7e9d-4c3b-a8f7-0eb975a58fa6": {
+      "ProjectGuid": "a5117e64-7e9d-4c3b-a8f7-0eb975a58fa6",
+      "DisplayName": "20220105que",
+      "ColorIndex": 2
+    },
+    "a0366eb4-e6ea-487b-a843-e448de6afb4c": {
+      "ProjectGuid": "a0366eb4-e6ea-487b-a843-e448de6afb4c",
+      "DisplayName": "MyCSharp_20220105_3",
+      "ColorIndex": 3
+    },
+    "ecb36765-dda8-4f55-89e6-aa1d376f7f1c": {
+      "ProjectGuid": "ecb36765-dda8-4f55-89e6-aa1d376f7f1c",
+      "DisplayName": "MyCSharp_20220105_5",
+      "ColorIndex": 4
+    },
+    "59b94213-c45d-410d-8d56-19470dc042aa": {
+      "ProjectGuid": "59b94213-c45d-410d-8d56-19470dc042aa",
+      "DisplayName": "20220105que",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

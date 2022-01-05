@@ -1,0 +1,8 @@
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\MyCSharp20220105\obj\Debug\MyCSharp_20220105_2.csproj.AssemblyReference.cache
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\MyCSharp20220105\obj\Debug\MyCSharp_20220105_2.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\MyCSharp20220105\obj\Debug\MyCSharp_20220105_2.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\MyCSharp20220105\bin\Debug\MyCSharp20220105.exe.config
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\MyCSharp20220105\bin\Debug\MyCSharp20220105.exe
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\MyCSharp20220105\bin\Debug\MyCSharp20220105.pdb
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\MyCSharp20220105\obj\Debug\MyCSharp20220105.exe
+C:\Users\KB\Desktop\sss\C#\MyCSharp_20220105\MyCSharp20220105\obj\Debug\MyCSharp20220105.pdb

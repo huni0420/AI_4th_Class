@@ -7,16 +7,16 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 public class userDAO {
-    private Connection conn;
-    private PreparedStatement pstmt;
-    private ResultSet rs;
+    Connection conn;
+    PreparedStatement pstmt;
+    ResultSet rs;
 
     public userDAO() {
         try {
-            String dbURL = "jdbc:mysql://localhost:3306/home";
+            String dbURL = "jdbc:mysql://127.0.0.1:8080/aa";
             String dbID = "root";
             String dbPassword = "1234";
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
         } catch (Exception e) {
             e.printStackTrace();

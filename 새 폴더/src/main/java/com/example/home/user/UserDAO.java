@@ -6,14 +6,14 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class userDAO {
+public class UserDAO {
     Connection conn;
     PreparedStatement pstmt;
     ResultSet rs;
 
-    public userDAO() {
+    public UserDAO() {
         try {
-            String dbURL = "jdbc:mysql://127.0.0.1:8080/aa";
+            String dbURL = "jdbc:mysql://localhost:3306/aa";
             String dbID = "root";
             String dbPassword = "1234";
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -24,7 +24,7 @@ public class userDAO {
     }
 
     public int login(String id, String password) {
-        String SQL = "SELECT password FROM user WHERE id = ?";
+        String SQL = "SELECT PASSWORD FROM USER WHERE ID = ?";
         try {
             pstmt = conn.prepareStatement(SQL);
             pstmt.setString(1, id);

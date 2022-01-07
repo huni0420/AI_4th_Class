@@ -39,11 +39,11 @@
                 <form method="post" action="loginaction.jsp">
                     <p>ID:</p>
                     <div  class="input-group mb-4">
-                        <input type="text" class="form-control" placeholder="아이디" name="Id">
+                        <input type="text" class="form-control" placeholder="아이디" name="id">
                     </div>
                     <p>Password:</p>
                     <div  class="input-group mb-4">
-                        <input type="password" class="form-control" placeholder="비밀번호" name="Password">
+                        <input type="password" class="form-control" placeholder="비밀번호" name="password">
                     </div>
                     <div class="nav justify-content-end">
                         <input type="submit" class="btn btn-primary form-control"  value="로그인">

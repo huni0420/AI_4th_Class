@@ -2,25 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7159d195-5289-4f66-a202-0580942775cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/20220106-py/run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../새 폴더/.idea/libraries/mysql_connector_java_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../새 폴더/src/main/webapp/memberlist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python_work.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_work.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/front.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/gener.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/img.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/img/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/img/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/img/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/img/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/img/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/img/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/img/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/img/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/img/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/img/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/img/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/img/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/maketrain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/resized_roi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/roi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/tarintest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/0/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/1/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/1/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/1/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/10/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/10/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/11/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/12/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/12/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/2/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/2/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/2/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/2/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/3/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/3/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/4/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/4/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/5/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/5/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/5/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/5/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/5/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/5/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/6/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/6/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/7/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/7/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/7/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/7/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/7/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/7/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/7/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/8/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/8/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/8/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/8/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/8/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/9/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/9/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/20220106-py/train_data/9/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../새 폴더/.idea/libraries/mysql_connector_java_5_1_48_bin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../새 폴더/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../새 폴더/.idea/libraries/mysql_connector_java_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../새 폴더/.idea/libraries/mysql_connector_java_5_1_29_bin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/20220106-py/img/5be219501be52c6d26b62e7365f24c0c.png" beforeDir="false" afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/static/images/5be219501be52c6d26b62e7365f24c0c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20220106-py/img/87ffd6d442d5669456369636eff8b042.png" beforeDir="false" afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/static/images/87ffd6d442d5669456369636eff8b042.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20220106-py/img/8b6db7132f23c925b113443bb336db2c.png" beforeDir="false" afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/static/images/8b6db7132f23c925b113443bb336db2c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20220106-py/img/93e48e8ce80803ccefb2c01c420c53ca.png" beforeDir="false" afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/static/images/93e48e8ce80803ccefb2c01c420c53ca.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20220106-py/img/997d570aac972d6abc03ecaf36111663.png" beforeDir="false" afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/static/images/997d570aac972d6abc03ecaf36111663.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20220106-py/img/a32d20450227c1ebc0c56da2de1474c2.png" beforeDir="false" afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/static/images/a32d20450227c1ebc0c56da2de1474c2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20220106-py/img/a38c040dfb3212b2a726912095007ea6.png" beforeDir="false" afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/static/images/a38c040dfb3212b2a726912095007ea6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20220106-py/img/a9c795632c1694367e92182b57ed4755.png" beforeDir="false" afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/static/images/a9c795632c1694367e92182b57ed4755.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20220106-py/img/c03be677195722464be7f766554fda52.png" beforeDir="false" afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/static/images/c03be677195722464be7f766554fda52.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20220106-py/img/c800c75809b458d1435ed06a8d68f03d.png" beforeDir="false" afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/static/images/c800c75809b458d1435ed06a8d68f03d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20220106-py/img/cd75341d0560c349dca1b73809a0eef4.png" beforeDir="false" afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/static/images/cd75341d0560c349dca1b73809a0eef4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20220106-py/img/ded7e67499b000b09e4a051efc983f29.png" beforeDir="false" afterPath="$PROJECT_DIR$/20220106-py/SCTF2017-Writeups-master/SCTF2017-Writeups-master/ASM/src/static/images/ded7e67499b000b09e4a051efc983f29.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20220106-py/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/20220106-py/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../새 폴더/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../새 폴더/.idea/libraries/mysql_connector_java_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../새 폴더/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../새 폴더/Home.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/Home.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../새 폴더/src/main/java/com/example/home/user/userDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/src/main/java/com/example/home/user/userDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../새 폴더/src/main/webapp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../새 폴더/src/main/java/com/example/home/user/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/src/main/java/com/example/home/user/user.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../새 폴더/src/main/java/com/example/home/user/userDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/src/main/java/com/example/home/user/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../새 폴더/src/main/webapp/loginaction.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/src/main/webapp/loginaction.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../새 폴더/src/main/webapp/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/src/main/webapp/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../새 폴더/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/src/main/webapp/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../새 폴더/target/Home-1.0-SNAPSHOT/WEB-INF/classes/com/example/home/user/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/target/Home-1.0-SNAPSHOT/WEB-INF/classes/com/example/home/user/user.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../새 폴더/target/Home-1.0-SNAPSHOT/WEB-INF/classes/com/example/home/user/userDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/target/Home-1.0-SNAPSHOT/WEB-INF/classes/com/example/home/user/userDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../새 폴더/target/Home-1.0-SNAPSHOT/login.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../새 폴더/target/Home-1.0-SNAPSHOT/loginaction.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/target/Home-1.0-SNAPSHOT/loginaction.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../새 폴더/target/Home-1.0-SNAPSHOT/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/target/Home-1.0-SNAPSHOT/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../새 폴더/target/Home-1.0-SNAPSHOT/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/target/Home-1.0-SNAPSHOT/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../새 폴더/target/classes/com/example/home/user/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/target/classes/com/example/home/user/user.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../새 폴더/target/classes/com/example/home/user/userDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../새 폴더/target/classes/com/example/home/user/userDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,14 +121,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/20220106-py" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\KB\Desktop\sss\python_work\20220106-py" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\KB\Desktop\sss\python_work\20220106-py" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run">
+  <component name="RunManager" selected="Python.tarintest">
     <configuration name="python_work" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="python_work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,12 +174,81 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tarintest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_work" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/20220106-py" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/20220106-py/tarintest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_work" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/20220106-py" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/20220106-py/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_work" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/20220106-py" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/20220106-py/utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.python_work" />
       <item itemvalue="Python.run" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.tarintest" />
+      <item itemvalue="Python.utils" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tarintest" />
+        <item itemvalue="Python.utils" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.run" />
       </list>
     </recent_temporary>

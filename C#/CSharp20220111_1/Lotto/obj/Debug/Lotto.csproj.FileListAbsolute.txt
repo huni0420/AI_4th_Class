@@ -1,0 +1,11 @@
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\Lotto\bin\Debug\Lotto.exe.config
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\Lotto\bin\Debug\Lotto.exe
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\Lotto\bin\Debug\Lotto.pdb
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\Lotto\obj\Debug\Lotto.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\Lotto\obj\Debug\Lotto.Form1.resources
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\Lotto\obj\Debug\Lotto.Properties.Resources.resources
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\Lotto\obj\Debug\Lotto.csproj.GenerateResource.cache
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\Lotto\obj\Debug\Lotto.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\Lotto\obj\Debug\Lotto.exe
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\Lotto\obj\Debug\Lotto.pdb
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\Lotto\obj\Debug\Lotto.csproj.AssemblyReference.cache

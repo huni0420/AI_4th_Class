@@ -1,0 +1,10 @@
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppStart\bin\Debug\WindowsFormsAppStart.exe.config
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppStart\bin\Debug\WindowsFormsAppStart.exe
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppStart\bin\Debug\WindowsFormsAppStart.pdb
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppStart\obj\Debug\WindowsFormsAppStart.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppStart\obj\Debug\WindowsFormsAppStart.Form1.resources
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppStart\obj\Debug\WindowsFormsAppStart.Properties.Resources.resources
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppStart\obj\Debug\WindowsFormsAppStart.csproj.GenerateResource.cache
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppStart\obj\Debug\WindowsFormsAppStart.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppStart\obj\Debug\WindowsFormsAppStart.exe
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppStart\obj\Debug\WindowsFormsAppStart.pdb

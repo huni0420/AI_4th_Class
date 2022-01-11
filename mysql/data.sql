@@ -23,3 +23,4 @@ CREATE TABLE `user` (
 );
 INSERT INTO user VALUES ('aa','123');
 SELECT * FROM user;
+SELECT PASSWORD FROM user WHERE ID = 'aa'

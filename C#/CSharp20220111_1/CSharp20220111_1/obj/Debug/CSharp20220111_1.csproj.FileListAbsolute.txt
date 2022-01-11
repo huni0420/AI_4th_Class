@@ -1,0 +1,8 @@
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\CSharp20220111_1\bin\Debug\CSharp20220111_1.exe.config
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\CSharp20220111_1\bin\Debug\CSharp20220111_1.exe
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\CSharp20220111_1\bin\Debug\CSharp20220111_1.pdb
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\CSharp20220111_1\obj\Debug\CSharp20220111_1.csproj.AssemblyReference.cache
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\CSharp20220111_1\obj\Debug\CSharp20220111_1.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\CSharp20220111_1\obj\Debug\CSharp20220111_1.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\CSharp20220111_1\obj\Debug\CSharp20220111_1.exe
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\CSharp20220111_1\obj\Debug\CSharp20220111_1.pdb

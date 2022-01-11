@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ab42776c-3629-424a-a7fd-17154945429f": {
+      "ProjectGuid": "ab42776c-3629-424a-a7fd-17154945429f",
+      "DisplayName": "CSharp20220111_1",
+      "ColorIndex": 0
+    },
+    "7270291d-b430-4e6e-bcc1-743c8bbf9917": {
+      "ProjectGuid": "7270291d-b430-4e6e-bcc1-743c8bbf9917",
+      "DisplayName": "CSharp20220111_2",
+      "ColorIndex": 1
+    },
+    "b3ccb3a8-d217-4648-b077-7e15d70c3cdc": {
+      "ProjectGuid": "b3ccb3a8-d217-4648-b077-7e15d70c3cdc",
+      "DisplayName": "WindowsFormsAppLoginForm",
+      "ColorIndex": 2
+    },
+    "853a568a-8ecc-4b3e-9a9e-5f1f9a161b51": {
+      "ProjectGuid": "853a568a-8ecc-4b3e-9a9e-5f1f9a161b51",
+      "DisplayName": "MyCSharplast20220111_3",
+      "ColorIndex": 3
+    },
+    "fd4b696f-4e1f-4822-ade6-ed96caa9e472": {
+      "ProjectGuid": "fd4b696f-4e1f-4822-ade6-ed96caa9e472",
+      "DisplayName": "MyCSharpLast20220111_3",
+      "ColorIndex": 4
+    },
+    "a760b49c-0dc8-4863-8cb0-50124976e2c8": {
+      "ProjectGuid": "a760b49c-0dc8-4863-8cb0-50124976e2c8",
+      "DisplayName": "WindowsFormsAppStart",
+      "ColorIndex": 5
+    },
+    "5e80c0b1-a643-46d1-8a71-3b2adf0ea8dc": {
+      "ProjectGuid": "5e80c0b1-a643-46d1-8a71-3b2adf0ea8dc",
+      "DisplayName": "Lotto",
+      "ColorIndex": 6
+    }
+  },
+  "NextColorIndex": 7
+}

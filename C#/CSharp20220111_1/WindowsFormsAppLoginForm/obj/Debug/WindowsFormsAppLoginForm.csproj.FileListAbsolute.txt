@@ -1,0 +1,11 @@
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppLoginForm\bin\Debug\WindowsFormsAppLoginForm.exe.config
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppLoginForm\bin\Debug\WindowsFormsAppLoginForm.exe
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppLoginForm\bin\Debug\WindowsFormsAppLoginForm.pdb
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppLoginForm\obj\Debug\WindowsFormsAppLoginForm.csproj.AssemblyReference.cache
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppLoginForm\obj\Debug\WindowsFormsAppLoginForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppLoginForm\obj\Debug\WindowsFormsAppLoginForm.Properties.Resources.resources
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppLoginForm\obj\Debug\WindowsFormsAppLoginForm.csproj.GenerateResource.cache
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppLoginForm\obj\Debug\WindowsFormsAppLoginForm.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppLoginForm\obj\Debug\WindowsFormsAppLoginForm.exe
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppLoginForm\obj\Debug\WindowsFormsAppLoginForm.pdb
+C:\Users\KB\Desktop\sss\C#\CSharp20220111_1\WindowsFormsAppLoginForm\obj\Debug\WindowsFormsAppLoginForm.Form1.resources

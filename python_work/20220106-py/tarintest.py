@@ -18,12 +18,15 @@ for folder in folders:
         train_input.append(gray_img)
         train_target.append(folder)
 
+
+
 train_input = np.array(train_input)
 train_target = np.array(train_target)
 print(train_input.shape)
 print(train_target.shape)
 print(train_target[:])
 
+np.savez("traintest.npz",train = train_input,target = train_target)
 knclf = KNeighborsClassifier(n_neighbors=1)
 knclf.fit(train_input, train_target)
 

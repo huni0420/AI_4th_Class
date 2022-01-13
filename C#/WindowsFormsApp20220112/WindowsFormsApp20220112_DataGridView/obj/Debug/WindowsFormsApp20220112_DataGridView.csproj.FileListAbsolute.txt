@@ -1,0 +1,12 @@
+C:\Users\KB\Desktop\sss\C#\WindowsFormsApp20220112\WindowsFormsApp20220112_DataGridView\bin\Debug\WindowsFormsApp20220112_DataGridView.exe.config
+C:\Users\KB\Desktop\sss\C#\WindowsFormsApp20220112\WindowsFormsApp20220112_DataGridView\bin\Debug\WindowsFormsApp20220112_DataGridView.exe
+C:\Users\KB\Desktop\sss\C#\WindowsFormsApp20220112\WindowsFormsApp20220112_DataGridView\bin\Debug\WindowsFormsApp20220112_DataGridView.pdb
+C:\Users\KB\Desktop\sss\C#\WindowsFormsApp20220112\WindowsFormsApp20220112_DataGridView\obj\Debug\WindowsFormsApp20220112_DataGridView.csproj.SuggestedBindingRedirects.cache
+C:\Users\KB\Desktop\sss\C#\WindowsFormsApp20220112\WindowsFormsApp20220112_DataGridView\obj\Debug\WindowsFormsApp20220112_DataGridView.Form1.resources
+C:\Users\KB\Desktop\sss\C#\WindowsFormsApp20220112\WindowsFormsApp20220112_DataGridView\obj\Debug\WindowsFormsApp20220112_DataGridView.Form2.resources
+C:\Users\KB\Desktop\sss\C#\WindowsFormsApp20220112\WindowsFormsApp20220112_DataGridView\obj\Debug\WindowsFormsApp20220112_DataGridView.Properties.Resources.resources
+C:\Users\KB\Desktop\sss\C#\WindowsFormsApp20220112\WindowsFormsApp20220112_DataGridView\obj\Debug\WindowsFormsApp20220112_DataGridView.usc1.resources
+C:\Users\KB\Desktop\sss\C#\WindowsFormsApp20220112\WindowsFormsApp20220112_DataGridView\obj\Debug\WindowsFormsApp20220112_DataGridView.csproj.GenerateResource.cache
+C:\Users\KB\Desktop\sss\C#\WindowsFormsApp20220112\WindowsFormsApp20220112_DataGridView\obj\Debug\WindowsFormsApp20220112_DataGridView.csproj.CoreCompileInputs.cache
+C:\Users\KB\Desktop\sss\C#\WindowsFormsApp20220112\WindowsFormsApp20220112_DataGridView\obj\Debug\WindowsFormsApp20220112_DataGridView.exe
+C:\Users\KB\Desktop\sss\C#\WindowsFormsApp20220112\WindowsFormsApp20220112_DataGridView\obj\Debug\WindowsFormsApp20220112_DataGridView.pdb

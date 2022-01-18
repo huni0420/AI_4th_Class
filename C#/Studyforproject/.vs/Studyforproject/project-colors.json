@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "53c77955-fe1e-4d13-89eb-d84008a10e84": {
+      "ProjectGuid": "53c77955-fe1e-4d13-89eb-d84008a10e84",
+      "DisplayName": "Studyforproject",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "기타 파일",
+      "ColorIndex": -1
+    },
+    "e79655d3-cb84-47b4-8570-1d1675e55aae": {
+      "ProjectGuid": "e79655d3-cb84-47b4-8570-1d1675e55aae",
+      "DisplayName": "PracticeForProject",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

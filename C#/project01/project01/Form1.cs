@@ -15,6 +15,8 @@ namespace project01
         public Form1()
         {
             InitializeComponent();
+            textBox2.PasswordChar = '*';
+            textBox1.MaxLength = 16; 
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

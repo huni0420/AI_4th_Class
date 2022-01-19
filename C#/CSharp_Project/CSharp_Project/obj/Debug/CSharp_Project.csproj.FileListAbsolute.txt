@@ -1,0 +1,11 @@
+C:\Users\mysky\source\repos\CSharp_Project\CSharp_Project\bin\Debug\CSharp_Project.exe.config
+C:\Users\mysky\source\repos\CSharp_Project\CSharp_Project\bin\Debug\CSharp_Project.exe
+C:\Users\mysky\source\repos\CSharp_Project\CSharp_Project\bin\Debug\CSharp_Project.pdb
+C:\Users\mysky\source\repos\CSharp_Project\CSharp_Project\obj\Debug\CSharp_Project.csproj.AssemblyReference.cache
+C:\Users\mysky\source\repos\CSharp_Project\CSharp_Project\obj\Debug\CSharp_Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\mysky\source\repos\CSharp_Project\CSharp_Project\obj\Debug\CSharp_Project.Form1.resources
+C:\Users\mysky\source\repos\CSharp_Project\CSharp_Project\obj\Debug\CSharp_Project.Properties.Resources.resources
+C:\Users\mysky\source\repos\CSharp_Project\CSharp_Project\obj\Debug\CSharp_Project.csproj.GenerateResource.cache
+C:\Users\mysky\source\repos\CSharp_Project\CSharp_Project\obj\Debug\CSharp_Project.csproj.CoreCompileInputs.cache
+C:\Users\mysky\source\repos\CSharp_Project\CSharp_Project\obj\Debug\CSharp_Project.exe
+C:\Users\mysky\source\repos\CSharp_Project\CSharp_Project\obj\Debug\CSharp_Project.pdb

@@ -118,6 +118,12 @@ namespace CSharp_Project
             btn_order_close.Visible = false;
             btn_order.Visible = true;
             panel_lab1.Visible = false;
+
+            //메뉴 내용들 끄기
+            panel_mainmenu.Visible = false;
+            panel_sidemenu.Visible = false;
+            panel_baverage.Visible = false;
+            panel_addmenu.Visible = false;
         }
 
         private void btn_table_close_Click(object sender, EventArgs e)
@@ -243,6 +249,11 @@ namespace CSharp_Project
             btn_addmenu.Visible = true;
             btn_addmenu_close.Visible = false;
             panel_addmenu.Visible = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

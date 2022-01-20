@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_table = new System.Windows.Forms.Button();
             this.btn_parking = new System.Windows.Forms.Button();
@@ -61,14 +62,14 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel_lab1 = new System.Windows.Forms.Panel();
-            this.btn_sidemenu = new System.Windows.Forms.Button();
-            this.btn_addmenu = new System.Windows.Forms.Button();
             this.btn_addmenu_close = new System.Windows.Forms.Button();
-            this.btn_beverage = new System.Windows.Forms.Button();
             this.btn_beverage_close = new System.Windows.Forms.Button();
             this.btn_sidemenu_close = new System.Windows.Forms.Button();
             this.btn_mainmenu_close = new System.Windows.Forms.Button();
             this.btn_mainmenu = new System.Windows.Forms.Button();
+            this.btn_sidemenu = new System.Windows.Forms.Button();
+            this.btn_beverage = new System.Windows.Forms.Button();
+            this.btn_addmenu = new System.Windows.Forms.Button();
             this.panel_mainmenu = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button11 = new System.Windows.Forms.Button();
@@ -221,6 +222,7 @@
             this.label33 = new System.Windows.Forms.Label();
             this.button71 = new System.Windows.Forms.Button();
             this.button72 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel_lab2.SuspendLayout();
             this.panel_lab3.SuspendLayout();
@@ -241,133 +243,151 @@
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(76)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btn_order);
             this.panel1.Controls.Add(this.btn_table);
-            this.panel1.Controls.Add(this.btn_parking);
-            this.panel1.Controls.Add(this.btn_table_close);
             this.panel1.Controls.Add(this.btn_calculate);
+            this.panel1.Controls.Add(this.btn_parking);
+            this.panel1.Controls.Add(this.btn_order_close);
+            this.panel1.Controls.Add(this.btn_table_close);
             this.panel1.Controls.Add(this.btn_calculate_close);
             this.panel1.Controls.Add(this.btn_parking_close);
-            this.panel1.Controls.Add(this.btn_order);
-            this.panel1.Controls.Add(this.btn_order_close);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1392, 110);
+            this.panel1.Size = new System.Drawing.Size(1391, 110);
             this.panel1.TabIndex = 0;
             // 
             // btn_table
             // 
+            this.btn_table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
             this.btn_table.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_table.FlatAppearance.BorderSize = 2;
             this.btn_table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_table.ForeColor = System.Drawing.Color.Wheat;
             this.btn_table.Location = new System.Drawing.Point(122, 0);
             this.btn_table.Name = "btn_table";
             this.btn_table.Padding = new System.Windows.Forms.Padding(25);
             this.btn_table.Size = new System.Drawing.Size(122, 110);
             this.btn_table.TabIndex = 7;
             this.btn_table.Text = "테이블";
-            this.btn_table.UseVisualStyleBackColor = true;
+            this.btn_table.UseVisualStyleBackColor = false;
             this.btn_table.Click += new System.EventHandler(this.btn_table_Click);
             // 
             // btn_parking
             // 
+            this.btn_parking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
             this.btn_parking.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_parking.FlatAppearance.BorderSize = 2;
             this.btn_parking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_parking.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btn_parking.Location = new System.Drawing.Point(366, 0);
             this.btn_parking.Name = "btn_parking";
             this.btn_parking.Padding = new System.Windows.Forms.Padding(25);
             this.btn_parking.Size = new System.Drawing.Size(122, 110);
             this.btn_parking.TabIndex = 9;
             this.btn_parking.Text = "주차";
-            this.btn_parking.UseVisualStyleBackColor = true;
+            this.btn_parking.UseVisualStyleBackColor = false;
             this.btn_parking.Click += new System.EventHandler(this.btn_parking_Click);
             // 
             // btn_table_close
             // 
+            this.btn_table_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
+            this.btn_table_close.ForeColor = System.Drawing.Color.Wheat;
             this.btn_table_close.Location = new System.Drawing.Point(123, 3);
             this.btn_table_close.Name = "btn_table_close";
             this.btn_table_close.Size = new System.Drawing.Size(121, 104);
             this.btn_table_close.TabIndex = 11;
             this.btn_table_close.Text = "테이블";
-            this.btn_table_close.UseVisualStyleBackColor = true;
+            this.btn_table_close.UseVisualStyleBackColor = false;
             this.btn_table_close.Click += new System.EventHandler(this.btn_table_close_Click);
             // 
             // btn_calculate
             // 
+            this.btn_calculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
             this.btn_calculate.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_calculate.FlatAppearance.BorderSize = 2;
             this.btn_calculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_calculate.ForeColor = System.Drawing.Color.Wheat;
             this.btn_calculate.Location = new System.Drawing.Point(244, 0);
             this.btn_calculate.Name = "btn_calculate";
             this.btn_calculate.Padding = new System.Windows.Forms.Padding(25);
             this.btn_calculate.Size = new System.Drawing.Size(122, 110);
             this.btn_calculate.TabIndex = 8;
             this.btn_calculate.Text = "정산";
-            this.btn_calculate.UseVisualStyleBackColor = true;
+            this.btn_calculate.UseVisualStyleBackColor = false;
             this.btn_calculate.Click += new System.EventHandler(this.btn_calculate_Click);
             // 
             // btn_calculate_close
             // 
+            this.btn_calculate_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
+            this.btn_calculate_close.ForeColor = System.Drawing.Color.Wheat;
             this.btn_calculate_close.Location = new System.Drawing.Point(244, 3);
             this.btn_calculate_close.Name = "btn_calculate_close";
             this.btn_calculate_close.Size = new System.Drawing.Size(121, 103);
             this.btn_calculate_close.TabIndex = 12;
             this.btn_calculate_close.Text = "정산";
-            this.btn_calculate_close.UseVisualStyleBackColor = true;
+            this.btn_calculate_close.UseVisualStyleBackColor = false;
             this.btn_calculate_close.Click += new System.EventHandler(this.btn_calculate_close_Click);
             // 
             // btn_parking_close
             // 
+            this.btn_parking_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
+            this.btn_parking_close.ForeColor = System.Drawing.Color.Wheat;
             this.btn_parking_close.Location = new System.Drawing.Point(366, 3);
             this.btn_parking_close.Name = "btn_parking_close";
             this.btn_parking_close.Size = new System.Drawing.Size(120, 104);
             this.btn_parking_close.TabIndex = 13;
             this.btn_parking_close.Text = "주차";
-            this.btn_parking_close.UseVisualStyleBackColor = true;
+            this.btn_parking_close.UseVisualStyleBackColor = false;
             this.btn_parking_close.Click += new System.EventHandler(this.btn_parking_close_Click);
             // 
             // btn_order
             // 
+            this.btn_order.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
             this.btn_order.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_order.FlatAppearance.BorderSize = 2;
             this.btn_order.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_order.ForeColor = System.Drawing.Color.Wheat;
             this.btn_order.Location = new System.Drawing.Point(0, 0);
             this.btn_order.Name = "btn_order";
             this.btn_order.Size = new System.Drawing.Size(122, 110);
             this.btn_order.TabIndex = 6;
             this.btn_order.Text = "주문";
-            this.btn_order.UseVisualStyleBackColor = true;
+            this.btn_order.UseVisualStyleBackColor = false;
             this.btn_order.Click += new System.EventHandler(this.btn_order_Click);
             // 
             // btn_order_close
             // 
+            this.btn_order_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(34)))), ((int)(((byte)(71)))));
+            this.btn_order_close.ForeColor = System.Drawing.Color.Wheat;
             this.btn_order_close.Location = new System.Drawing.Point(3, 3);
             this.btn_order_close.Name = "btn_order_close";
             this.btn_order_close.Size = new System.Drawing.Size(119, 104);
             this.btn_order_close.TabIndex = 10;
             this.btn_order_close.Text = "주문";
-            this.btn_order_close.UseVisualStyleBackColor = true;
+            this.btn_order_close.UseVisualStyleBackColor = false;
             this.btn_order_close.Visible = false;
             this.btn_order_close.Click += new System.EventHandler(this.btn_order_close_Click);
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 110);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1392, 10);
+            this.panel3.Size = new System.Drawing.Size(1391, 10);
             this.panel3.TabIndex = 2;
             // 
             // panel_lab2
             // 
-            this.panel_lab2.BackColor = System.Drawing.Color.Orange;
+            this.panel_lab2.BackColor = System.Drawing.Color.DarkSlateGray;
             this.panel_lab2.Controls.Add(this.table_num9);
             this.panel_lab2.Controls.Add(this.table_num8);
             this.panel_lab2.Controls.Add(this.table_num12);
@@ -529,28 +549,34 @@
             // 
             // table_num1
             // 
+            this.table_num1.BackColor = System.Drawing.Color.SteelBlue;
+            this.table_num1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.table_num1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.table_num1.ForeColor = System.Drawing.SystemColors.InfoText;
             this.table_num1.Location = new System.Drawing.Point(122, 147);
             this.table_num1.Name = "table_num1";
             this.table_num1.Size = new System.Drawing.Size(75, 23);
             this.table_num1.TabIndex = 1;
             this.table_num1.Text = "1";
-            this.table_num1.UseVisualStyleBackColor = true;
+            this.table_num1.UseVisualStyleBackColor = false;
             // 
             // label9
             // 
             this.label9.BackColor = System.Drawing.Color.Peru;
-            this.label9.Location = new System.Drawing.Point(3, 3);
+            this.label9.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9.Location = new System.Drawing.Point(470, 3);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(744, 83);
+            this.label9.Size = new System.Drawing.Size(523, 83);
             this.label9.TabIndex = 0;
             this.label9.Text = "계산대";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel_lab4
             // 
             this.panel_lab4.BackColor = System.Drawing.Color.Yellow;
             this.panel_lab4.Location = new System.Drawing.Point(1, 120);
             this.panel_lab4.Name = "panel_lab4";
-            this.panel_lab4.Size = new System.Drawing.Size(1391, 764);
+            this.panel_lab4.Size = new System.Drawing.Size(1390, 764);
             this.panel_lab4.TabIndex = 5;
             this.panel_lab4.Visible = false;
             // 
@@ -606,30 +632,6 @@
             this.panel_lab1.TabIndex = 3;
             this.panel_lab1.Visible = false;
             // 
-            // btn_sidemenu
-            // 
-            this.btn_sidemenu.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.btn_sidemenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_sidemenu.Location = new System.Drawing.Point(0, 63);
-            this.btn_sidemenu.Name = "btn_sidemenu";
-            this.btn_sidemenu.Size = new System.Drawing.Size(220, 63);
-            this.btn_sidemenu.TabIndex = 1;
-            this.btn_sidemenu.Text = "사이드 메뉴";
-            this.btn_sidemenu.UseVisualStyleBackColor = true;
-            this.btn_sidemenu.Click += new System.EventHandler(this.btn_sidemenu_Click);
-            // 
-            // btn_addmenu
-            // 
-            this.btn_addmenu.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.btn_addmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_addmenu.Location = new System.Drawing.Point(0, 189);
-            this.btn_addmenu.Name = "btn_addmenu";
-            this.btn_addmenu.Size = new System.Drawing.Size(220, 63);
-            this.btn_addmenu.TabIndex = 3;
-            this.btn_addmenu.Text = "추가 메뉴";
-            this.btn_addmenu.UseVisualStyleBackColor = true;
-            this.btn_addmenu.Click += new System.EventHandler(this.btn_addmenu_Click);
-            // 
             // btn_addmenu_close
             // 
             this.btn_addmenu_close.Location = new System.Drawing.Point(1, 190);
@@ -640,18 +642,6 @@
             this.btn_addmenu_close.UseVisualStyleBackColor = true;
             this.btn_addmenu_close.Visible = false;
             this.btn_addmenu_close.Click += new System.EventHandler(this.btn_addmenu_close_Click);
-            // 
-            // btn_beverage
-            // 
-            this.btn_beverage.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.btn_beverage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_beverage.Location = new System.Drawing.Point(0, 126);
-            this.btn_beverage.Name = "btn_beverage";
-            this.btn_beverage.Size = new System.Drawing.Size(220, 63);
-            this.btn_beverage.TabIndex = 2;
-            this.btn_beverage.Text = "음료류";
-            this.btn_beverage.UseVisualStyleBackColor = true;
-            this.btn_beverage.Click += new System.EventHandler(this.btn_beverage_Click);
             // 
             // btn_beverage_close
             // 
@@ -698,6 +688,42 @@
             this.btn_mainmenu.UseVisualStyleBackColor = true;
             this.btn_mainmenu.Click += new System.EventHandler(this.btn_mainmenu_Click);
             // 
+            // btn_sidemenu
+            // 
+            this.btn_sidemenu.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btn_sidemenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sidemenu.Location = new System.Drawing.Point(0, 63);
+            this.btn_sidemenu.Name = "btn_sidemenu";
+            this.btn_sidemenu.Size = new System.Drawing.Size(220, 63);
+            this.btn_sidemenu.TabIndex = 1;
+            this.btn_sidemenu.Text = "사이드 메뉴";
+            this.btn_sidemenu.UseVisualStyleBackColor = true;
+            this.btn_sidemenu.Click += new System.EventHandler(this.btn_sidemenu_Click);
+            // 
+            // btn_beverage
+            // 
+            this.btn_beverage.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btn_beverage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_beverage.Location = new System.Drawing.Point(0, 126);
+            this.btn_beverage.Name = "btn_beverage";
+            this.btn_beverage.Size = new System.Drawing.Size(220, 63);
+            this.btn_beverage.TabIndex = 2;
+            this.btn_beverage.Text = "음료류";
+            this.btn_beverage.UseVisualStyleBackColor = true;
+            this.btn_beverage.Click += new System.EventHandler(this.btn_beverage_Click);
+            // 
+            // btn_addmenu
+            // 
+            this.btn_addmenu.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btn_addmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_addmenu.Location = new System.Drawing.Point(0, 189);
+            this.btn_addmenu.Name = "btn_addmenu";
+            this.btn_addmenu.Size = new System.Drawing.Size(220, 63);
+            this.btn_addmenu.TabIndex = 3;
+            this.btn_addmenu.Text = "추가 메뉴";
+            this.btn_addmenu.UseVisualStyleBackColor = true;
+            this.btn_addmenu.Click += new System.EventHandler(this.btn_addmenu_Click);
+            // 
             // panel_mainmenu
             // 
             this.panel_mainmenu.BackColor = System.Drawing.Color.RosyBrown;
@@ -706,7 +732,7 @@
             this.panel_mainmenu.Controls.Add(this.groupBox1);
             this.panel_mainmenu.Location = new System.Drawing.Point(219, 119);
             this.panel_mainmenu.Name = "panel_mainmenu";
-            this.panel_mainmenu.Size = new System.Drawing.Size(1172, 765);
+            this.panel_mainmenu.Size = new System.Drawing.Size(1171, 765);
             this.panel_mainmenu.TabIndex = 6;
             this.panel_mainmenu.Visible = false;
             // 
@@ -1070,7 +1096,7 @@
             this.panel_sidemenu.Controls.Add(this.groupBox6);
             this.panel_sidemenu.Location = new System.Drawing.Point(219, 119);
             this.panel_sidemenu.Name = "panel_sidemenu";
-            this.panel_sidemenu.Size = new System.Drawing.Size(1172, 765);
+            this.panel_sidemenu.Size = new System.Drawing.Size(1171, 765);
             this.panel_sidemenu.TabIndex = 7;
             this.panel_sidemenu.Visible = false;
             // 
@@ -1434,7 +1460,7 @@
             this.panel_baverage.Controls.Add(this.groupBox8);
             this.panel_baverage.Location = new System.Drawing.Point(219, 119);
             this.panel_baverage.Name = "panel_baverage";
-            this.panel_baverage.Size = new System.Drawing.Size(1172, 765);
+            this.panel_baverage.Size = new System.Drawing.Size(1171, 765);
             this.panel_baverage.TabIndex = 7;
             this.panel_baverage.Visible = false;
             // 
@@ -1798,7 +1824,7 @@
             this.panel_addmenu.Controls.Add(this.groupBox10);
             this.panel_addmenu.Location = new System.Drawing.Point(219, 119);
             this.panel_addmenu.Name = "panel_addmenu";
-            this.panel_addmenu.Size = new System.Drawing.Size(1172, 765);
+            this.panel_addmenu.Size = new System.Drawing.Size(1171, 765);
             this.panel_addmenu.TabIndex = 7;
             this.panel_addmenu.Visible = false;
             // 
@@ -2154,22 +2180,35 @@
             this.button72.Text = "button72";
             this.button72.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1320, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(68, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1391, 930);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel_addmenu);
-            this.Controls.Add(this.panel_baverage);
-            this.Controls.Add(this.panel_sidemenu);
             this.Controls.Add(this.panel_mainmenu);
             this.Controls.Add(this.panel_lab1);
             this.Controls.Add(this.panel_lab4);
             this.Controls.Add(this.panel_lab2);
             this.Controls.Add(this.panel_lab3);
+            this.Controls.Add(this.panel_addmenu);
+            this.Controls.Add(this.panel_baverage);
+            this.Controls.Add(this.panel_sidemenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -2198,6 +2237,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2397,6 +2437,7 @@
         private System.Windows.Forms.Button btn_mainmenu_close;
         private System.Windows.Forms.Button btn_sidemenu_close;
         private System.Windows.Forms.Button btn_beverage_close;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

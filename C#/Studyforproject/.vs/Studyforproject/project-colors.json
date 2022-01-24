@@ -15,7 +15,12 @@
       "ProjectGuid": "e79655d3-cb84-47b4-8570-1d1675e55aae",
       "DisplayName": "PracticeForProject",
       "ColorIndex": 1
+    },
+    "3571a86b-f49a-4eb8-a456-484977d5fbfd": {
+      "ProjectGuid": "3571a86b-f49a-4eb8-a456-484977d5fbfd",
+      "DisplayName": "ConnectDBtest",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

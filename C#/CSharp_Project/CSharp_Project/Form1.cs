@@ -1477,6 +1477,50 @@ namespace CSharp_Project
             DataManager.selectQuery(16);
             refreshScreen();
         }
+
+        // 주차 입고 & 출고 버튼---------------------------------------------------------------------------
+        private void btn_checkin_Click(object sender, EventArgs e)
+        {
+            string mm = DateTime.Now.ToString("yyyy-MM-dd");
+            if (textBox_store.Text == null)
+            {
+                MessageBox.Show("차번호를 입력하세요");
+            }
+            else if (textBox_store.Text != null )
+            {
+                DataManager.executeQuery_p("insert", textBox_store.Text, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "입고");
+                DataManager.selectQuery_p(mm);
+                dataGridView5.DataSource = null;
+                dataGridView5.DataSource = DataManager.parkings;
+            }
+
+        }
+
+        private void btn_checkout_Click(object sender, EventArgs e)
+        {
+            string mm = DateTime.Now.ToString("yyyy-MM-dd");
+            if (textBox_store.Text == null)
+            {
+                MessageBox.Show("차번호를 입력하세요");
+            }
+            else if (textBox_store.Text != null)
+            {
+                DataManager.executeQuery_p("insert", textBox_store.Text, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "출고");
+                DataManager.selectQuery_p(mm);
+                dataGridView5.DataSource = null;
+                dataGridView5.DataSource = DataManager.parkings;
+            }
+        }
+
+        // 주차 날짜별 입출고 기록 보기------------------------------------------------------------------
+        private void btn_time_p_search_Click(object sender, EventArgs e)
+        {
+            string record = dateTimePicker_parking.Value.ToString();
+            string[] records = record.Split(' ');
+            DataManager.selectQuery_p(records[0]);
+            dataGridView5.DataSource = null;
+            dataGridView5.DataSource = DataManager.parkings;
+        }
     }
 }
 

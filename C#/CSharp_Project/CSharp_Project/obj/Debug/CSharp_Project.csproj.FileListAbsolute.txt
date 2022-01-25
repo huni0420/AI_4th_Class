@@ -72,3 +72,4 @@ C:\Users\KB\Desktop\sss\C#\CSharp_Project\CSharp_Project\obj\Debug\CSharp_Projec
 C:\Users\KB\Desktop\sss\C#\CSharp_Project\CSharp_Project\obj\Debug\CSharp_Project.exe
 C:\Users\KB\Desktop\sss\C#\CSharp_Project\CSharp_Project\obj\Debug\CSharp_Project.pdb
 C:\Users\KB\Desktop\sss\C#\CSharp_Project\CSharp_Project\obj\Debug\CSharp_Project.Form2.resources
+C:\Users\mysky\Desktop\Github\C#\CSharp_Project\CSharp_Project\obj\Debug\CSharp_Project.Form2.resources

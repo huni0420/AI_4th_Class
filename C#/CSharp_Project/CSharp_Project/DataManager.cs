@@ -12,7 +12,7 @@ namespace CSharp_Project
     {
         const string ORADB = "Data Source=(DESCRIPTION=(ADDRESS_LIST=" +
                   "(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))" +
-                  "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XE)));" +
+                  "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=orcl)));" +
                   "User Id=system;Password=1234;";
         public static OracleConnection OraConn = new OracleConnection(ORADB);
 
@@ -98,7 +98,7 @@ namespace CSharp_Project
                         query = $"insert into {TABLE} values('{menus}',{tablenum},{quantity})";
                     break;
                 case "delete":
-                    query = $"delete from {TABLE} where menu = '{menus}' and tablenum = {tablenum}";
+                    query = $"delete from {TABLE} where menu = '{menus}' and tablenum = {tablenum} and quantity = {quantity}";
                     break;
                 default:
 
@@ -107,10 +107,7 @@ namespace CSharp_Project
             return query;
         }
 
-        //executeQuery("delete",1)
-        //executeQuery("update",1,"30규1234","이동준","010-2940-1613")
-        //삽입, 삭제, 수정 역할 함
-        //삽입 : 주차공간 추가, 삭제 : 주차공간 삭제, 수정 : 주차 및 출차처리
+        
         public static void executeQuery(string menu, string menus, string quantity, string tablenum)
         {
             ConnectDB();
@@ -123,16 +120,15 @@ namespace CSharp_Project
                 cmd.CommandText = query;
                 cmd.ExecuteNonQuery();
             }
-            catch (Exception ex) //쿼리문에 문제 생길 시 오류 발생
+            catch (Exception ex) 
             {
-                //쿼리문과 함께 오류 메시지들 출력
-                OraConn.Close(); //쿼리 날렸을 때 실패하면 db접속을 닫아준다.
+                OraConn.Close(); 
                 throw new Exception(query + "_" + ex.Message + "오류위치" + Environment.NewLine + ex.StackTrace);
             }
 
             OraConn.Close();
 
-            selectQuery(); //수정 삭제 삽입 후 테이블 조회해서 cars List 업데이트 시킴
+            selectQuery();
         }
 
     }

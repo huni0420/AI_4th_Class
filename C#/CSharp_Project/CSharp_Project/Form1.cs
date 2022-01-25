@@ -16,8 +16,48 @@ namespace CSharp_Project
         public Form1()
         {
             InitializeComponent();
+            Application.Run(new Form2());
             DataManager.selectQuery(int.Parse(label_main_tablenum.Text));
             refreshScreen();
+        }
+        void insert_null()
+        {
+            textBox_mainmenu1.Text = null;
+            textBox_mainmenu2.Text = null;
+            textBox_mainmenu3.Text = null;
+            textBox_mainmenu4.Text = null;
+            textBox_mainmenu5.Text = null;
+            textBox_mainmenu6.Text = null;
+            textBox_mainmenu7.Text = null;
+            textBox_mainmenu8.Text = null;
+
+            textBox_sidemenu1.Text = null;
+            textBox_sidemenu2.Text = null;
+            textBox_sidemenu3.Text = null;
+            textBox_sidemenu4.Text = null;
+            textBox_sidemenu5.Text = null;
+            textBox_sidemenu6.Text = null;
+            textBox_sidemenu7.Text = null;
+            textBox_sidemenu8.Text = null;
+
+            textBox_bavemenu1.Text = null;
+            textBox_bavemenu2.Text = null;
+            textBox_bavemenu3.Text = null;
+            textBox_bavemenu4.Text = null;
+            textBox_bavemenu5.Text = null;
+            textBox_bavemenu6.Text = null;
+            textBox_bavemenu7.Text = null;
+            textBox_bavemenu8.Text = null;
+
+            textBox_addmenu1.Text = null;
+            textBox_addmenu2.Text = null;
+            textBox_addmenu3.Text = null;
+            textBox_addmenu4.Text = null;
+            textBox_addmenu5.Text = null;
+            textBox_addmenu6.Text = null;
+            textBox_addmenu7.Text = null;
+            textBox_addmenu8.Text = null;
+
         }
         void refreshScreen()
         {
@@ -69,6 +109,20 @@ namespace CSharp_Project
                 if (DataManager.menus.Count > 0)
                 {
                     dataGridView4.DataSource = DataManager.menus;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            dataGridView7.DataSource = null;
+            try
+            {
+                if (DataManager.menus.Count > 0)
+                {
+                    dataGridView7.DataSource = DataManager.menus;
                 }
             }
             catch (Exception)
@@ -765,7 +819,7 @@ namespace CSharp_Project
                             if (tbox_mainmenus[j] != "")
                             {
                                 //DataManager.executeQuery("delete", mainmenus[j],tbox_mainmenus[j], i.ToString());
-                                DataManager.executeQuery("insert",mainmenus[j],tbox_mainmenus[j] , i.ToString());
+                                DataManager.executeQuery("insert",$"{i} - "+mainmenus[j],tbox_mainmenus[j] ,i.ToString());
                             }
                         }
                         DataManager.selectQuery(i);
@@ -776,6 +830,7 @@ namespace CSharp_Project
             //테이블 선택창 초기화
             label_main_tablenum.Text = "0";
             label_main_tablenum.Visible = false;
+            insert_null();
         }
         private void btn_mainmenu_delete_Click(object sender, EventArgs e)
         {
@@ -812,7 +867,7 @@ namespace CSharp_Project
                         {
                             if (tbox_mainmenus[j] != "")
                             {
-                                DataManager.executeQuery("delete", mainmenus[j],tbox_mainmenus[j], i.ToString());
+                                DataManager.executeQuery("delete", $"{i} - " + mainmenus[j],tbox_mainmenus[j], i.ToString());
                             }
                         }
                         DataManager.selectQuery(i);
@@ -823,6 +878,7 @@ namespace CSharp_Project
             //테이블 선택창 초기화
             label_main_tablenum.Text = "0";
             label_main_tablenum.Visible = false;
+            insert_null();
         }
 
         private void btn_mainmenu_update_Click(object sender, EventArgs e)
@@ -860,7 +916,7 @@ namespace CSharp_Project
                         {
                             if (tbox_mainmenus[j] != "")
                             {
-                                DataManager.executeQuery("update", mainmenus[j], tbox_mainmenus[j], i.ToString());
+                                DataManager.executeQuery("update", $"{i} - " + mainmenus[j], tbox_mainmenus[j], i.ToString());
                             }
                         }
                         DataManager.selectQuery(i);
@@ -871,6 +927,7 @@ namespace CSharp_Project
             //테이블 선택창 초기화
             label_main_tablenum.Text = "0";
             label_main_tablenum.Visible = false;
+            insert_null();
         }
 
         //사이드메뉴 버튼---------------------------------------------------------------------------------
@@ -910,7 +967,7 @@ namespace CSharp_Project
                         {
                             if (tbox_sidemenus[j] != "")
                             {
-                                DataManager.executeQuery("insert", sidemenus[j], tbox_sidemenus[j], i.ToString());
+                                DataManager.executeQuery("insert", $"{i} - " + sidemenus[j], tbox_sidemenus[j],i.ToString());
                             }
                         }
                         DataManager.selectQuery(i);
@@ -921,6 +978,7 @@ namespace CSharp_Project
             //테이블 선택창 초기화
             label_side_tablenum.Text = "0";
             label_side_tablenum.Visible = false;
+            insert_null();
         }
         private void btn_sidemenu_delete_Click(object sender, EventArgs e)
         {
@@ -958,7 +1016,7 @@ namespace CSharp_Project
                         {
                             if (tbox_sidemenus[j] != "")
                             {
-                                DataManager.executeQuery("delete", sidemenus[j], tbox_sidemenus[j], i.ToString());
+                                DataManager.executeQuery("delete", $"{i} - " + sidemenus[j], tbox_sidemenus[j], i.ToString());
                             }
                         }
                         DataManager.selectQuery(i);
@@ -969,6 +1027,7 @@ namespace CSharp_Project
             //테이블 선택창 초기화
             label_side_tablenum.Text = "0";
             label_side_tablenum.Visible = false;
+            insert_null();
         }
 
         private void btn_sidemenu_update_Click(object sender, EventArgs e)
@@ -1007,7 +1066,7 @@ namespace CSharp_Project
                         {
                             if (tbox_sidemenus[j] != "")
                             {
-                                DataManager.executeQuery("update", sidemenus[j], tbox_sidemenus[j], i.ToString());
+                                DataManager.executeQuery("update", $"{i} - " + sidemenus[j], tbox_sidemenus[j], i.ToString());
                             }
                         }
                         DataManager.selectQuery(i);
@@ -1018,6 +1077,7 @@ namespace CSharp_Project
             //테이블 선택창 초기화
             label_side_tablenum.Text = "0";
             label_side_tablenum.Visible = false;
+            insert_null();
         }
 
         //음료메뉴 버튼 -------------------------------------------------------------------------------------
@@ -1057,7 +1117,7 @@ namespace CSharp_Project
                         {
                             if (tbox_bavemenus[j] != "")
                             {
-                                DataManager.executeQuery("insert", bavemenus[j], tbox_bavemenus[j], i.ToString());
+                                DataManager.executeQuery("insert", $"{i} - " + bavemenus[j], tbox_bavemenus[j], i.ToString());
                             }
                         }
                         DataManager.selectQuery(i);
@@ -1068,6 +1128,7 @@ namespace CSharp_Project
             //테이블 선택창 초기화
             label_bave_tablenum.Text = "0";
             label_bave_tablenum.Visible = false;
+            insert_null();
         }
         private void btn_bavemenu_delete_Click(object sender, EventArgs e)
         {
@@ -1105,7 +1166,7 @@ namespace CSharp_Project
                         {
                             if (tbox_bavemenus[j] != "")
                             {
-                                DataManager.executeQuery("delete", bavemenus[j], tbox_bavemenus[j], i.ToString());
+                                DataManager.executeQuery("delete", $"{i} - " + bavemenus[j], tbox_bavemenus[j], i.ToString());
                             }
                         }
                         DataManager.selectQuery(i);
@@ -1116,6 +1177,7 @@ namespace CSharp_Project
             //테이블 선택창 초기화
             label_bave_tablenum.Text = "0";
             label_bave_tablenum.Visible = false;
+            insert_null();
         }
 
         private void btn_bavemenu_update_Click(object sender, EventArgs e)
@@ -1154,7 +1216,7 @@ namespace CSharp_Project
                         {
                             if (tbox_bavemenus[j] != "")
                             {
-                                DataManager.executeQuery("update", bavemenus[j], tbox_bavemenus[j], i.ToString());
+                                DataManager.executeQuery("update", $"{i} - " + bavemenus[j], tbox_bavemenus[j], i.ToString());
                             }
                         }
                         DataManager.selectQuery(i);
@@ -1165,6 +1227,7 @@ namespace CSharp_Project
             //테이블 선택창 초기화
             label_bave_tablenum.Text = "0";
             label_bave_tablenum.Visible = false;
+            insert_null();
         }
 
         //추가메뉴 버튼 -------------------------------------------------------------------------------------
@@ -1204,7 +1267,7 @@ namespace CSharp_Project
                         {
                             if (tbox_addmenus[j] != "")
                             {
-                                DataManager.executeQuery("insert", addmenus[j], tbox_addmenus[j], i.ToString());
+                                DataManager.executeQuery("insert", $"{i} - " + addmenus[j], tbox_addmenus[j], i.ToString());
                             }
                         }
                         DataManager.selectQuery(i);
@@ -1215,6 +1278,7 @@ namespace CSharp_Project
             //테이블 선택창 초기화
             label_add_tablenum.Text = "0";
             label_add_tablenum.Visible = false;
+            insert_null();
         }
         private void btn_addmenu_delete_Click(object sender, EventArgs e)
         {
@@ -1252,7 +1316,7 @@ namespace CSharp_Project
                         {
                             if (tbox_addmenus[j] != "")
                             {
-                                DataManager.executeQuery("delete", addmenus[j], tbox_addmenus[j], i.ToString());
+                                DataManager.executeQuery("delete", $"{i} - " + addmenus[j], tbox_addmenus[j], i.ToString());
                             }
                         }
                         DataManager.selectQuery(i);
@@ -1263,6 +1327,7 @@ namespace CSharp_Project
             //테이블 선택창 초기화
             label_add_tablenum.Text = "0";
             label_add_tablenum.Visible = false;
+            insert_null();
         }
 
         private void btn_addmenu_update_Click(object sender, EventArgs e)
@@ -1301,7 +1366,7 @@ namespace CSharp_Project
                         {
                             if (tbox_addmenus[j] != "")
                             {
-                                DataManager.executeQuery("update", addmenus[j], tbox_addmenus[j], i.ToString());
+                                DataManager.executeQuery("update", $"{i} - " + addmenus[j], tbox_addmenus[j], i.ToString());
                             }
                         }
                         DataManager.selectQuery(i);
@@ -1312,6 +1377,105 @@ namespace CSharp_Project
             //테이블 선택창 초기화
             label_add_tablenum.Text = "0";
             label_add_tablenum.Visible = false;
+            insert_null();
+        }
+
+
+        //테이블 계산대 테이블별 주문-----------------------------------------------------------------------------------------
+        private void btn_cal_table1_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(1);
+            refreshScreen();
+        }
+
+        private void btn_cal_table2_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(2);
+            refreshScreen();
+        }
+
+        private void btn_cal_table3_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(3);
+            refreshScreen();
+        }
+
+        private void btn_cal_table4_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(4);
+            refreshScreen();
+        }
+
+        private void btn_cal_table5_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(5);
+            refreshScreen();
+        }
+
+        private void btn_cal_table6_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(6);
+            refreshScreen();
+        }
+
+        private void btn_cal_table7_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(7);
+            refreshScreen();
+        }
+
+        private void btn_cal_table8_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(8);
+            refreshScreen();
+        }
+
+        private void btn_cal_table9_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(9);
+            refreshScreen();
+        }
+
+        private void btn_cal_table10_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(10);
+            refreshScreen();
+        }
+
+        private void btn_cal_table11_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(11);
+            refreshScreen();
+        }
+
+        private void btn_cal_table12_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(12);
+            refreshScreen();
+        }
+
+        private void btn_cal_table13_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(13);
+            refreshScreen();
+        }
+
+        private void btn_cal_table14_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(14);
+            refreshScreen();
+        }
+
+        private void btn_cal_table15_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(15);
+            refreshScreen();
+        }
+
+        private void btn_cal_table16_Click(object sender, EventArgs e)
+        {
+            DataManager.selectQuery(16);
+            refreshScreen();
         }
     }
 }

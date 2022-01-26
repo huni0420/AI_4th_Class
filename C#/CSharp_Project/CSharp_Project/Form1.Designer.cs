@@ -36,6 +36,7 @@
             this.btn_calculate = new System.Windows.Forms.Button();
             this.btn_order_close = new System.Windows.Forms.Button();
             this.btn_calculate_close = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_parking = new System.Windows.Forms.Button();
             this.btn_table = new System.Windows.Forms.Button();
             this.btn_table_close = new System.Windows.Forms.Button();
@@ -52,6 +53,9 @@
             this.label43 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.dateTimePicker_parking = new System.Windows.Forms.DateTimePicker();
+            this.btn_time_p_search = new System.Windows.Forms.Button();
             this.label59 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.button79 = new System.Windows.Forms.Button();
@@ -306,14 +310,10 @@
             this.btn_cal_table3 = new System.Windows.Forms.Button();
             this.btn_cal_table2 = new System.Windows.Forms.Button();
             this.btn_cal_table1 = new System.Windows.Forms.Button();
-            this.btn_time_p_search = new System.Windows.Forms.Button();
-            this.dateTimePicker_parking = new System.Windows.Forms.DateTimePicker();
-            this.label60 = new System.Windows.Forms.Label();
             this.carNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.parkingBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_lab4.SuspendLayout();
@@ -362,17 +362,17 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1391, 120);
+            this.panel1.Size = new System.Drawing.Size(1217, 96);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1320, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(1155, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 48);
+            this.pictureBox1.Size = new System.Drawing.Size(60, 38);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -388,7 +388,7 @@
             this.btn_order.Location = new System.Drawing.Point(1, 1);
             this.btn_order.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_order.Name = "btn_order";
-            this.btn_order.Size = new System.Drawing.Size(122, 115);
+            this.btn_order.Size = new System.Drawing.Size(107, 92);
             this.btn_order.TabIndex = 6;
             this.btn_order.Text = "주문";
             this.btn_order.UseVisualStyleBackColor = false;
@@ -401,10 +401,10 @@
             this.btn_calculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_calculate.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
             this.btn_calculate.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_calculate.Location = new System.Drawing.Point(241, 1);
+            this.btn_calculate.Location = new System.Drawing.Point(211, 1);
             this.btn_calculate.Margin = new System.Windows.Forms.Padding(0);
             this.btn_calculate.Name = "btn_calculate";
-            this.btn_calculate.Size = new System.Drawing.Size(126, 115);
+            this.btn_calculate.Size = new System.Drawing.Size(110, 92);
             this.btn_calculate.TabIndex = 8;
             this.btn_calculate.Text = "정산";
             this.btn_calculate.UseVisualStyleBackColor = false;
@@ -420,7 +420,7 @@
             this.btn_order_close.Location = new System.Drawing.Point(1, 1);
             this.btn_order_close.Margin = new System.Windows.Forms.Padding(0);
             this.btn_order_close.Name = "btn_order_close";
-            this.btn_order_close.Size = new System.Drawing.Size(121, 115);
+            this.btn_order_close.Size = new System.Drawing.Size(106, 92);
             this.btn_order_close.TabIndex = 10;
             this.btn_order_close.Text = "주문";
             this.btn_order_close.UseVisualStyleBackColor = false;
@@ -434,14 +434,30 @@
             this.btn_calculate_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_calculate_close.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
             this.btn_calculate_close.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_calculate_close.Location = new System.Drawing.Point(246, 1);
+            this.btn_calculate_close.Location = new System.Drawing.Point(215, 1);
             this.btn_calculate_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_calculate_close.Name = "btn_calculate_close";
-            this.btn_calculate_close.Size = new System.Drawing.Size(121, 115);
+            this.btn_calculate_close.Size = new System.Drawing.Size(106, 92);
             this.btn_calculate_close.TabIndex = 12;
             this.btn_calculate_close.Text = "정산";
             this.btn_calculate_close.UseVisualStyleBackColor = false;
             this.btn_calculate_close.Click += new System.EventHandler(this.btn_calculate_close_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.Location = new System.Drawing.Point(322, 3);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 89);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "주차";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btn_parking_Click);
             // 
             // btn_parking
             // 
@@ -450,10 +466,10 @@
             this.btn_parking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_parking.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
             this.btn_parking.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_parking.Location = new System.Drawing.Point(367, 2);
+            this.btn_parking.Location = new System.Drawing.Point(321, 2);
             this.btn_parking.Margin = new System.Windows.Forms.Padding(0);
             this.btn_parking.Name = "btn_parking";
-            this.btn_parking.Size = new System.Drawing.Size(123, 114);
+            this.btn_parking.Size = new System.Drawing.Size(108, 91);
             this.btn_parking.TabIndex = 9;
             this.btn_parking.Text = "주차";
             this.btn_parking.UseVisualStyleBackColor = false;
@@ -467,11 +483,11 @@
             this.btn_table.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_table.Font = new System.Drawing.Font("맑은 고딕", 10F, System.Drawing.FontStyle.Bold);
             this.btn_table.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_table.Location = new System.Drawing.Point(122, 1);
+            this.btn_table.Location = new System.Drawing.Point(107, 1);
             this.btn_table.Margin = new System.Windows.Forms.Padding(0);
             this.btn_table.Name = "btn_table";
-            this.btn_table.Padding = new System.Windows.Forms.Padding(25);
-            this.btn_table.Size = new System.Drawing.Size(122, 115);
+            this.btn_table.Padding = new System.Windows.Forms.Padding(22, 20, 22, 20);
+            this.btn_table.Size = new System.Drawing.Size(107, 92);
             this.btn_table.TabIndex = 7;
             this.btn_table.Text = "테이블";
             this.btn_table.UseVisualStyleBackColor = false;
@@ -484,10 +500,10 @@
             this.btn_table_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_table_close.Font = new System.Drawing.Font("맑은 고딕", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_table_close.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_table_close.Location = new System.Drawing.Point(123, 1);
+            this.btn_table_close.Location = new System.Drawing.Point(108, 1);
             this.btn_table_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_table_close.Name = "btn_table_close";
-            this.btn_table_close.Size = new System.Drawing.Size(118, 115);
+            this.btn_table_close.Size = new System.Drawing.Size(103, 92);
             this.btn_table_close.TabIndex = 11;
             this.btn_table_close.Text = "테이블";
             this.btn_table_close.UseVisualStyleBackColor = false;
@@ -500,10 +516,10 @@
             this.btn_parking_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_parking_close.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
             this.btn_parking_close.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_parking_close.Location = new System.Drawing.Point(367, 2);
+            this.btn_parking_close.Location = new System.Drawing.Point(321, 2);
             this.btn_parking_close.Margin = new System.Windows.Forms.Padding(0);
             this.btn_parking_close.Name = "btn_parking_close";
-            this.btn_parking_close.Size = new System.Drawing.Size(123, 114);
+            this.btn_parking_close.Size = new System.Drawing.Size(108, 91);
             this.btn_parking_close.TabIndex = 13;
             this.btn_parking_close.Text = "주차";
             this.btn_parking_close.UseVisualStyleBackColor = false;
@@ -517,22 +533,21 @@
             this.panel_lab4.Controls.Add(this.dataGridView5);
             this.panel_lab4.Controls.Add(this.groupBox12);
             this.panel_lab4.Controls.Add(this.groupBox11);
-            this.panel_lab4.Location = new System.Drawing.Point(0, 120);
+            this.panel_lab4.Location = new System.Drawing.Point(0, 96);
             this.panel_lab4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_lab4.Name = "panel_lab4";
-            this.panel_lab4.Size = new System.Drawing.Size(1391, 764);
+            this.panel_lab4.Size = new System.Drawing.Size(1217, 611);
             this.panel_lab4.TabIndex = 5;
             this.panel_lab4.Visible = false;
             // 
             // dataGridView6
             // 
             this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(941, 470);
-            this.dataGridView6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView6.Location = new System.Drawing.Point(823, 376);
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.RowHeadersWidth = 51;
             this.dataGridView6.RowTemplate.Height = 23;
-            this.dataGridView6.Size = new System.Drawing.Size(422, 226);
+            this.dataGridView6.Size = new System.Drawing.Size(369, 181);
             this.dataGridView6.TabIndex = 3;
             // 
             // dataGridView5
@@ -546,13 +561,12 @@
             this.timeDataGridViewTextBoxColumn,
             this.statusDataGridViewTextBoxColumn});
             this.dataGridView5.DataSource = this.parkingBindingSource;
-            this.dataGridView5.Location = new System.Drawing.Point(63, 470);
-            this.dataGridView5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView5.Location = new System.Drawing.Point(55, 376);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.ReadOnly = true;
             this.dataGridView5.RowHeadersWidth = 51;
             this.dataGridView5.RowTemplate.Height = 23;
-            this.dataGridView5.Size = new System.Drawing.Size(796, 228);
+            this.dataGridView5.Size = new System.Drawing.Size(696, 182);
             this.dataGridView5.TabIndex = 2;
             // 
             // groupBox12
@@ -566,29 +580,29 @@
             this.groupBox12.Controls.Add(this.label43);
             this.groupBox12.Controls.Add(this.label42);
             this.groupBox12.ForeColor = System.Drawing.Color.Black;
-            this.groupBox12.Location = new System.Drawing.Point(941, 34);
+            this.groupBox12.Location = new System.Drawing.Point(823, 27);
             this.groupBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox12.Size = new System.Drawing.Size(424, 405);
+            this.groupBox12.Size = new System.Drawing.Size(371, 324);
             this.groupBox12.TabIndex = 1;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "groupBox12";
             // 
             // dateTimePicker_cal
             // 
-            this.dateTimePicker_cal.Location = new System.Drawing.Point(37, 258);
+            this.dateTimePicker_cal.Location = new System.Drawing.Point(32, 206);
             this.dateTimePicker_cal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker_cal.Name = "dateTimePicker_cal";
-            this.dateTimePicker_cal.Size = new System.Drawing.Size(201, 25);
+            this.dateTimePicker_cal.Size = new System.Drawing.Size(176, 21);
             this.dateTimePicker_cal.TabIndex = 25;
             // 
             // label46
             // 
             this.label46.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label46.Location = new System.Drawing.Point(323, 92);
+            this.label46.Location = new System.Drawing.Point(283, 74);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(40, 22);
+            this.label46.Size = new System.Drawing.Size(35, 18);
             this.label46.TabIndex = 24;
             this.label46.Text = "0";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -596,9 +610,9 @@
             // label47
             // 
             this.label47.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label47.Location = new System.Drawing.Point(238, 92);
+            this.label47.Location = new System.Drawing.Point(208, 74);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(77, 22);
+            this.label47.Size = new System.Drawing.Size(67, 18);
             this.label47.TabIndex = 23;
             this.label47.Text = "총 결제액:";
             this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -606,9 +620,9 @@
             // label45
             // 
             this.label45.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label45.Location = new System.Drawing.Point(238, 30);
+            this.label45.Location = new System.Drawing.Point(208, 24);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(77, 22);
+            this.label45.Size = new System.Drawing.Size(67, 18);
             this.label45.TabIndex = 22;
             this.label45.Text = "현금결제:";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -616,9 +630,9 @@
             // label44
             // 
             this.label44.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label44.Location = new System.Drawing.Point(139, 30);
+            this.label44.Location = new System.Drawing.Point(122, 24);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(40, 22);
+            this.label44.Size = new System.Drawing.Size(35, 18);
             this.label44.TabIndex = 21;
             this.label44.Text = "0";
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -626,9 +640,9 @@
             // label43
             // 
             this.label43.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label43.Location = new System.Drawing.Point(321, 30);
+            this.label43.Location = new System.Drawing.Point(281, 24);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(40, 22);
+            this.label43.Size = new System.Drawing.Size(35, 18);
             this.label43.TabIndex = 20;
             this.label43.Text = "0";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -636,9 +650,9 @@
             // label42
             // 
             this.label42.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label42.Location = new System.Drawing.Point(55, 30);
+            this.label42.Location = new System.Drawing.Point(48, 24);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(77, 22);
+            this.label42.Size = new System.Drawing.Size(67, 18);
             this.label42.TabIndex = 19;
             this.label42.Text = "카드결제:";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -670,22 +684,51 @@
             this.groupBox11.Controls.Add(this.btn_checkin);
             this.groupBox11.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox11.ForeColor = System.Drawing.Color.Black;
-            this.groupBox11.Location = new System.Drawing.Point(32, 34);
+            this.groupBox11.Location = new System.Drawing.Point(28, 27);
             this.groupBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox11.Size = new System.Drawing.Size(858, 405);
+            this.groupBox11.Size = new System.Drawing.Size(751, 324);
             this.groupBox11.TabIndex = 0;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "groupBox11";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(207, 226);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(149, 12);
+            this.label60.TabIndex = 29;
+            this.label60.Text = "해당 날짜의 주차기록 검색";
+            // 
+            // dateTimePicker_parking
+            // 
+            this.dateTimePicker_parking.Location = new System.Drawing.Point(207, 247);
+            this.dateTimePicker_parking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePicker_parking.Name = "dateTimePicker_parking";
+            this.dateTimePicker_parking.Size = new System.Drawing.Size(176, 21);
+            this.dateTimePicker_parking.TabIndex = 26;
+            // 
+            // btn_time_p_search
+            // 
+            this.btn_time_p_search.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_time_p_search.Location = new System.Drawing.Point(395, 246);
+            this.btn_time_p_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_time_p_search.Name = "btn_time_p_search";
+            this.btn_time_p_search.Size = new System.Drawing.Size(66, 23);
+            this.btn_time_p_search.TabIndex = 28;
+            this.btn_time_p_search.Text = "검색";
+            this.btn_time_p_search.UseVisualStyleBackColor = true;
+            this.btn_time_p_search.Click += new System.EventHandler(this.btn_time_p_search_Click);
             // 
             // label59
             // 
             this.label59.AutoSize = true;
             this.label59.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label59.Location = new System.Drawing.Point(585, 111);
+            this.label59.Location = new System.Drawing.Point(512, 89);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(15, 15);
+            this.label59.Size = new System.Drawing.Size(11, 12);
             this.label59.TabIndex = 27;
             this.label59.Text = "0";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -694,9 +737,9 @@
             // 
             this.label58.AutoSize = true;
             this.label58.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label58.Location = new System.Drawing.Point(278, 111);
+            this.label58.Location = new System.Drawing.Point(243, 89);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(15, 15);
+            this.label58.Size = new System.Drawing.Size(11, 12);
             this.label58.TabIndex = 26;
             this.label58.Text = "0";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -704,10 +747,10 @@
             // button79
             // 
             this.button79.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button79.Location = new System.Drawing.Point(89, 321);
+            this.button79.Location = new System.Drawing.Point(78, 257);
             this.button79.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button79.Name = "button79";
-            this.button79.Size = new System.Drawing.Size(75, 29);
+            this.button79.Size = new System.Drawing.Size(66, 23);
             this.button79.TabIndex = 18;
             this.button79.Text = "삭제";
             this.button79.UseVisualStyleBackColor = true;
@@ -715,10 +758,10 @@
             // button78
             // 
             this.button78.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button78.Location = new System.Drawing.Point(89, 270);
+            this.button78.Location = new System.Drawing.Point(78, 216);
             this.button78.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button78.Name = "button78";
-            this.button78.Size = new System.Drawing.Size(75, 29);
+            this.button78.Size = new System.Drawing.Size(66, 23);
             this.button78.TabIndex = 17;
             this.button78.Text = "수정";
             this.button78.UseVisualStyleBackColor = true;
@@ -726,10 +769,10 @@
             // button77
             // 
             this.button77.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button77.Location = new System.Drawing.Point(635, 363);
+            this.button77.Location = new System.Drawing.Point(556, 290);
             this.button77.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button77.Name = "button77";
-            this.button77.Size = new System.Drawing.Size(193, 29);
+            this.button77.Size = new System.Drawing.Size(169, 23);
             this.button77.TabIndex = 16;
             this.button77.Text = "식당이용고객결제";
             this.button77.UseVisualStyleBackColor = true;
@@ -737,9 +780,9 @@
             // label41
             // 
             this.label41.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label41.Location = new System.Drawing.Point(690, 266);
+            this.label41.Location = new System.Drawing.Point(604, 213);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(138, 22);
+            this.label41.Size = new System.Drawing.Size(121, 18);
             this.label41.TabIndex = 15;
             this.label41.Text = "0";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -747,9 +790,9 @@
             // label40
             // 
             this.label40.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label40.Location = new System.Drawing.Point(690, 223);
+            this.label40.Location = new System.Drawing.Point(604, 178);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(138, 22);
+            this.label40.Size = new System.Drawing.Size(121, 18);
             this.label40.TabIndex = 14;
             this.label40.Text = "0";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -757,9 +800,9 @@
             // label39
             // 
             this.label39.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label39.Location = new System.Drawing.Point(607, 266);
+            this.label39.Location = new System.Drawing.Point(531, 213);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(77, 22);
+            this.label39.Size = new System.Drawing.Size(67, 18);
             this.label39.TabIndex = 13;
             this.label39.Text = "요 금:";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -767,9 +810,9 @@
             // label38
             // 
             this.label38.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label38.Location = new System.Drawing.Point(607, 223);
+            this.label38.Location = new System.Drawing.Point(531, 178);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(77, 22);
+            this.label38.Size = new System.Drawing.Size(67, 18);
             this.label38.TabIndex = 12;
             this.label38.Text = "주차시간:";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -777,9 +820,9 @@
             // label37
             // 
             this.label37.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label37.Location = new System.Drawing.Point(354, 111);
+            this.label37.Location = new System.Drawing.Point(310, 89);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(77, 22);
+            this.label37.Size = new System.Drawing.Size(67, 18);
             this.label37.TabIndex = 11;
             this.label37.Text = "출고시간:";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -787,9 +830,9 @@
             // label36
             // 
             this.label36.ForeColor = System.Drawing.Color.Black;
-            this.label36.Location = new System.Drawing.Point(46, 112);
+            this.label36.Location = new System.Drawing.Point(40, 90);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(77, 22);
+            this.label36.Size = new System.Drawing.Size(67, 18);
             this.label36.TabIndex = 10;
             this.label36.Text = "입고시간:";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -797,9 +840,9 @@
             // label35
             // 
             this.label35.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label35.Location = new System.Drawing.Point(354, 49);
+            this.label35.Location = new System.Drawing.Point(310, 39);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(77, 22);
+            this.label35.Size = new System.Drawing.Size(67, 18);
             this.label35.TabIndex = 9;
             this.label35.Text = "출고차량:";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -807,36 +850,36 @@
             // label34
             // 
             this.label34.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label34.Location = new System.Drawing.Point(46, 49);
+            this.label34.Location = new System.Drawing.Point(40, 39);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(77, 22);
+            this.label34.Size = new System.Drawing.Size(67, 18);
             this.label34.TabIndex = 8;
             this.label34.Text = "입고차량:";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox_release
             // 
-            this.textBox_release.Location = new System.Drawing.Point(441, 46);
+            this.textBox_release.Location = new System.Drawing.Point(386, 37);
             this.textBox_release.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_release.Name = "textBox_release";
-            this.textBox_release.Size = new System.Drawing.Size(156, 25);
+            this.textBox_release.Size = new System.Drawing.Size(137, 21);
             this.textBox_release.TabIndex = 5;
             // 
             // textBox_store
             // 
-            this.textBox_store.Location = new System.Drawing.Point(139, 48);
+            this.textBox_store.Location = new System.Drawing.Point(122, 38);
             this.textBox_store.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_store.Name = "textBox_store";
-            this.textBox_store.Size = new System.Drawing.Size(156, 25);
+            this.textBox_store.Size = new System.Drawing.Size(137, 21);
             this.textBox_store.TabIndex = 4;
             // 
             // button76
             // 
             this.button76.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button76.Location = new System.Drawing.Point(753, 294);
+            this.button76.Location = new System.Drawing.Point(659, 235);
             this.button76.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button76.Name = "button76";
-            this.button76.Size = new System.Drawing.Size(75, 29);
+            this.button76.Size = new System.Drawing.Size(66, 23);
             this.button76.TabIndex = 3;
             this.button76.Text = "현금결제";
             this.button76.UseVisualStyleBackColor = true;
@@ -844,10 +887,10 @@
             // button75
             // 
             this.button75.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button75.Location = new System.Drawing.Point(635, 294);
+            this.button75.Location = new System.Drawing.Point(556, 235);
             this.button75.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button75.Name = "button75";
-            this.button75.Size = new System.Drawing.Size(75, 29);
+            this.button75.Size = new System.Drawing.Size(66, 23);
             this.button75.TabIndex = 2;
             this.button75.Text = "카드결제";
             this.button75.UseVisualStyleBackColor = true;
@@ -855,10 +898,10 @@
             // btn_checkout
             // 
             this.btn_checkout.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_checkout.Location = new System.Drawing.Point(459, 175);
+            this.btn_checkout.Location = new System.Drawing.Point(402, 140);
             this.btn_checkout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_checkout.Name = "btn_checkout";
-            this.btn_checkout.Size = new System.Drawing.Size(136, 29);
+            this.btn_checkout.Size = new System.Drawing.Size(119, 23);
             this.btn_checkout.TabIndex = 1;
             this.btn_checkout.Text = "출고체크아웃";
             this.btn_checkout.UseVisualStyleBackColor = true;
@@ -867,10 +910,10 @@
             // btn_checkin
             // 
             this.btn_checkin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_checkin.Location = new System.Drawing.Point(157, 175);
+            this.btn_checkin.Location = new System.Drawing.Point(137, 140);
             this.btn_checkin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_checkin.Name = "btn_checkin";
-            this.btn_checkin.Size = new System.Drawing.Size(136, 29);
+            this.btn_checkin.Size = new System.Drawing.Size(119, 23);
             this.btn_checkin.TabIndex = 0;
             this.btn_checkin.Text = "입고체크인";
             this.btn_checkin.UseVisualStyleBackColor = true;
@@ -881,10 +924,10 @@
             this.panel_lab3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel_lab3.Controls.Add(this.groupBox3);
             this.panel_lab3.Controls.Add(this.groupBox2);
-            this.panel_lab3.Location = new System.Drawing.Point(0, 120);
+            this.panel_lab3.Location = new System.Drawing.Point(0, 96);
             this.panel_lab3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_lab3.Name = "panel_lab3";
-            this.panel_lab3.Size = new System.Drawing.Size(1391, 764);
+            this.panel_lab3.Size = new System.Drawing.Size(1217, 611);
             this.panel_lab3.TabIndex = 4;
             this.panel_lab3.Visible = false;
             // 
@@ -893,11 +936,11 @@
             this.groupBox3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.groupBox3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox3.Location = new System.Drawing.Point(13, 430);
+            this.groupBox3.Location = new System.Drawing.Point(11, 344);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(1353, 298);
+            this.groupBox3.Size = new System.Drawing.Size(1184, 238);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
@@ -907,11 +950,11 @@
             this.groupBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.groupBox2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox2.Location = new System.Drawing.Point(13, 20);
+            this.groupBox2.Location = new System.Drawing.Point(11, 16);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(1353, 392);
+            this.groupBox2.Size = new System.Drawing.Size(1184, 314);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
@@ -928,10 +971,10 @@
             this.panel_lab1.Controls.Add(this.btn_sidemenu_close);
             this.panel_lab1.Controls.Add(this.btn_beverage_close);
             this.panel_lab1.Controls.Add(this.btn_addmenu_close);
-            this.panel_lab1.Location = new System.Drawing.Point(0, 120);
+            this.panel_lab1.Location = new System.Drawing.Point(0, 96);
             this.panel_lab1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_lab1.Name = "panel_lab1";
-            this.panel_lab1.Size = new System.Drawing.Size(219, 764);
+            this.panel_lab1.Size = new System.Drawing.Size(192, 611);
             this.panel_lab1.TabIndex = 3;
             this.panel_lab1.Visible = false;
             // 
@@ -945,7 +988,7 @@
             this.btn_mainmenu.Location = new System.Drawing.Point(0, 0);
             this.btn_mainmenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_mainmenu.Name = "btn_mainmenu";
-            this.btn_mainmenu.Size = new System.Drawing.Size(219, 62);
+            this.btn_mainmenu.Size = new System.Drawing.Size(192, 50);
             this.btn_mainmenu.TabIndex = 0;
             this.btn_mainmenu.Text = "메인 메뉴";
             this.btn_mainmenu.UseVisualStyleBackColor = false;
@@ -958,10 +1001,10 @@
             this.btn_sidemenu.FlatAppearance.BorderSize = 0;
             this.btn_sidemenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_sidemenu.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_sidemenu.Location = new System.Drawing.Point(0, 62);
+            this.btn_sidemenu.Location = new System.Drawing.Point(0, 50);
             this.btn_sidemenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_sidemenu.Name = "btn_sidemenu";
-            this.btn_sidemenu.Size = new System.Drawing.Size(219, 62);
+            this.btn_sidemenu.Size = new System.Drawing.Size(192, 50);
             this.btn_sidemenu.TabIndex = 1;
             this.btn_sidemenu.Text = "사이드 메뉴";
             this.btn_sidemenu.UseVisualStyleBackColor = false;
@@ -974,10 +1017,10 @@
             this.btn_beverage.FlatAppearance.BorderSize = 0;
             this.btn_beverage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_beverage.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_beverage.Location = new System.Drawing.Point(0, 126);
+            this.btn_beverage.Location = new System.Drawing.Point(0, 101);
             this.btn_beverage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_beverage.Name = "btn_beverage";
-            this.btn_beverage.Size = new System.Drawing.Size(219, 62);
+            this.btn_beverage.Size = new System.Drawing.Size(192, 50);
             this.btn_beverage.TabIndex = 2;
             this.btn_beverage.Text = "음료류";
             this.btn_beverage.UseVisualStyleBackColor = false;
@@ -990,10 +1033,10 @@
             this.btn_addmenu.FlatAppearance.BorderSize = 0;
             this.btn_addmenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_addmenu.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_addmenu.Location = new System.Drawing.Point(0, 189);
+            this.btn_addmenu.Location = new System.Drawing.Point(0, 151);
             this.btn_addmenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_addmenu.Name = "btn_addmenu";
-            this.btn_addmenu.Size = new System.Drawing.Size(219, 65);
+            this.btn_addmenu.Size = new System.Drawing.Size(192, 52);
             this.btn_addmenu.TabIndex = 3;
             this.btn_addmenu.Text = "추가 메뉴";
             this.btn_addmenu.UseVisualStyleBackColor = false;
@@ -1010,7 +1053,7 @@
             this.btn_mainmenu_close.Location = new System.Drawing.Point(1, 0);
             this.btn_mainmenu_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_mainmenu_close.Name = "btn_mainmenu_close";
-            this.btn_mainmenu_close.Size = new System.Drawing.Size(218, 62);
+            this.btn_mainmenu_close.Size = new System.Drawing.Size(191, 50);
             this.btn_mainmenu_close.TabIndex = 4;
             this.btn_mainmenu_close.Text = "메인 메뉴";
             this.btn_mainmenu_close.UseVisualStyleBackColor = false;
@@ -1025,10 +1068,10 @@
             this.btn_sidemenu_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_sidemenu_close.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_sidemenu_close.ForeColor = System.Drawing.Color.White;
-            this.btn_sidemenu_close.Location = new System.Drawing.Point(1, 65);
+            this.btn_sidemenu_close.Location = new System.Drawing.Point(1, 52);
             this.btn_sidemenu_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_sidemenu_close.Name = "btn_sidemenu_close";
-            this.btn_sidemenu_close.Size = new System.Drawing.Size(218, 62);
+            this.btn_sidemenu_close.Size = new System.Drawing.Size(191, 50);
             this.btn_sidemenu_close.TabIndex = 5;
             this.btn_sidemenu_close.Text = "사이드 메뉴";
             this.btn_sidemenu_close.UseVisualStyleBackColor = false;
@@ -1043,10 +1086,10 @@
             this.btn_beverage_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_beverage_close.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_beverage_close.ForeColor = System.Drawing.Color.White;
-            this.btn_beverage_close.Location = new System.Drawing.Point(1, 129);
+            this.btn_beverage_close.Location = new System.Drawing.Point(1, 103);
             this.btn_beverage_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_beverage_close.Name = "btn_beverage_close";
-            this.btn_beverage_close.Size = new System.Drawing.Size(218, 62);
+            this.btn_beverage_close.Size = new System.Drawing.Size(191, 50);
             this.btn_beverage_close.TabIndex = 6;
             this.btn_beverage_close.Text = "음료수";
             this.btn_beverage_close.UseVisualStyleBackColor = false;
@@ -1061,10 +1104,10 @@
             this.btn_addmenu_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_addmenu_close.Font = new System.Drawing.Font("Yu Gothic UI", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_addmenu_close.ForeColor = System.Drawing.Color.White;
-            this.btn_addmenu_close.Location = new System.Drawing.Point(1, 192);
+            this.btn_addmenu_close.Location = new System.Drawing.Point(1, 154);
             this.btn_addmenu_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_addmenu_close.Name = "btn_addmenu_close";
-            this.btn_addmenu_close.Size = new System.Drawing.Size(218, 61);
+            this.btn_addmenu_close.Size = new System.Drawing.Size(191, 49);
             this.btn_addmenu_close.TabIndex = 7;
             this.btn_addmenu_close.Text = "추가 메뉴";
             this.btn_addmenu_close.UseVisualStyleBackColor = false;
@@ -1078,10 +1121,10 @@
             this.panel_mainmenu.Controls.Add(this.groupBox4);
             this.panel_mainmenu.Controls.Add(this.dataGridView1);
             this.panel_mainmenu.Controls.Add(this.groupBox1);
-            this.panel_mainmenu.Location = new System.Drawing.Point(219, 119);
+            this.panel_mainmenu.Location = new System.Drawing.Point(192, 95);
             this.panel_mainmenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_mainmenu.Name = "panel_mainmenu";
-            this.panel_mainmenu.Size = new System.Drawing.Size(1171, 765);
+            this.panel_mainmenu.Size = new System.Drawing.Size(1025, 612);
             this.panel_mainmenu.TabIndex = 6;
             this.panel_mainmenu.Visible = false;
             // 
@@ -1104,21 +1147,21 @@
             this.groupBox4.Controls.Add(this.btn_main_tablenum4);
             this.groupBox4.Controls.Add(this.btn_main_tablenum1);
             this.groupBox4.Controls.Add(this.btn_main_tablenum2);
-            this.groupBox4.Location = new System.Drawing.Point(24, 455);
+            this.groupBox4.Location = new System.Drawing.Point(21, 364);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(729, 249);
+            this.groupBox4.Size = new System.Drawing.Size(638, 199);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "테이블 선택";
             // 
             // btn_main_tablenum15
             // 
-            this.btn_main_tablenum15.Location = new System.Drawing.Point(399, 202);
+            this.btn_main_tablenum15.Location = new System.Drawing.Point(349, 162);
             this.btn_main_tablenum15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum15.Name = "btn_main_tablenum15";
-            this.btn_main_tablenum15.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum15.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum15.TabIndex = 19;
             this.btn_main_tablenum15.Text = "15번 테이블";
             this.btn_main_tablenum15.UseVisualStyleBackColor = true;
@@ -1126,10 +1169,10 @@
             // 
             // btn_main_tablenum16
             // 
-            this.btn_main_tablenum16.Location = new System.Drawing.Point(560, 202);
+            this.btn_main_tablenum16.Location = new System.Drawing.Point(490, 162);
             this.btn_main_tablenum16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum16.Name = "btn_main_tablenum16";
-            this.btn_main_tablenum16.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum16.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum16.TabIndex = 18;
             this.btn_main_tablenum16.Text = "16번 테이블";
             this.btn_main_tablenum16.UseVisualStyleBackColor = true;
@@ -1137,10 +1180,10 @@
             // 
             // btn_main_tablenum13
             // 
-            this.btn_main_tablenum13.Location = new System.Drawing.Point(72, 202);
+            this.btn_main_tablenum13.Location = new System.Drawing.Point(63, 162);
             this.btn_main_tablenum13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum13.Name = "btn_main_tablenum13";
-            this.btn_main_tablenum13.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum13.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum13.TabIndex = 17;
             this.btn_main_tablenum13.Text = "13번 테이블";
             this.btn_main_tablenum13.UseVisualStyleBackColor = true;
@@ -1148,10 +1191,10 @@
             // 
             // btn_main_tablenum14
             // 
-            this.btn_main_tablenum14.Location = new System.Drawing.Point(227, 202);
+            this.btn_main_tablenum14.Location = new System.Drawing.Point(199, 162);
             this.btn_main_tablenum14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum14.Name = "btn_main_tablenum14";
-            this.btn_main_tablenum14.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum14.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum14.TabIndex = 16;
             this.btn_main_tablenum14.Text = "14번 테이블";
             this.btn_main_tablenum14.UseVisualStyleBackColor = true;
@@ -1159,10 +1202,10 @@
             // 
             // btn_main_tablenum11
             // 
-            this.btn_main_tablenum11.Location = new System.Drawing.Point(399, 149);
+            this.btn_main_tablenum11.Location = new System.Drawing.Point(349, 119);
             this.btn_main_tablenum11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum11.Name = "btn_main_tablenum11";
-            this.btn_main_tablenum11.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum11.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum11.TabIndex = 15;
             this.btn_main_tablenum11.Text = "11번 테이블";
             this.btn_main_tablenum11.UseVisualStyleBackColor = true;
@@ -1170,10 +1213,10 @@
             // 
             // btn_main_tablenum12
             // 
-            this.btn_main_tablenum12.Location = new System.Drawing.Point(560, 149);
+            this.btn_main_tablenum12.Location = new System.Drawing.Point(490, 119);
             this.btn_main_tablenum12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum12.Name = "btn_main_tablenum12";
-            this.btn_main_tablenum12.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum12.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum12.TabIndex = 14;
             this.btn_main_tablenum12.Text = "12번 테이블";
             this.btn_main_tablenum12.UseVisualStyleBackColor = true;
@@ -1181,10 +1224,10 @@
             // 
             // btn_main_tablenum9
             // 
-            this.btn_main_tablenum9.Location = new System.Drawing.Point(72, 149);
+            this.btn_main_tablenum9.Location = new System.Drawing.Point(63, 119);
             this.btn_main_tablenum9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum9.Name = "btn_main_tablenum9";
-            this.btn_main_tablenum9.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum9.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum9.TabIndex = 13;
             this.btn_main_tablenum9.Text = "9번 테이블";
             this.btn_main_tablenum9.UseVisualStyleBackColor = true;
@@ -1192,10 +1235,10 @@
             // 
             // btn_main_tablenum10
             // 
-            this.btn_main_tablenum10.Location = new System.Drawing.Point(227, 149);
+            this.btn_main_tablenum10.Location = new System.Drawing.Point(199, 119);
             this.btn_main_tablenum10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum10.Name = "btn_main_tablenum10";
-            this.btn_main_tablenum10.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum10.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum10.TabIndex = 12;
             this.btn_main_tablenum10.Text = "10번 테이블";
             this.btn_main_tablenum10.UseVisualStyleBackColor = true;
@@ -1203,10 +1246,10 @@
             // 
             // btn_main_tablenum7
             // 
-            this.btn_main_tablenum7.Location = new System.Drawing.Point(399, 100);
+            this.btn_main_tablenum7.Location = new System.Drawing.Point(349, 80);
             this.btn_main_tablenum7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum7.Name = "btn_main_tablenum7";
-            this.btn_main_tablenum7.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum7.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum7.TabIndex = 11;
             this.btn_main_tablenum7.Text = "7번 테이블";
             this.btn_main_tablenum7.UseVisualStyleBackColor = true;
@@ -1214,10 +1257,10 @@
             // 
             // btn_main_tablenum8
             // 
-            this.btn_main_tablenum8.Location = new System.Drawing.Point(560, 100);
+            this.btn_main_tablenum8.Location = new System.Drawing.Point(490, 80);
             this.btn_main_tablenum8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum8.Name = "btn_main_tablenum8";
-            this.btn_main_tablenum8.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum8.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum8.TabIndex = 10;
             this.btn_main_tablenum8.Text = "8번 테이블";
             this.btn_main_tablenum8.UseVisualStyleBackColor = true;
@@ -1225,10 +1268,10 @@
             // 
             // btn_main_tablenum5
             // 
-            this.btn_main_tablenum5.Location = new System.Drawing.Point(72, 100);
+            this.btn_main_tablenum5.Location = new System.Drawing.Point(63, 80);
             this.btn_main_tablenum5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum5.Name = "btn_main_tablenum5";
-            this.btn_main_tablenum5.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum5.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum5.TabIndex = 9;
             this.btn_main_tablenum5.Text = "5번 테이블";
             this.btn_main_tablenum5.UseVisualStyleBackColor = true;
@@ -1236,10 +1279,10 @@
             // 
             // btn_main_tablenum6
             // 
-            this.btn_main_tablenum6.Location = new System.Drawing.Point(227, 100);
+            this.btn_main_tablenum6.Location = new System.Drawing.Point(199, 80);
             this.btn_main_tablenum6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum6.Name = "btn_main_tablenum6";
-            this.btn_main_tablenum6.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum6.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum6.TabIndex = 8;
             this.btn_main_tablenum6.Text = "6번 테이블";
             this.btn_main_tablenum6.UseVisualStyleBackColor = true;
@@ -1247,10 +1290,10 @@
             // 
             // btn_main_tablenum3
             // 
-            this.btn_main_tablenum3.Location = new System.Drawing.Point(399, 46);
+            this.btn_main_tablenum3.Location = new System.Drawing.Point(349, 37);
             this.btn_main_tablenum3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum3.Name = "btn_main_tablenum3";
-            this.btn_main_tablenum3.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum3.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum3.TabIndex = 7;
             this.btn_main_tablenum3.Text = "3번 테이블";
             this.btn_main_tablenum3.UseVisualStyleBackColor = true;
@@ -1258,10 +1301,10 @@
             // 
             // btn_main_tablenum4
             // 
-            this.btn_main_tablenum4.Location = new System.Drawing.Point(560, 46);
+            this.btn_main_tablenum4.Location = new System.Drawing.Point(490, 37);
             this.btn_main_tablenum4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum4.Name = "btn_main_tablenum4";
-            this.btn_main_tablenum4.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum4.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum4.TabIndex = 6;
             this.btn_main_tablenum4.Text = "4번 테이블";
             this.btn_main_tablenum4.UseVisualStyleBackColor = true;
@@ -1269,10 +1312,10 @@
             // 
             // btn_main_tablenum1
             // 
-            this.btn_main_tablenum1.Location = new System.Drawing.Point(72, 46);
+            this.btn_main_tablenum1.Location = new System.Drawing.Point(63, 37);
             this.btn_main_tablenum1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum1.Name = "btn_main_tablenum1";
-            this.btn_main_tablenum1.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum1.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum1.TabIndex = 5;
             this.btn_main_tablenum1.Text = "1번 테이블";
             this.btn_main_tablenum1.UseVisualStyleBackColor = true;
@@ -1280,10 +1323,10 @@
             // 
             // btn_main_tablenum2
             // 
-            this.btn_main_tablenum2.Location = new System.Drawing.Point(227, 46);
+            this.btn_main_tablenum2.Location = new System.Drawing.Point(199, 37);
             this.btn_main_tablenum2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_main_tablenum2.Name = "btn_main_tablenum2";
-            this.btn_main_tablenum2.Size = new System.Drawing.Size(96, 30);
+            this.btn_main_tablenum2.Size = new System.Drawing.Size(84, 24);
             this.btn_main_tablenum2.TabIndex = 4;
             this.btn_main_tablenum2.Text = "2번 테이블";
             this.btn_main_tablenum2.UseVisualStyleBackColor = true;
@@ -1295,12 +1338,12 @@
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.Bisque;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(797, 35);
+            this.dataGridView1.Location = new System.Drawing.Point(697, 28);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(333, 496);
+            this.dataGridView1.Size = new System.Drawing.Size(291, 397);
             this.dataGridView1.TabIndex = 1;
             // 
             // groupBox1
@@ -1335,21 +1378,21 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btn_mainmenu_add);
             this.groupBox1.Controls.Add(this.btn_mainmenu_delete);
-            this.groupBox1.Location = new System.Drawing.Point(24, 28);
+            this.groupBox1.Location = new System.Drawing.Point(21, 22);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(729, 398);
+            this.groupBox1.Size = new System.Drawing.Size(638, 318);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "메인 메뉴판";
             // 
             // btn_mainmenu_update
             // 
-            this.btn_mainmenu_update.Location = new System.Drawing.Point(426, 351);
+            this.btn_mainmenu_update.Location = new System.Drawing.Point(373, 281);
             this.btn_mainmenu_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_mainmenu_update.Name = "btn_mainmenu_update";
-            this.btn_mainmenu_update.Size = new System.Drawing.Size(90, 29);
+            this.btn_mainmenu_update.Size = new System.Drawing.Size(79, 23);
             this.btn_mainmenu_update.TabIndex = 34;
             this.btn_mainmenu_update.Text = "주문 수정";
             this.btn_mainmenu_update.UseVisualStyleBackColor = true;
@@ -1358,235 +1401,235 @@
             // mainmenu8
             // 
             this.mainmenu8.AutoSize = true;
-            this.mainmenu8.Location = new System.Drawing.Point(441, 198);
+            this.mainmenu8.Location = new System.Drawing.Point(386, 158);
             this.mainmenu8.Name = "mainmenu8";
-            this.mainmenu8.Size = new System.Drawing.Size(80, 15);
+            this.mainmenu8.Size = new System.Drawing.Size(71, 12);
             this.mainmenu8.TabIndex = 33;
             this.mainmenu8.Text = "mainmenu8";
             // 
             // mainmenu7
             // 
             this.mainmenu7.AutoSize = true;
-            this.mainmenu7.Location = new System.Drawing.Point(318, 198);
+            this.mainmenu7.Location = new System.Drawing.Point(278, 158);
             this.mainmenu7.Name = "mainmenu7";
-            this.mainmenu7.Size = new System.Drawing.Size(80, 15);
+            this.mainmenu7.Size = new System.Drawing.Size(71, 12);
             this.mainmenu7.TabIndex = 32;
             this.mainmenu7.Text = "mainmenu7";
             // 
             // mainmenu6
             // 
             this.mainmenu6.AutoSize = true;
-            this.mainmenu6.Location = new System.Drawing.Point(187, 198);
+            this.mainmenu6.Location = new System.Drawing.Point(164, 158);
             this.mainmenu6.Name = "mainmenu6";
-            this.mainmenu6.Size = new System.Drawing.Size(80, 15);
+            this.mainmenu6.Size = new System.Drawing.Size(71, 12);
             this.mainmenu6.TabIndex = 31;
             this.mainmenu6.Text = "mainmenu6";
             // 
             // mainmenu5
             // 
             this.mainmenu5.AutoSize = true;
-            this.mainmenu5.Location = new System.Drawing.Point(69, 198);
+            this.mainmenu5.Location = new System.Drawing.Point(60, 158);
             this.mainmenu5.Name = "mainmenu5";
-            this.mainmenu5.Size = new System.Drawing.Size(80, 15);
+            this.mainmenu5.Size = new System.Drawing.Size(71, 12);
             this.mainmenu5.TabIndex = 30;
             this.mainmenu5.Text = "mainmenu5";
             // 
             // mainmenu4
             // 
             this.mainmenu4.AutoSize = true;
-            this.mainmenu4.Location = new System.Drawing.Point(441, 44);
+            this.mainmenu4.Location = new System.Drawing.Point(386, 35);
             this.mainmenu4.Name = "mainmenu4";
-            this.mainmenu4.Size = new System.Drawing.Size(80, 15);
+            this.mainmenu4.Size = new System.Drawing.Size(71, 12);
             this.mainmenu4.TabIndex = 29;
             this.mainmenu4.Text = "mainmenu4";
             // 
             // mainmenu3
             // 
             this.mainmenu3.AutoSize = true;
-            this.mainmenu3.Location = new System.Drawing.Point(318, 45);
+            this.mainmenu3.Location = new System.Drawing.Point(278, 36);
             this.mainmenu3.Name = "mainmenu3";
-            this.mainmenu3.Size = new System.Drawing.Size(80, 15);
+            this.mainmenu3.Size = new System.Drawing.Size(71, 12);
             this.mainmenu3.TabIndex = 28;
             this.mainmenu3.Text = "mainmenu3";
             // 
             // mainmenu2
             // 
             this.mainmenu2.AutoSize = true;
-            this.mainmenu2.Location = new System.Drawing.Point(189, 44);
+            this.mainmenu2.Location = new System.Drawing.Point(165, 35);
             this.mainmenu2.Name = "mainmenu2";
-            this.mainmenu2.Size = new System.Drawing.Size(80, 15);
+            this.mainmenu2.Size = new System.Drawing.Size(71, 12);
             this.mainmenu2.TabIndex = 27;
             this.mainmenu2.Text = "mainmenu2";
             // 
             // mainmenu1
             // 
             this.mainmenu1.AutoSize = true;
-            this.mainmenu1.Location = new System.Drawing.Point(72, 45);
+            this.mainmenu1.Location = new System.Drawing.Point(63, 36);
             this.mainmenu1.Name = "mainmenu1";
-            this.mainmenu1.Size = new System.Drawing.Size(80, 15);
+            this.mainmenu1.Size = new System.Drawing.Size(71, 12);
             this.mainmenu1.TabIndex = 26;
             this.mainmenu1.Text = "mainmenu1";
             // 
             // label_main_tablenum
             // 
             this.label_main_tablenum.AutoSize = true;
-            this.label_main_tablenum.Location = new System.Drawing.Point(179, 316);
+            this.label_main_tablenum.Location = new System.Drawing.Point(157, 253);
             this.label_main_tablenum.Name = "label_main_tablenum";
-            this.label_main_tablenum.Size = new System.Drawing.Size(15, 15);
+            this.label_main_tablenum.Size = new System.Drawing.Size(11, 12);
             this.label_main_tablenum.TabIndex = 25;
             this.label_main_tablenum.Text = "0";
             this.label_main_tablenum.Visible = false;
             // 
             // label48
             // 
-            this.label48.Location = new System.Drawing.Point(53, 316);
+            this.label48.Location = new System.Drawing.Point(46, 253);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(111, 22);
+            this.label48.Size = new System.Drawing.Size(97, 18);
             this.label48.TabIndex = 24;
             this.label48.Text = "선택된 테이블:";
             // 
             // textBox_mainmenu8
             // 
-            this.textBox_mainmenu8.Location = new System.Drawing.Point(443, 228);
+            this.textBox_mainmenu8.Location = new System.Drawing.Point(388, 182);
             this.textBox_mainmenu8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_mainmenu8.Name = "textBox_mainmenu8";
-            this.textBox_mainmenu8.Size = new System.Drawing.Size(66, 25);
+            this.textBox_mainmenu8.Size = new System.Drawing.Size(58, 21);
             this.textBox_mainmenu8.TabIndex = 23;
             // 
             // textBox_mainmenu7
             // 
-            this.textBox_mainmenu7.Location = new System.Drawing.Point(321, 228);
+            this.textBox_mainmenu7.Location = new System.Drawing.Point(281, 182);
             this.textBox_mainmenu7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_mainmenu7.Name = "textBox_mainmenu7";
-            this.textBox_mainmenu7.Size = new System.Drawing.Size(66, 25);
+            this.textBox_mainmenu7.Size = new System.Drawing.Size(58, 21);
             this.textBox_mainmenu7.TabIndex = 22;
             // 
             // textBox_mainmenu6
             // 
-            this.textBox_mainmenu6.Location = new System.Drawing.Point(192, 228);
+            this.textBox_mainmenu6.Location = new System.Drawing.Point(168, 182);
             this.textBox_mainmenu6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_mainmenu6.Name = "textBox_mainmenu6";
-            this.textBox_mainmenu6.Size = new System.Drawing.Size(66, 25);
+            this.textBox_mainmenu6.Size = new System.Drawing.Size(58, 21);
             this.textBox_mainmenu6.TabIndex = 21;
             // 
             // textBox_mainmenu5
             // 
-            this.textBox_mainmenu5.Location = new System.Drawing.Point(72, 228);
+            this.textBox_mainmenu5.Location = new System.Drawing.Point(63, 182);
             this.textBox_mainmenu5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_mainmenu5.Name = "textBox_mainmenu5";
-            this.textBox_mainmenu5.Size = new System.Drawing.Size(66, 25);
+            this.textBox_mainmenu5.Size = new System.Drawing.Size(58, 21);
             this.textBox_mainmenu5.TabIndex = 20;
             // 
             // textBox_mainmenu4
             // 
-            this.textBox_mainmenu4.Location = new System.Drawing.Point(443, 79);
+            this.textBox_mainmenu4.Location = new System.Drawing.Point(388, 63);
             this.textBox_mainmenu4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_mainmenu4.Name = "textBox_mainmenu4";
-            this.textBox_mainmenu4.Size = new System.Drawing.Size(66, 25);
+            this.textBox_mainmenu4.Size = new System.Drawing.Size(58, 21);
             this.textBox_mainmenu4.TabIndex = 19;
             // 
             // textBox_mainmenu3
             // 
-            this.textBox_mainmenu3.Location = new System.Drawing.Point(321, 79);
+            this.textBox_mainmenu3.Location = new System.Drawing.Point(281, 63);
             this.textBox_mainmenu3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_mainmenu3.Name = "textBox_mainmenu3";
-            this.textBox_mainmenu3.Size = new System.Drawing.Size(66, 25);
+            this.textBox_mainmenu3.Size = new System.Drawing.Size(58, 21);
             this.textBox_mainmenu3.TabIndex = 18;
             // 
             // textBox_mainmenu2
             // 
-            this.textBox_mainmenu2.Location = new System.Drawing.Point(192, 79);
+            this.textBox_mainmenu2.Location = new System.Drawing.Point(168, 63);
             this.textBox_mainmenu2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_mainmenu2.Name = "textBox_mainmenu2";
-            this.textBox_mainmenu2.Size = new System.Drawing.Size(66, 25);
+            this.textBox_mainmenu2.Size = new System.Drawing.Size(58, 21);
             this.textBox_mainmenu2.TabIndex = 17;
             // 
             // textBox_mainmenu1
             // 
-            this.textBox_mainmenu1.Location = new System.Drawing.Point(72, 79);
+            this.textBox_mainmenu1.Location = new System.Drawing.Point(63, 63);
             this.textBox_mainmenu1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_mainmenu1.Name = "textBox_mainmenu1";
-            this.textBox_mainmenu1.Size = new System.Drawing.Size(66, 25);
+            this.textBox_mainmenu1.Size = new System.Drawing.Size(58, 21);
             this.textBox_mainmenu1.TabIndex = 16;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(395, 234);
+            this.label8.Location = new System.Drawing.Point(346, 187);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(42, 15);
+            this.label8.Size = new System.Drawing.Size(33, 12);
             this.label8.TabIndex = 15;
             this.label8.Text = "수량:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(273, 234);
+            this.label7.Location = new System.Drawing.Point(239, 187);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 15);
+            this.label7.Size = new System.Drawing.Size(33, 12);
             this.label7.TabIndex = 14;
             this.label7.Text = "수량:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(144, 234);
+            this.label6.Location = new System.Drawing.Point(126, 187);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 15);
+            this.label6.Size = new System.Drawing.Size(33, 12);
             this.label6.TabIndex = 13;
             this.label6.Text = "수량:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 234);
+            this.label5.Location = new System.Drawing.Point(20, 187);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 15);
+            this.label5.Size = new System.Drawing.Size(33, 12);
             this.label5.TabIndex = 12;
             this.label5.Text = "수량:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(395, 84);
+            this.label4.Location = new System.Drawing.Point(346, 67);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 15);
+            this.label4.Size = new System.Drawing.Size(33, 12);
             this.label4.TabIndex = 11;
             this.label4.Text = "수량:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(144, 85);
+            this.label3.Location = new System.Drawing.Point(126, 68);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 15);
+            this.label3.Size = new System.Drawing.Size(33, 12);
             this.label3.TabIndex = 10;
             this.label3.Text = "수량:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(273, 85);
+            this.label2.Location = new System.Drawing.Point(239, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 15);
+            this.label2.Size = new System.Drawing.Size(33, 12);
             this.label2.TabIndex = 9;
             this.label2.Text = "수량:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 84);
+            this.label1.Location = new System.Drawing.Point(20, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 15);
+            this.label1.Size = new System.Drawing.Size(33, 12);
             this.label1.TabIndex = 8;
             this.label1.Text = "수량:";
             // 
             // btn_mainmenu_add
             // 
-            this.btn_mainmenu_add.Location = new System.Drawing.Point(426, 301);
+            this.btn_mainmenu_add.Location = new System.Drawing.Point(373, 241);
             this.btn_mainmenu_add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_mainmenu_add.Name = "btn_mainmenu_add";
-            this.btn_mainmenu_add.Size = new System.Drawing.Size(89, 26);
+            this.btn_mainmenu_add.Size = new System.Drawing.Size(78, 21);
             this.btn_mainmenu_add.TabIndex = 7;
             this.btn_mainmenu_add.Text = "주 문";
             this.btn_mainmenu_add.UseVisualStyleBackColor = true;
@@ -1594,10 +1637,10 @@
             // 
             // btn_mainmenu_delete
             // 
-            this.btn_mainmenu_delete.Location = new System.Drawing.Point(560, 301);
+            this.btn_mainmenu_delete.Location = new System.Drawing.Point(490, 241);
             this.btn_mainmenu_delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_mainmenu_delete.Name = "btn_mainmenu_delete";
-            this.btn_mainmenu_delete.Size = new System.Drawing.Size(88, 29);
+            this.btn_mainmenu_delete.Size = new System.Drawing.Size(77, 23);
             this.btn_mainmenu_delete.TabIndex = 6;
             this.btn_mainmenu_delete.Text = "주문 취소";
             this.btn_mainmenu_delete.UseVisualStyleBackColor = true;
@@ -1610,10 +1653,10 @@
             this.panel_sidemenu.Controls.Add(this.groupBox5);
             this.panel_sidemenu.Controls.Add(this.dataGridView2);
             this.panel_sidemenu.Controls.Add(this.groupBox43);
-            this.panel_sidemenu.Location = new System.Drawing.Point(219, 119);
+            this.panel_sidemenu.Location = new System.Drawing.Point(192, 95);
             this.panel_sidemenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_sidemenu.Name = "panel_sidemenu";
-            this.panel_sidemenu.Size = new System.Drawing.Size(1171, 765);
+            this.panel_sidemenu.Size = new System.Drawing.Size(1025, 612);
             this.panel_sidemenu.TabIndex = 7;
             this.panel_sidemenu.Visible = false;
             // 
@@ -1636,21 +1679,21 @@
             this.groupBox5.Controls.Add(this.btn_side_tablenum4);
             this.groupBox5.Controls.Add(this.btn_side_tablenum1);
             this.groupBox5.Controls.Add(this.btn_side_tablenum2);
-            this.groupBox5.Location = new System.Drawing.Point(24, 455);
+            this.groupBox5.Location = new System.Drawing.Point(21, 364);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox5.Size = new System.Drawing.Size(729, 249);
+            this.groupBox5.Size = new System.Drawing.Size(638, 199);
             this.groupBox5.TabIndex = 6;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "테이블 선택";
             // 
             // btn_side_tablenum15
             // 
-            this.btn_side_tablenum15.Location = new System.Drawing.Point(395, 202);
+            this.btn_side_tablenum15.Location = new System.Drawing.Point(346, 162);
             this.btn_side_tablenum15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum15.Name = "btn_side_tablenum15";
-            this.btn_side_tablenum15.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum15.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum15.TabIndex = 35;
             this.btn_side_tablenum15.Text = "15번 테이블";
             this.btn_side_tablenum15.UseVisualStyleBackColor = true;
@@ -1658,10 +1701,10 @@
             // 
             // btn_side_tablenum16
             // 
-            this.btn_side_tablenum16.Location = new System.Drawing.Point(555, 202);
+            this.btn_side_tablenum16.Location = new System.Drawing.Point(486, 162);
             this.btn_side_tablenum16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum16.Name = "btn_side_tablenum16";
-            this.btn_side_tablenum16.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum16.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum16.TabIndex = 34;
             this.btn_side_tablenum16.Text = "16번 테이블";
             this.btn_side_tablenum16.UseVisualStyleBackColor = true;
@@ -1669,10 +1712,10 @@
             // 
             // btn_side_tablenum13
             // 
-            this.btn_side_tablenum13.Location = new System.Drawing.Point(69, 202);
+            this.btn_side_tablenum13.Location = new System.Drawing.Point(60, 162);
             this.btn_side_tablenum13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum13.Name = "btn_side_tablenum13";
-            this.btn_side_tablenum13.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum13.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum13.TabIndex = 33;
             this.btn_side_tablenum13.Text = "13번 테이블";
             this.btn_side_tablenum13.UseVisualStyleBackColor = true;
@@ -1680,10 +1723,10 @@
             // 
             // btn_side_tablenum14
             // 
-            this.btn_side_tablenum14.Location = new System.Drawing.Point(223, 202);
+            this.btn_side_tablenum14.Location = new System.Drawing.Point(195, 162);
             this.btn_side_tablenum14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum14.Name = "btn_side_tablenum14";
-            this.btn_side_tablenum14.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum14.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum14.TabIndex = 32;
             this.btn_side_tablenum14.Text = "14번 테이블";
             this.btn_side_tablenum14.UseVisualStyleBackColor = true;
@@ -1691,10 +1734,10 @@
             // 
             // btn_side_tablenum11
             // 
-            this.btn_side_tablenum11.Location = new System.Drawing.Point(395, 149);
+            this.btn_side_tablenum11.Location = new System.Drawing.Point(346, 119);
             this.btn_side_tablenum11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum11.Name = "btn_side_tablenum11";
-            this.btn_side_tablenum11.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum11.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum11.TabIndex = 31;
             this.btn_side_tablenum11.Text = "11번 테이블";
             this.btn_side_tablenum11.UseVisualStyleBackColor = true;
@@ -1702,10 +1745,10 @@
             // 
             // btn_side_tablenum12
             // 
-            this.btn_side_tablenum12.Location = new System.Drawing.Point(555, 149);
+            this.btn_side_tablenum12.Location = new System.Drawing.Point(486, 119);
             this.btn_side_tablenum12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum12.Name = "btn_side_tablenum12";
-            this.btn_side_tablenum12.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum12.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum12.TabIndex = 30;
             this.btn_side_tablenum12.Text = "12번 테이블";
             this.btn_side_tablenum12.UseVisualStyleBackColor = true;
@@ -1713,10 +1756,10 @@
             // 
             // btn_side_tablenum9
             // 
-            this.btn_side_tablenum9.Location = new System.Drawing.Point(69, 149);
+            this.btn_side_tablenum9.Location = new System.Drawing.Point(60, 119);
             this.btn_side_tablenum9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum9.Name = "btn_side_tablenum9";
-            this.btn_side_tablenum9.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum9.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum9.TabIndex = 29;
             this.btn_side_tablenum9.Text = "9번 테이블";
             this.btn_side_tablenum9.UseVisualStyleBackColor = true;
@@ -1724,10 +1767,10 @@
             // 
             // btn_side_tablenum10
             // 
-            this.btn_side_tablenum10.Location = new System.Drawing.Point(223, 149);
+            this.btn_side_tablenum10.Location = new System.Drawing.Point(195, 119);
             this.btn_side_tablenum10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum10.Name = "btn_side_tablenum10";
-            this.btn_side_tablenum10.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum10.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum10.TabIndex = 28;
             this.btn_side_tablenum10.Text = "10번 테이블";
             this.btn_side_tablenum10.UseVisualStyleBackColor = true;
@@ -1735,10 +1778,10 @@
             // 
             // btn_side_tablenum7
             // 
-            this.btn_side_tablenum7.Location = new System.Drawing.Point(395, 100);
+            this.btn_side_tablenum7.Location = new System.Drawing.Point(346, 80);
             this.btn_side_tablenum7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum7.Name = "btn_side_tablenum7";
-            this.btn_side_tablenum7.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum7.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum7.TabIndex = 27;
             this.btn_side_tablenum7.Text = "7번 테이블";
             this.btn_side_tablenum7.UseVisualStyleBackColor = true;
@@ -1746,10 +1789,10 @@
             // 
             // btn_side_tablenum8
             // 
-            this.btn_side_tablenum8.Location = new System.Drawing.Point(555, 100);
+            this.btn_side_tablenum8.Location = new System.Drawing.Point(486, 80);
             this.btn_side_tablenum8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum8.Name = "btn_side_tablenum8";
-            this.btn_side_tablenum8.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum8.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum8.TabIndex = 26;
             this.btn_side_tablenum8.Text = "8번 테이블";
             this.btn_side_tablenum8.UseVisualStyleBackColor = true;
@@ -1757,10 +1800,10 @@
             // 
             // btn_side_tablenum5
             // 
-            this.btn_side_tablenum5.Location = new System.Drawing.Point(69, 100);
+            this.btn_side_tablenum5.Location = new System.Drawing.Point(60, 80);
             this.btn_side_tablenum5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum5.Name = "btn_side_tablenum5";
-            this.btn_side_tablenum5.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum5.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum5.TabIndex = 25;
             this.btn_side_tablenum5.Text = "5번 테이블";
             this.btn_side_tablenum5.UseVisualStyleBackColor = true;
@@ -1768,10 +1811,10 @@
             // 
             // btn_side_tablenum6
             // 
-            this.btn_side_tablenum6.Location = new System.Drawing.Point(223, 100);
+            this.btn_side_tablenum6.Location = new System.Drawing.Point(195, 80);
             this.btn_side_tablenum6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum6.Name = "btn_side_tablenum6";
-            this.btn_side_tablenum6.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum6.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum6.TabIndex = 24;
             this.btn_side_tablenum6.Text = "6번 테이블";
             this.btn_side_tablenum6.UseVisualStyleBackColor = true;
@@ -1779,10 +1822,10 @@
             // 
             // btn_side_tablenum3
             // 
-            this.btn_side_tablenum3.Location = new System.Drawing.Point(395, 46);
+            this.btn_side_tablenum3.Location = new System.Drawing.Point(346, 37);
             this.btn_side_tablenum3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum3.Name = "btn_side_tablenum3";
-            this.btn_side_tablenum3.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum3.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum3.TabIndex = 23;
             this.btn_side_tablenum3.Text = "3번 테이블";
             this.btn_side_tablenum3.UseVisualStyleBackColor = true;
@@ -1790,10 +1833,10 @@
             // 
             // btn_side_tablenum4
             // 
-            this.btn_side_tablenum4.Location = new System.Drawing.Point(555, 46);
+            this.btn_side_tablenum4.Location = new System.Drawing.Point(486, 37);
             this.btn_side_tablenum4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum4.Name = "btn_side_tablenum4";
-            this.btn_side_tablenum4.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum4.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum4.TabIndex = 22;
             this.btn_side_tablenum4.Text = "4번 테이블";
             this.btn_side_tablenum4.UseVisualStyleBackColor = true;
@@ -1801,10 +1844,10 @@
             // 
             // btn_side_tablenum1
             // 
-            this.btn_side_tablenum1.Location = new System.Drawing.Point(69, 46);
+            this.btn_side_tablenum1.Location = new System.Drawing.Point(60, 37);
             this.btn_side_tablenum1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum1.Name = "btn_side_tablenum1";
-            this.btn_side_tablenum1.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum1.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum1.TabIndex = 21;
             this.btn_side_tablenum1.Text = "1번 테이블";
             this.btn_side_tablenum1.UseVisualStyleBackColor = true;
@@ -1812,10 +1855,10 @@
             // 
             // btn_side_tablenum2
             // 
-            this.btn_side_tablenum2.Location = new System.Drawing.Point(223, 46);
+            this.btn_side_tablenum2.Location = new System.Drawing.Point(195, 37);
             this.btn_side_tablenum2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_side_tablenum2.Name = "btn_side_tablenum2";
-            this.btn_side_tablenum2.Size = new System.Drawing.Size(96, 30);
+            this.btn_side_tablenum2.Size = new System.Drawing.Size(84, 24);
             this.btn_side_tablenum2.TabIndex = 20;
             this.btn_side_tablenum2.Text = "2번 테이블";
             this.btn_side_tablenum2.UseVisualStyleBackColor = true;
@@ -1827,13 +1870,13 @@
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.BackgroundColor = System.Drawing.Color.Bisque;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(797, 28);
+            this.dataGridView2.Location = new System.Drawing.Point(697, 22);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 27;
-            this.dataGridView2.Size = new System.Drawing.Size(347, 504);
+            this.dataGridView2.Size = new System.Drawing.Size(304, 403);
             this.dataGridView2.TabIndex = 1;
             // 
             // groupBox43
@@ -1868,21 +1911,21 @@
             this.groupBox43.Controls.Add(this.label17);
             this.groupBox43.Controls.Add(this.btn_sidemenu_add);
             this.groupBox43.Controls.Add(this.btn_sidemenu_delete);
-            this.groupBox43.Location = new System.Drawing.Point(24, 28);
+            this.groupBox43.Location = new System.Drawing.Point(21, 22);
             this.groupBox43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox43.Name = "groupBox43";
             this.groupBox43.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox43.Size = new System.Drawing.Size(729, 398);
+            this.groupBox43.Size = new System.Drawing.Size(638, 318);
             this.groupBox43.TabIndex = 0;
             this.groupBox43.TabStop = false;
             this.groupBox43.Text = "사이드 메뉴판";
             // 
             // btn_sidemenu_update
             // 
-            this.btn_sidemenu_update.Location = new System.Drawing.Point(425, 350);
+            this.btn_sidemenu_update.Location = new System.Drawing.Point(372, 280);
             this.btn_sidemenu_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_sidemenu_update.Name = "btn_sidemenu_update";
-            this.btn_sidemenu_update.Size = new System.Drawing.Size(87, 25);
+            this.btn_sidemenu_update.Size = new System.Drawing.Size(76, 20);
             this.btn_sidemenu_update.TabIndex = 42;
             this.btn_sidemenu_update.Text = "주문 수정";
             this.btn_sidemenu_update.UseVisualStyleBackColor = true;
@@ -1891,235 +1934,235 @@
             // sidemenu8
             // 
             this.sidemenu8.AutoSize = true;
-            this.sidemenu8.Location = new System.Drawing.Point(438, 196);
+            this.sidemenu8.Location = new System.Drawing.Point(383, 157);
             this.sidemenu8.Name = "sidemenu8";
-            this.sidemenu8.Size = new System.Drawing.Size(77, 15);
+            this.sidemenu8.Size = new System.Drawing.Size(67, 12);
             this.sidemenu8.TabIndex = 41;
             this.sidemenu8.Text = "sidemenu8";
             // 
             // sidemenu7
             // 
             this.sidemenu7.AutoSize = true;
-            this.sidemenu7.Location = new System.Drawing.Point(315, 196);
+            this.sidemenu7.Location = new System.Drawing.Point(276, 157);
             this.sidemenu7.Name = "sidemenu7";
-            this.sidemenu7.Size = new System.Drawing.Size(77, 15);
+            this.sidemenu7.Size = new System.Drawing.Size(67, 12);
             this.sidemenu7.TabIndex = 40;
             this.sidemenu7.Text = "sidemenu7";
             // 
             // sidemenu6
             // 
             this.sidemenu6.AutoSize = true;
-            this.sidemenu6.Location = new System.Drawing.Point(185, 196);
+            this.sidemenu6.Location = new System.Drawing.Point(162, 157);
             this.sidemenu6.Name = "sidemenu6";
-            this.sidemenu6.Size = new System.Drawing.Size(77, 15);
+            this.sidemenu6.Size = new System.Drawing.Size(67, 12);
             this.sidemenu6.TabIndex = 39;
             this.sidemenu6.Text = "sidemenu6";
             // 
             // sidemenu5
             // 
             this.sidemenu5.AutoSize = true;
-            this.sidemenu5.Location = new System.Drawing.Point(66, 196);
+            this.sidemenu5.Location = new System.Drawing.Point(58, 157);
             this.sidemenu5.Name = "sidemenu5";
-            this.sidemenu5.Size = new System.Drawing.Size(77, 15);
+            this.sidemenu5.Size = new System.Drawing.Size(67, 12);
             this.sidemenu5.TabIndex = 38;
             this.sidemenu5.Text = "sidemenu5";
             // 
             // sidemenu4
             // 
             this.sidemenu4.AutoSize = true;
-            this.sidemenu4.Location = new System.Drawing.Point(438, 42);
+            this.sidemenu4.Location = new System.Drawing.Point(383, 34);
             this.sidemenu4.Name = "sidemenu4";
-            this.sidemenu4.Size = new System.Drawing.Size(77, 15);
+            this.sidemenu4.Size = new System.Drawing.Size(67, 12);
             this.sidemenu4.TabIndex = 37;
             this.sidemenu4.Text = "sidemenu4";
             // 
             // sidemenu3
             // 
             this.sidemenu3.AutoSize = true;
-            this.sidemenu3.Location = new System.Drawing.Point(315, 44);
+            this.sidemenu3.Location = new System.Drawing.Point(276, 35);
             this.sidemenu3.Name = "sidemenu3";
-            this.sidemenu3.Size = new System.Drawing.Size(77, 15);
+            this.sidemenu3.Size = new System.Drawing.Size(67, 12);
             this.sidemenu3.TabIndex = 36;
             this.sidemenu3.Text = "sidemenu3";
             // 
             // sidemenu2
             // 
             this.sidemenu2.AutoSize = true;
-            this.sidemenu2.Location = new System.Drawing.Point(186, 42);
+            this.sidemenu2.Location = new System.Drawing.Point(163, 34);
             this.sidemenu2.Name = "sidemenu2";
-            this.sidemenu2.Size = new System.Drawing.Size(77, 15);
+            this.sidemenu2.Size = new System.Drawing.Size(67, 12);
             this.sidemenu2.TabIndex = 35;
             this.sidemenu2.Text = "sidemenu2";
             // 
             // sidemenu1
             // 
             this.sidemenu1.AutoSize = true;
-            this.sidemenu1.Location = new System.Drawing.Point(69, 44);
+            this.sidemenu1.Location = new System.Drawing.Point(60, 35);
             this.sidemenu1.Name = "sidemenu1";
-            this.sidemenu1.Size = new System.Drawing.Size(77, 15);
+            this.sidemenu1.Size = new System.Drawing.Size(67, 12);
             this.sidemenu1.TabIndex = 34;
             this.sidemenu1.Text = "sidemenu1";
             // 
             // label_side_tablenum
             // 
             this.label_side_tablenum.AutoSize = true;
-            this.label_side_tablenum.Location = new System.Drawing.Point(202, 304);
+            this.label_side_tablenum.Location = new System.Drawing.Point(177, 243);
             this.label_side_tablenum.Name = "label_side_tablenum";
-            this.label_side_tablenum.Size = new System.Drawing.Size(15, 15);
+            this.label_side_tablenum.Size = new System.Drawing.Size(11, 12);
             this.label_side_tablenum.TabIndex = 27;
             this.label_side_tablenum.Text = "0";
             this.label_side_tablenum.Visible = false;
             // 
             // label55
             // 
-            this.label55.Location = new System.Drawing.Point(75, 304);
+            this.label55.Location = new System.Drawing.Point(66, 243);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(111, 22);
+            this.label55.Size = new System.Drawing.Size(97, 18);
             this.label55.TabIndex = 26;
             this.label55.Text = "선택된 테이블:";
             // 
             // textBox_sidemenu8
             // 
-            this.textBox_sidemenu8.Location = new System.Drawing.Point(443, 228);
+            this.textBox_sidemenu8.Location = new System.Drawing.Point(388, 182);
             this.textBox_sidemenu8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_sidemenu8.Name = "textBox_sidemenu8";
-            this.textBox_sidemenu8.Size = new System.Drawing.Size(66, 25);
+            this.textBox_sidemenu8.Size = new System.Drawing.Size(58, 21);
             this.textBox_sidemenu8.TabIndex = 23;
             // 
             // textBox_sidemenu7
             // 
-            this.textBox_sidemenu7.Location = new System.Drawing.Point(321, 228);
+            this.textBox_sidemenu7.Location = new System.Drawing.Point(281, 182);
             this.textBox_sidemenu7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_sidemenu7.Name = "textBox_sidemenu7";
-            this.textBox_sidemenu7.Size = new System.Drawing.Size(66, 25);
+            this.textBox_sidemenu7.Size = new System.Drawing.Size(58, 21);
             this.textBox_sidemenu7.TabIndex = 22;
             // 
             // textBox_sidemenu6
             // 
-            this.textBox_sidemenu6.Location = new System.Drawing.Point(192, 228);
+            this.textBox_sidemenu6.Location = new System.Drawing.Point(168, 182);
             this.textBox_sidemenu6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_sidemenu6.Name = "textBox_sidemenu6";
-            this.textBox_sidemenu6.Size = new System.Drawing.Size(66, 25);
+            this.textBox_sidemenu6.Size = new System.Drawing.Size(58, 21);
             this.textBox_sidemenu6.TabIndex = 21;
             // 
             // textBox_sidemenu5
             // 
-            this.textBox_sidemenu5.Location = new System.Drawing.Point(72, 228);
+            this.textBox_sidemenu5.Location = new System.Drawing.Point(63, 182);
             this.textBox_sidemenu5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_sidemenu5.Name = "textBox_sidemenu5";
-            this.textBox_sidemenu5.Size = new System.Drawing.Size(66, 25);
+            this.textBox_sidemenu5.Size = new System.Drawing.Size(58, 21);
             this.textBox_sidemenu5.TabIndex = 20;
             // 
             // textBox_sidemenu4
             // 
-            this.textBox_sidemenu4.Location = new System.Drawing.Point(443, 79);
+            this.textBox_sidemenu4.Location = new System.Drawing.Point(388, 63);
             this.textBox_sidemenu4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_sidemenu4.Name = "textBox_sidemenu4";
-            this.textBox_sidemenu4.Size = new System.Drawing.Size(66, 25);
+            this.textBox_sidemenu4.Size = new System.Drawing.Size(58, 21);
             this.textBox_sidemenu4.TabIndex = 19;
             // 
             // textBox_sidemenu3
             // 
-            this.textBox_sidemenu3.Location = new System.Drawing.Point(321, 79);
+            this.textBox_sidemenu3.Location = new System.Drawing.Point(281, 63);
             this.textBox_sidemenu3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_sidemenu3.Name = "textBox_sidemenu3";
-            this.textBox_sidemenu3.Size = new System.Drawing.Size(66, 25);
+            this.textBox_sidemenu3.Size = new System.Drawing.Size(58, 21);
             this.textBox_sidemenu3.TabIndex = 18;
             // 
             // textBox_sidemenu2
             // 
-            this.textBox_sidemenu2.Location = new System.Drawing.Point(192, 79);
+            this.textBox_sidemenu2.Location = new System.Drawing.Point(168, 63);
             this.textBox_sidemenu2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_sidemenu2.Name = "textBox_sidemenu2";
-            this.textBox_sidemenu2.Size = new System.Drawing.Size(66, 25);
+            this.textBox_sidemenu2.Size = new System.Drawing.Size(58, 21);
             this.textBox_sidemenu2.TabIndex = 17;
             // 
             // textBox_sidemenu1
             // 
-            this.textBox_sidemenu1.Location = new System.Drawing.Point(72, 79);
+            this.textBox_sidemenu1.Location = new System.Drawing.Point(63, 63);
             this.textBox_sidemenu1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_sidemenu1.Name = "textBox_sidemenu1";
-            this.textBox_sidemenu1.Size = new System.Drawing.Size(66, 25);
+            this.textBox_sidemenu1.Size = new System.Drawing.Size(58, 21);
             this.textBox_sidemenu1.TabIndex = 16;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(395, 234);
+            this.label10.Location = new System.Drawing.Point(346, 187);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 15);
+            this.label10.Size = new System.Drawing.Size(33, 12);
             this.label10.TabIndex = 15;
             this.label10.Text = "수량:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(273, 234);
+            this.label11.Location = new System.Drawing.Point(239, 187);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 15);
+            this.label11.Size = new System.Drawing.Size(33, 12);
             this.label11.TabIndex = 14;
             this.label11.Text = "수량:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(144, 234);
+            this.label12.Location = new System.Drawing.Point(126, 187);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(42, 15);
+            this.label12.Size = new System.Drawing.Size(33, 12);
             this.label12.TabIndex = 13;
             this.label12.Text = "수량:";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(23, 234);
+            this.label13.Location = new System.Drawing.Point(20, 187);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(42, 15);
+            this.label13.Size = new System.Drawing.Size(33, 12);
             this.label13.TabIndex = 12;
             this.label13.Text = "수량:";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(395, 84);
+            this.label14.Location = new System.Drawing.Point(346, 67);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(42, 15);
+            this.label14.Size = new System.Drawing.Size(33, 12);
             this.label14.TabIndex = 11;
             this.label14.Text = "수량:";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(144, 85);
+            this.label15.Location = new System.Drawing.Point(126, 68);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(42, 15);
+            this.label15.Size = new System.Drawing.Size(33, 12);
             this.label15.TabIndex = 10;
             this.label15.Text = "수량:";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(273, 85);
+            this.label16.Location = new System.Drawing.Point(239, 68);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(42, 15);
+            this.label16.Size = new System.Drawing.Size(33, 12);
             this.label16.TabIndex = 9;
             this.label16.Text = "수량:";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(23, 84);
+            this.label17.Location = new System.Drawing.Point(20, 67);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(42, 15);
+            this.label17.Size = new System.Drawing.Size(33, 12);
             this.label17.TabIndex = 8;
             this.label17.Text = "수량:";
             // 
             // btn_sidemenu_add
             // 
-            this.btn_sidemenu_add.Location = new System.Drawing.Point(425, 300);
+            this.btn_sidemenu_add.Location = new System.Drawing.Point(372, 240);
             this.btn_sidemenu_add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_sidemenu_add.Name = "btn_sidemenu_add";
-            this.btn_sidemenu_add.Size = new System.Drawing.Size(87, 25);
+            this.btn_sidemenu_add.Size = new System.Drawing.Size(76, 20);
             this.btn_sidemenu_add.TabIndex = 7;
             this.btn_sidemenu_add.Text = "주 문";
             this.btn_sidemenu_add.UseVisualStyleBackColor = true;
@@ -2127,10 +2170,10 @@
             // 
             // btn_sidemenu_delete
             // 
-            this.btn_sidemenu_delete.Location = new System.Drawing.Point(562, 300);
+            this.btn_sidemenu_delete.Location = new System.Drawing.Point(492, 240);
             this.btn_sidemenu_delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_sidemenu_delete.Name = "btn_sidemenu_delete";
-            this.btn_sidemenu_delete.Size = new System.Drawing.Size(88, 28);
+            this.btn_sidemenu_delete.Size = new System.Drawing.Size(77, 22);
             this.btn_sidemenu_delete.TabIndex = 6;
             this.btn_sidemenu_delete.Text = "주문 취소";
             this.btn_sidemenu_delete.UseVisualStyleBackColor = true;
@@ -2143,10 +2186,10 @@
             this.panel_baverage.Controls.Add(this.groupBox7);
             this.panel_baverage.Controls.Add(this.dataGridView3);
             this.panel_baverage.Controls.Add(this.groupBox8);
-            this.panel_baverage.Location = new System.Drawing.Point(219, 119);
+            this.panel_baverage.Location = new System.Drawing.Point(192, 95);
             this.panel_baverage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_baverage.Name = "panel_baverage";
-            this.panel_baverage.Size = new System.Drawing.Size(1171, 765);
+            this.panel_baverage.Size = new System.Drawing.Size(1025, 612);
             this.panel_baverage.TabIndex = 7;
             this.panel_baverage.Visible = false;
             // 
@@ -2169,21 +2212,21 @@
             this.groupBox7.Controls.Add(this.btn_bave_tablenum4);
             this.groupBox7.Controls.Add(this.btn_bave_tablenum1);
             this.groupBox7.Controls.Add(this.btn_bave_tablenum2);
-            this.groupBox7.Location = new System.Drawing.Point(24, 455);
+            this.groupBox7.Location = new System.Drawing.Point(21, 364);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox7.Size = new System.Drawing.Size(729, 249);
+            this.groupBox7.Size = new System.Drawing.Size(638, 199);
             this.groupBox7.TabIndex = 6;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "테이블 선택";
             // 
             // btn_bave_tablenum15
             // 
-            this.btn_bave_tablenum15.Location = new System.Drawing.Point(402, 188);
+            this.btn_bave_tablenum15.Location = new System.Drawing.Point(352, 150);
             this.btn_bave_tablenum15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum15.Name = "btn_bave_tablenum15";
-            this.btn_bave_tablenum15.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum15.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum15.TabIndex = 35;
             this.btn_bave_tablenum15.Text = "15번 테이블";
             this.btn_bave_tablenum15.UseVisualStyleBackColor = true;
@@ -2191,10 +2234,10 @@
             // 
             // btn_bave_tablenum16
             // 
-            this.btn_bave_tablenum16.Location = new System.Drawing.Point(563, 188);
+            this.btn_bave_tablenum16.Location = new System.Drawing.Point(493, 150);
             this.btn_bave_tablenum16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum16.Name = "btn_bave_tablenum16";
-            this.btn_bave_tablenum16.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum16.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum16.TabIndex = 34;
             this.btn_bave_tablenum16.Text = "16번 테이블";
             this.btn_bave_tablenum16.UseVisualStyleBackColor = true;
@@ -2202,10 +2245,10 @@
             // 
             // btn_bave_tablenum13
             // 
-            this.btn_bave_tablenum13.Location = new System.Drawing.Point(75, 188);
+            this.btn_bave_tablenum13.Location = new System.Drawing.Point(66, 150);
             this.btn_bave_tablenum13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum13.Name = "btn_bave_tablenum13";
-            this.btn_bave_tablenum13.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum13.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum13.TabIndex = 33;
             this.btn_bave_tablenum13.Text = "13번 테이블";
             this.btn_bave_tablenum13.UseVisualStyleBackColor = true;
@@ -2213,10 +2256,10 @@
             // 
             // btn_bave_tablenum14
             // 
-            this.btn_bave_tablenum14.Location = new System.Drawing.Point(230, 188);
+            this.btn_bave_tablenum14.Location = new System.Drawing.Point(201, 150);
             this.btn_bave_tablenum14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum14.Name = "btn_bave_tablenum14";
-            this.btn_bave_tablenum14.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum14.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum14.TabIndex = 32;
             this.btn_bave_tablenum14.Text = "14번 테이블";
             this.btn_bave_tablenum14.UseVisualStyleBackColor = true;
@@ -2224,10 +2267,10 @@
             // 
             // btn_bave_tablenum11
             // 
-            this.btn_bave_tablenum11.Location = new System.Drawing.Point(402, 134);
+            this.btn_bave_tablenum11.Location = new System.Drawing.Point(352, 107);
             this.btn_bave_tablenum11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum11.Name = "btn_bave_tablenum11";
-            this.btn_bave_tablenum11.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum11.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum11.TabIndex = 31;
             this.btn_bave_tablenum11.Text = "11번 테이블";
             this.btn_bave_tablenum11.UseVisualStyleBackColor = true;
@@ -2235,10 +2278,10 @@
             // 
             // btn_bave_tablenum12
             // 
-            this.btn_bave_tablenum12.Location = new System.Drawing.Point(563, 134);
+            this.btn_bave_tablenum12.Location = new System.Drawing.Point(493, 107);
             this.btn_bave_tablenum12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum12.Name = "btn_bave_tablenum12";
-            this.btn_bave_tablenum12.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum12.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum12.TabIndex = 30;
             this.btn_bave_tablenum12.Text = "12번 테이블";
             this.btn_bave_tablenum12.UseVisualStyleBackColor = true;
@@ -2246,10 +2289,10 @@
             // 
             // btn_bave_tablenum9
             // 
-            this.btn_bave_tablenum9.Location = new System.Drawing.Point(75, 134);
+            this.btn_bave_tablenum9.Location = new System.Drawing.Point(66, 107);
             this.btn_bave_tablenum9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum9.Name = "btn_bave_tablenum9";
-            this.btn_bave_tablenum9.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum9.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum9.TabIndex = 29;
             this.btn_bave_tablenum9.Text = "9번 테이블";
             this.btn_bave_tablenum9.UseVisualStyleBackColor = true;
@@ -2257,10 +2300,10 @@
             // 
             // btn_bave_tablenum10
             // 
-            this.btn_bave_tablenum10.Location = new System.Drawing.Point(230, 134);
+            this.btn_bave_tablenum10.Location = new System.Drawing.Point(201, 107);
             this.btn_bave_tablenum10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum10.Name = "btn_bave_tablenum10";
-            this.btn_bave_tablenum10.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum10.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum10.TabIndex = 28;
             this.btn_bave_tablenum10.Text = "10번 테이블";
             this.btn_bave_tablenum10.UseVisualStyleBackColor = true;
@@ -2268,10 +2311,10 @@
             // 
             // btn_bave_tablenum7
             // 
-            this.btn_bave_tablenum7.Location = new System.Drawing.Point(402, 85);
+            this.btn_bave_tablenum7.Location = new System.Drawing.Point(352, 68);
             this.btn_bave_tablenum7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum7.Name = "btn_bave_tablenum7";
-            this.btn_bave_tablenum7.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum7.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum7.TabIndex = 27;
             this.btn_bave_tablenum7.Text = "7번 테이블";
             this.btn_bave_tablenum7.UseVisualStyleBackColor = true;
@@ -2279,10 +2322,10 @@
             // 
             // btn_bave_tablenum8
             // 
-            this.btn_bave_tablenum8.Location = new System.Drawing.Point(563, 85);
+            this.btn_bave_tablenum8.Location = new System.Drawing.Point(493, 68);
             this.btn_bave_tablenum8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum8.Name = "btn_bave_tablenum8";
-            this.btn_bave_tablenum8.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum8.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum8.TabIndex = 26;
             this.btn_bave_tablenum8.Text = "8번 테이블";
             this.btn_bave_tablenum8.UseVisualStyleBackColor = true;
@@ -2290,10 +2333,10 @@
             // 
             // btn_bave_tablenum5
             // 
-            this.btn_bave_tablenum5.Location = new System.Drawing.Point(75, 85);
+            this.btn_bave_tablenum5.Location = new System.Drawing.Point(66, 68);
             this.btn_bave_tablenum5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum5.Name = "btn_bave_tablenum5";
-            this.btn_bave_tablenum5.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum5.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum5.TabIndex = 25;
             this.btn_bave_tablenum5.Text = "5번 테이블";
             this.btn_bave_tablenum5.UseVisualStyleBackColor = true;
@@ -2301,10 +2344,10 @@
             // 
             // btn_bave_tablenum6
             // 
-            this.btn_bave_tablenum6.Location = new System.Drawing.Point(230, 85);
+            this.btn_bave_tablenum6.Location = new System.Drawing.Point(201, 68);
             this.btn_bave_tablenum6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum6.Name = "btn_bave_tablenum6";
-            this.btn_bave_tablenum6.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum6.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum6.TabIndex = 24;
             this.btn_bave_tablenum6.Text = "6번 테이블";
             this.btn_bave_tablenum6.UseVisualStyleBackColor = true;
@@ -2312,10 +2355,10 @@
             // 
             // btn_bave_tablenum3
             // 
-            this.btn_bave_tablenum3.Location = new System.Drawing.Point(402, 31);
+            this.btn_bave_tablenum3.Location = new System.Drawing.Point(352, 25);
             this.btn_bave_tablenum3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum3.Name = "btn_bave_tablenum3";
-            this.btn_bave_tablenum3.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum3.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum3.TabIndex = 23;
             this.btn_bave_tablenum3.Text = "3번 테이블";
             this.btn_bave_tablenum3.UseVisualStyleBackColor = true;
@@ -2323,10 +2366,10 @@
             // 
             // btn_bave_tablenum4
             // 
-            this.btn_bave_tablenum4.Location = new System.Drawing.Point(563, 31);
+            this.btn_bave_tablenum4.Location = new System.Drawing.Point(493, 25);
             this.btn_bave_tablenum4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum4.Name = "btn_bave_tablenum4";
-            this.btn_bave_tablenum4.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum4.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum4.TabIndex = 22;
             this.btn_bave_tablenum4.Text = "4번 테이블";
             this.btn_bave_tablenum4.UseVisualStyleBackColor = true;
@@ -2334,10 +2377,10 @@
             // 
             // btn_bave_tablenum1
             // 
-            this.btn_bave_tablenum1.Location = new System.Drawing.Point(75, 31);
+            this.btn_bave_tablenum1.Location = new System.Drawing.Point(66, 25);
             this.btn_bave_tablenum1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum1.Name = "btn_bave_tablenum1";
-            this.btn_bave_tablenum1.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum1.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum1.TabIndex = 21;
             this.btn_bave_tablenum1.Text = "1번 테이블";
             this.btn_bave_tablenum1.UseVisualStyleBackColor = true;
@@ -2345,10 +2388,10 @@
             // 
             // btn_bave_tablenum2
             // 
-            this.btn_bave_tablenum2.Location = new System.Drawing.Point(230, 31);
+            this.btn_bave_tablenum2.Location = new System.Drawing.Point(201, 25);
             this.btn_bave_tablenum2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bave_tablenum2.Name = "btn_bave_tablenum2";
-            this.btn_bave_tablenum2.Size = new System.Drawing.Size(98, 30);
+            this.btn_bave_tablenum2.Size = new System.Drawing.Size(86, 24);
             this.btn_bave_tablenum2.TabIndex = 20;
             this.btn_bave_tablenum2.Text = "2번 테이블";
             this.btn_bave_tablenum2.UseVisualStyleBackColor = true;
@@ -2360,13 +2403,13 @@
             this.dataGridView3.AllowUserToDeleteRows = false;
             this.dataGridView3.BackgroundColor = System.Drawing.Color.Bisque;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(797, 28);
+            this.dataGridView3.Location = new System.Drawing.Point(697, 22);
             this.dataGridView3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.RowTemplate.Height = 27;
-            this.dataGridView3.Size = new System.Drawing.Size(328, 504);
+            this.dataGridView3.Size = new System.Drawing.Size(287, 403);
             this.dataGridView3.TabIndex = 1;
             // 
             // groupBox8
@@ -2401,21 +2444,21 @@
             this.groupBox8.Controls.Add(this.label25);
             this.groupBox8.Controls.Add(this.btn_bavemenu_add);
             this.groupBox8.Controls.Add(this.btn_bavemenu_delete);
-            this.groupBox8.Location = new System.Drawing.Point(24, 28);
+            this.groupBox8.Location = new System.Drawing.Point(21, 22);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox8.Size = new System.Drawing.Size(729, 398);
+            this.groupBox8.Size = new System.Drawing.Size(638, 318);
             this.groupBox8.TabIndex = 0;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "추가 메뉴판";
             // 
             // btn_bavemenu_update
             // 
-            this.btn_bavemenu_update.Location = new System.Drawing.Point(424, 346);
+            this.btn_bavemenu_update.Location = new System.Drawing.Point(371, 277);
             this.btn_bavemenu_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bavemenu_update.Name = "btn_bavemenu_update";
-            this.btn_bavemenu_update.Size = new System.Drawing.Size(87, 28);
+            this.btn_bavemenu_update.Size = new System.Drawing.Size(76, 22);
             this.btn_bavemenu_update.TabIndex = 42;
             this.btn_bavemenu_update.Text = "주문 취소";
             this.btn_bavemenu_update.UseVisualStyleBackColor = true;
@@ -2424,235 +2467,235 @@
             // bavemenu8
             // 
             this.bavemenu8.AutoSize = true;
-            this.bavemenu8.Location = new System.Drawing.Point(443, 199);
+            this.bavemenu8.Location = new System.Drawing.Point(388, 159);
             this.bavemenu8.Name = "bavemenu8";
-            this.bavemenu8.Size = new System.Drawing.Size(82, 15);
+            this.bavemenu8.Size = new System.Drawing.Size(70, 12);
             this.bavemenu8.TabIndex = 41;
             this.bavemenu8.Text = "bavemenu8";
             // 
             // bavemenu7
             // 
             this.bavemenu7.AutoSize = true;
-            this.bavemenu7.Location = new System.Drawing.Point(321, 199);
+            this.bavemenu7.Location = new System.Drawing.Point(281, 159);
             this.bavemenu7.Name = "bavemenu7";
-            this.bavemenu7.Size = new System.Drawing.Size(82, 15);
+            this.bavemenu7.Size = new System.Drawing.Size(70, 12);
             this.bavemenu7.TabIndex = 40;
             this.bavemenu7.Text = "bavemenu7";
             // 
             // bavemenu6
             // 
             this.bavemenu6.AutoSize = true;
-            this.bavemenu6.Location = new System.Drawing.Point(191, 199);
+            this.bavemenu6.Location = new System.Drawing.Point(167, 159);
             this.bavemenu6.Name = "bavemenu6";
-            this.bavemenu6.Size = new System.Drawing.Size(82, 15);
+            this.bavemenu6.Size = new System.Drawing.Size(70, 12);
             this.bavemenu6.TabIndex = 39;
             this.bavemenu6.Text = "bavemenu6";
             // 
             // bavemenu5
             // 
             this.bavemenu5.AutoSize = true;
-            this.bavemenu5.Location = new System.Drawing.Point(72, 199);
+            this.bavemenu5.Location = new System.Drawing.Point(63, 159);
             this.bavemenu5.Name = "bavemenu5";
-            this.bavemenu5.Size = new System.Drawing.Size(82, 15);
+            this.bavemenu5.Size = new System.Drawing.Size(70, 12);
             this.bavemenu5.TabIndex = 38;
             this.bavemenu5.Text = "bavemenu5";
             // 
             // bavemenu4
             // 
             this.bavemenu4.AutoSize = true;
-            this.bavemenu4.Location = new System.Drawing.Point(443, 46);
+            this.bavemenu4.Location = new System.Drawing.Point(388, 37);
             this.bavemenu4.Name = "bavemenu4";
-            this.bavemenu4.Size = new System.Drawing.Size(82, 15);
+            this.bavemenu4.Size = new System.Drawing.Size(70, 12);
             this.bavemenu4.TabIndex = 37;
             this.bavemenu4.Text = "bavemenu4";
             // 
             // bavemenu3
             // 
             this.bavemenu3.AutoSize = true;
-            this.bavemenu3.Location = new System.Drawing.Point(321, 48);
+            this.bavemenu3.Location = new System.Drawing.Point(281, 38);
             this.bavemenu3.Name = "bavemenu3";
-            this.bavemenu3.Size = new System.Drawing.Size(82, 15);
+            this.bavemenu3.Size = new System.Drawing.Size(70, 12);
             this.bavemenu3.TabIndex = 36;
             this.bavemenu3.Text = "bavemenu3";
             // 
             // bavemenu2
             // 
             this.bavemenu2.AutoSize = true;
-            this.bavemenu2.Location = new System.Drawing.Point(192, 46);
+            this.bavemenu2.Location = new System.Drawing.Point(168, 37);
             this.bavemenu2.Name = "bavemenu2";
-            this.bavemenu2.Size = new System.Drawing.Size(82, 15);
+            this.bavemenu2.Size = new System.Drawing.Size(70, 12);
             this.bavemenu2.TabIndex = 35;
             this.bavemenu2.Text = "bavemenu2";
             // 
             // bavemenu1
             // 
             this.bavemenu1.AutoSize = true;
-            this.bavemenu1.Location = new System.Drawing.Point(75, 48);
+            this.bavemenu1.Location = new System.Drawing.Point(66, 38);
             this.bavemenu1.Name = "bavemenu1";
-            this.bavemenu1.Size = new System.Drawing.Size(82, 15);
+            this.bavemenu1.Size = new System.Drawing.Size(70, 12);
             this.bavemenu1.TabIndex = 34;
             this.bavemenu1.Text = "bavemenu1";
             // 
             // label_bave_tablenum
             // 
             this.label_bave_tablenum.AutoSize = true;
-            this.label_bave_tablenum.Location = new System.Drawing.Point(202, 304);
+            this.label_bave_tablenum.Location = new System.Drawing.Point(177, 243);
             this.label_bave_tablenum.Name = "label_bave_tablenum";
-            this.label_bave_tablenum.Size = new System.Drawing.Size(15, 15);
+            this.label_bave_tablenum.Size = new System.Drawing.Size(11, 12);
             this.label_bave_tablenum.TabIndex = 27;
             this.label_bave_tablenum.Text = "0";
             this.label_bave_tablenum.Visible = false;
             // 
             // label53
             // 
-            this.label53.Location = new System.Drawing.Point(75, 304);
+            this.label53.Location = new System.Drawing.Point(66, 243);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(111, 22);
+            this.label53.Size = new System.Drawing.Size(97, 18);
             this.label53.TabIndex = 26;
             this.label53.Text = "선택된 테이블:";
             // 
             // textBox_bavemenu8
             // 
-            this.textBox_bavemenu8.Location = new System.Drawing.Point(443, 228);
+            this.textBox_bavemenu8.Location = new System.Drawing.Point(388, 182);
             this.textBox_bavemenu8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_bavemenu8.Name = "textBox_bavemenu8";
-            this.textBox_bavemenu8.Size = new System.Drawing.Size(66, 25);
+            this.textBox_bavemenu8.Size = new System.Drawing.Size(58, 21);
             this.textBox_bavemenu8.TabIndex = 23;
             // 
             // textBox_bavemenu7
             // 
-            this.textBox_bavemenu7.Location = new System.Drawing.Point(321, 228);
+            this.textBox_bavemenu7.Location = new System.Drawing.Point(281, 182);
             this.textBox_bavemenu7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_bavemenu7.Name = "textBox_bavemenu7";
-            this.textBox_bavemenu7.Size = new System.Drawing.Size(66, 25);
+            this.textBox_bavemenu7.Size = new System.Drawing.Size(58, 21);
             this.textBox_bavemenu7.TabIndex = 22;
             // 
             // textBox_bavemenu6
             // 
-            this.textBox_bavemenu6.Location = new System.Drawing.Point(192, 228);
+            this.textBox_bavemenu6.Location = new System.Drawing.Point(168, 182);
             this.textBox_bavemenu6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_bavemenu6.Name = "textBox_bavemenu6";
-            this.textBox_bavemenu6.Size = new System.Drawing.Size(66, 25);
+            this.textBox_bavemenu6.Size = new System.Drawing.Size(58, 21);
             this.textBox_bavemenu6.TabIndex = 21;
             // 
             // textBox_bavemenu5
             // 
-            this.textBox_bavemenu5.Location = new System.Drawing.Point(72, 228);
+            this.textBox_bavemenu5.Location = new System.Drawing.Point(63, 182);
             this.textBox_bavemenu5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_bavemenu5.Name = "textBox_bavemenu5";
-            this.textBox_bavemenu5.Size = new System.Drawing.Size(66, 25);
+            this.textBox_bavemenu5.Size = new System.Drawing.Size(58, 21);
             this.textBox_bavemenu5.TabIndex = 20;
             // 
             // textBox_bavemenu4
             // 
-            this.textBox_bavemenu4.Location = new System.Drawing.Point(443, 79);
+            this.textBox_bavemenu4.Location = new System.Drawing.Point(388, 63);
             this.textBox_bavemenu4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_bavemenu4.Name = "textBox_bavemenu4";
-            this.textBox_bavemenu4.Size = new System.Drawing.Size(66, 25);
+            this.textBox_bavemenu4.Size = new System.Drawing.Size(58, 21);
             this.textBox_bavemenu4.TabIndex = 19;
             // 
             // textBox_bavemenu3
             // 
-            this.textBox_bavemenu3.Location = new System.Drawing.Point(321, 79);
+            this.textBox_bavemenu3.Location = new System.Drawing.Point(281, 63);
             this.textBox_bavemenu3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_bavemenu3.Name = "textBox_bavemenu3";
-            this.textBox_bavemenu3.Size = new System.Drawing.Size(66, 25);
+            this.textBox_bavemenu3.Size = new System.Drawing.Size(58, 21);
             this.textBox_bavemenu3.TabIndex = 18;
             // 
             // textBox_bavemenu2
             // 
-            this.textBox_bavemenu2.Location = new System.Drawing.Point(192, 79);
+            this.textBox_bavemenu2.Location = new System.Drawing.Point(168, 63);
             this.textBox_bavemenu2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_bavemenu2.Name = "textBox_bavemenu2";
-            this.textBox_bavemenu2.Size = new System.Drawing.Size(66, 25);
+            this.textBox_bavemenu2.Size = new System.Drawing.Size(58, 21);
             this.textBox_bavemenu2.TabIndex = 17;
             // 
             // textBox_bavemenu1
             // 
-            this.textBox_bavemenu1.Location = new System.Drawing.Point(72, 79);
+            this.textBox_bavemenu1.Location = new System.Drawing.Point(63, 63);
             this.textBox_bavemenu1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_bavemenu1.Name = "textBox_bavemenu1";
-            this.textBox_bavemenu1.Size = new System.Drawing.Size(66, 25);
+            this.textBox_bavemenu1.Size = new System.Drawing.Size(58, 21);
             this.textBox_bavemenu1.TabIndex = 16;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(395, 234);
+            this.label18.Location = new System.Drawing.Point(346, 187);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(42, 15);
+            this.label18.Size = new System.Drawing.Size(33, 12);
             this.label18.TabIndex = 15;
             this.label18.Text = "수량:";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(273, 234);
+            this.label19.Location = new System.Drawing.Point(239, 187);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(42, 15);
+            this.label19.Size = new System.Drawing.Size(33, 12);
             this.label19.TabIndex = 14;
             this.label19.Text = "수량:";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(144, 234);
+            this.label20.Location = new System.Drawing.Point(126, 187);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(42, 15);
+            this.label20.Size = new System.Drawing.Size(33, 12);
             this.label20.TabIndex = 13;
             this.label20.Text = "수량:";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(23, 234);
+            this.label21.Location = new System.Drawing.Point(20, 187);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(42, 15);
+            this.label21.Size = new System.Drawing.Size(33, 12);
             this.label21.TabIndex = 12;
             this.label21.Text = "수량:";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(395, 84);
+            this.label22.Location = new System.Drawing.Point(346, 67);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(42, 15);
+            this.label22.Size = new System.Drawing.Size(33, 12);
             this.label22.TabIndex = 11;
             this.label22.Text = "수량:";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(144, 85);
+            this.label23.Location = new System.Drawing.Point(126, 68);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(42, 15);
+            this.label23.Size = new System.Drawing.Size(33, 12);
             this.label23.TabIndex = 10;
             this.label23.Text = "수량:";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(273, 85);
+            this.label24.Location = new System.Drawing.Point(239, 68);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(42, 15);
+            this.label24.Size = new System.Drawing.Size(33, 12);
             this.label24.TabIndex = 9;
             this.label24.Text = "수량:";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(23, 84);
+            this.label25.Location = new System.Drawing.Point(20, 67);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(42, 15);
+            this.label25.Size = new System.Drawing.Size(33, 12);
             this.label25.TabIndex = 8;
             this.label25.Text = "수량:";
             // 
             // btn_bavemenu_add
             // 
-            this.btn_bavemenu_add.Location = new System.Drawing.Point(424, 300);
+            this.btn_bavemenu_add.Location = new System.Drawing.Point(371, 240);
             this.btn_bavemenu_add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bavemenu_add.Name = "btn_bavemenu_add";
-            this.btn_bavemenu_add.Size = new System.Drawing.Size(88, 26);
+            this.btn_bavemenu_add.Size = new System.Drawing.Size(77, 21);
             this.btn_bavemenu_add.TabIndex = 7;
             this.btn_bavemenu_add.Text = "주 문";
             this.btn_bavemenu_add.UseVisualStyleBackColor = true;
@@ -2660,10 +2703,10 @@
             // 
             // btn_bavemenu_delete
             // 
-            this.btn_bavemenu_delete.Location = new System.Drawing.Point(562, 300);
+            this.btn_bavemenu_delete.Location = new System.Drawing.Point(492, 240);
             this.btn_bavemenu_delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_bavemenu_delete.Name = "btn_bavemenu_delete";
-            this.btn_bavemenu_delete.Size = new System.Drawing.Size(86, 28);
+            this.btn_bavemenu_delete.Size = new System.Drawing.Size(75, 22);
             this.btn_bavemenu_delete.TabIndex = 6;
             this.btn_bavemenu_delete.Text = "주문 취소";
             this.btn_bavemenu_delete.UseVisualStyleBackColor = true;
@@ -2676,10 +2719,10 @@
             this.panel_addmenu.Controls.Add(this.groupBox9);
             this.panel_addmenu.Controls.Add(this.dataGridView4);
             this.panel_addmenu.Controls.Add(this.groupBox10);
-            this.panel_addmenu.Location = new System.Drawing.Point(219, 119);
+            this.panel_addmenu.Location = new System.Drawing.Point(192, 95);
             this.panel_addmenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_addmenu.Name = "panel_addmenu";
-            this.panel_addmenu.Size = new System.Drawing.Size(1171, 765);
+            this.panel_addmenu.Size = new System.Drawing.Size(1025, 612);
             this.panel_addmenu.TabIndex = 7;
             this.panel_addmenu.Visible = false;
             // 
@@ -2702,21 +2745,21 @@
             this.groupBox9.Controls.Add(this.btn_add_tablenum4);
             this.groupBox9.Controls.Add(this.btn_add_tablenum1);
             this.groupBox9.Controls.Add(this.btn_add_tablenum2);
-            this.groupBox9.Location = new System.Drawing.Point(24, 455);
+            this.groupBox9.Location = new System.Drawing.Point(21, 364);
             this.groupBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox9.Size = new System.Drawing.Size(729, 249);
+            this.groupBox9.Size = new System.Drawing.Size(638, 199);
             this.groupBox9.TabIndex = 6;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "테이블 선택";
             // 
             // btn_add_tablenum15
             // 
-            this.btn_add_tablenum15.Location = new System.Drawing.Point(393, 196);
+            this.btn_add_tablenum15.Location = new System.Drawing.Point(344, 157);
             this.btn_add_tablenum15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum15.Name = "btn_add_tablenum15";
-            this.btn_add_tablenum15.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum15.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum15.TabIndex = 35;
             this.btn_add_tablenum15.Text = "15번 테이블";
             this.btn_add_tablenum15.UseVisualStyleBackColor = true;
@@ -2724,10 +2767,10 @@
             // 
             // btn_add_tablenum16
             // 
-            this.btn_add_tablenum16.Location = new System.Drawing.Point(554, 196);
+            this.btn_add_tablenum16.Location = new System.Drawing.Point(485, 157);
             this.btn_add_tablenum16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum16.Name = "btn_add_tablenum16";
-            this.btn_add_tablenum16.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum16.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum16.TabIndex = 34;
             this.btn_add_tablenum16.Text = "16번 테이블";
             this.btn_add_tablenum16.UseVisualStyleBackColor = true;
@@ -2735,10 +2778,10 @@
             // 
             // btn_add_tablenum13
             // 
-            this.btn_add_tablenum13.Location = new System.Drawing.Point(66, 196);
+            this.btn_add_tablenum13.Location = new System.Drawing.Point(58, 157);
             this.btn_add_tablenum13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum13.Name = "btn_add_tablenum13";
-            this.btn_add_tablenum13.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum13.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum13.TabIndex = 33;
             this.btn_add_tablenum13.Text = "13번 테이블";
             this.btn_add_tablenum13.UseVisualStyleBackColor = true;
@@ -2746,10 +2789,10 @@
             // 
             // btn_add_tablenum14
             // 
-            this.btn_add_tablenum14.Location = new System.Drawing.Point(221, 196);
+            this.btn_add_tablenum14.Location = new System.Drawing.Point(193, 157);
             this.btn_add_tablenum14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum14.Name = "btn_add_tablenum14";
-            this.btn_add_tablenum14.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum14.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum14.TabIndex = 32;
             this.btn_add_tablenum14.Text = "14번 테이블";
             this.btn_add_tablenum14.UseVisualStyleBackColor = true;
@@ -2757,10 +2800,10 @@
             // 
             // btn_add_tablenum11
             // 
-            this.btn_add_tablenum11.Location = new System.Drawing.Point(393, 142);
+            this.btn_add_tablenum11.Location = new System.Drawing.Point(344, 114);
             this.btn_add_tablenum11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum11.Name = "btn_add_tablenum11";
-            this.btn_add_tablenum11.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum11.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum11.TabIndex = 31;
             this.btn_add_tablenum11.Text = "11번 테이블";
             this.btn_add_tablenum11.UseVisualStyleBackColor = true;
@@ -2768,10 +2811,10 @@
             // 
             // btn_add_tablenum12
             // 
-            this.btn_add_tablenum12.Location = new System.Drawing.Point(554, 142);
+            this.btn_add_tablenum12.Location = new System.Drawing.Point(485, 114);
             this.btn_add_tablenum12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum12.Name = "btn_add_tablenum12";
-            this.btn_add_tablenum12.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum12.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum12.TabIndex = 30;
             this.btn_add_tablenum12.Text = "12번 테이블";
             this.btn_add_tablenum12.UseVisualStyleBackColor = true;
@@ -2779,10 +2822,10 @@
             // 
             // btn_add_tablenum9
             // 
-            this.btn_add_tablenum9.Location = new System.Drawing.Point(66, 142);
+            this.btn_add_tablenum9.Location = new System.Drawing.Point(58, 114);
             this.btn_add_tablenum9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum9.Name = "btn_add_tablenum9";
-            this.btn_add_tablenum9.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum9.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum9.TabIndex = 29;
             this.btn_add_tablenum9.Text = "9번 테이블";
             this.btn_add_tablenum9.UseVisualStyleBackColor = true;
@@ -2790,10 +2833,10 @@
             // 
             // btn_add_tablenum10
             // 
-            this.btn_add_tablenum10.Location = new System.Drawing.Point(221, 142);
+            this.btn_add_tablenum10.Location = new System.Drawing.Point(193, 114);
             this.btn_add_tablenum10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum10.Name = "btn_add_tablenum10";
-            this.btn_add_tablenum10.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum10.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum10.TabIndex = 28;
             this.btn_add_tablenum10.Text = "10번 테이블";
             this.btn_add_tablenum10.UseVisualStyleBackColor = true;
@@ -2801,10 +2844,10 @@
             // 
             // btn_add_tablenum7
             // 
-            this.btn_add_tablenum7.Location = new System.Drawing.Point(393, 92);
+            this.btn_add_tablenum7.Location = new System.Drawing.Point(344, 74);
             this.btn_add_tablenum7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum7.Name = "btn_add_tablenum7";
-            this.btn_add_tablenum7.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum7.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum7.TabIndex = 27;
             this.btn_add_tablenum7.Text = "7번 테이블";
             this.btn_add_tablenum7.UseVisualStyleBackColor = true;
@@ -2812,10 +2855,10 @@
             // 
             // btn_add_tablenum8
             // 
-            this.btn_add_tablenum8.Location = new System.Drawing.Point(554, 92);
+            this.btn_add_tablenum8.Location = new System.Drawing.Point(485, 74);
             this.btn_add_tablenum8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum8.Name = "btn_add_tablenum8";
-            this.btn_add_tablenum8.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum8.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum8.TabIndex = 26;
             this.btn_add_tablenum8.Text = "8번 테이블";
             this.btn_add_tablenum8.UseVisualStyleBackColor = true;
@@ -2823,10 +2866,10 @@
             // 
             // btn_add_tablenum5
             // 
-            this.btn_add_tablenum5.Location = new System.Drawing.Point(66, 92);
+            this.btn_add_tablenum5.Location = new System.Drawing.Point(58, 74);
             this.btn_add_tablenum5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum5.Name = "btn_add_tablenum5";
-            this.btn_add_tablenum5.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum5.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum5.TabIndex = 25;
             this.btn_add_tablenum5.Text = "5번 테이블";
             this.btn_add_tablenum5.UseVisualStyleBackColor = true;
@@ -2834,10 +2877,10 @@
             // 
             // btn_add_tablenum6
             // 
-            this.btn_add_tablenum6.Location = new System.Drawing.Point(221, 92);
+            this.btn_add_tablenum6.Location = new System.Drawing.Point(193, 74);
             this.btn_add_tablenum6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum6.Name = "btn_add_tablenum6";
-            this.btn_add_tablenum6.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum6.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum6.TabIndex = 24;
             this.btn_add_tablenum6.Text = "6번 테이블";
             this.btn_add_tablenum6.UseVisualStyleBackColor = true;
@@ -2845,10 +2888,10 @@
             // 
             // btn_add_tablenum3
             // 
-            this.btn_add_tablenum3.Location = new System.Drawing.Point(393, 39);
+            this.btn_add_tablenum3.Location = new System.Drawing.Point(344, 31);
             this.btn_add_tablenum3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum3.Name = "btn_add_tablenum3";
-            this.btn_add_tablenum3.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum3.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum3.TabIndex = 23;
             this.btn_add_tablenum3.Text = "3번 테이블";
             this.btn_add_tablenum3.UseVisualStyleBackColor = true;
@@ -2856,10 +2899,10 @@
             // 
             // btn_add_tablenum4
             // 
-            this.btn_add_tablenum4.Location = new System.Drawing.Point(554, 39);
+            this.btn_add_tablenum4.Location = new System.Drawing.Point(485, 31);
             this.btn_add_tablenum4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum4.Name = "btn_add_tablenum4";
-            this.btn_add_tablenum4.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum4.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum4.TabIndex = 22;
             this.btn_add_tablenum4.Text = "4번 테이블";
             this.btn_add_tablenum4.UseVisualStyleBackColor = true;
@@ -2867,10 +2910,10 @@
             // 
             // btn_add_tablenum1
             // 
-            this.btn_add_tablenum1.Location = new System.Drawing.Point(66, 39);
+            this.btn_add_tablenum1.Location = new System.Drawing.Point(58, 31);
             this.btn_add_tablenum1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum1.Name = "btn_add_tablenum1";
-            this.btn_add_tablenum1.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum1.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum1.TabIndex = 21;
             this.btn_add_tablenum1.Text = "1번 테이블";
             this.btn_add_tablenum1.UseVisualStyleBackColor = true;
@@ -2878,10 +2921,10 @@
             // 
             // btn_add_tablenum2
             // 
-            this.btn_add_tablenum2.Location = new System.Drawing.Point(221, 39);
+            this.btn_add_tablenum2.Location = new System.Drawing.Point(193, 31);
             this.btn_add_tablenum2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_add_tablenum2.Name = "btn_add_tablenum2";
-            this.btn_add_tablenum2.Size = new System.Drawing.Size(98, 30);
+            this.btn_add_tablenum2.Size = new System.Drawing.Size(86, 24);
             this.btn_add_tablenum2.TabIndex = 20;
             this.btn_add_tablenum2.Text = "2번 테이블";
             this.btn_add_tablenum2.UseVisualStyleBackColor = true;
@@ -2893,13 +2936,13 @@
             this.dataGridView4.AllowUserToDeleteRows = false;
             this.dataGridView4.BackgroundColor = System.Drawing.Color.Bisque;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(797, 28);
+            this.dataGridView4.Location = new System.Drawing.Point(697, 22);
             this.dataGridView4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.ReadOnly = true;
             this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.RowTemplate.Height = 27;
-            this.dataGridView4.Size = new System.Drawing.Size(328, 504);
+            this.dataGridView4.Size = new System.Drawing.Size(287, 403);
             this.dataGridView4.TabIndex = 1;
             // 
             // groupBox10
@@ -2934,21 +2977,21 @@
             this.groupBox10.Controls.Add(this.label33);
             this.groupBox10.Controls.Add(this.btn_addmenu_add);
             this.groupBox10.Controls.Add(this.btn_addmenu_delete);
-            this.groupBox10.Location = new System.Drawing.Point(24, 28);
+            this.groupBox10.Location = new System.Drawing.Point(21, 22);
             this.groupBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox10.Size = new System.Drawing.Size(729, 398);
+            this.groupBox10.Size = new System.Drawing.Size(638, 318);
             this.groupBox10.TabIndex = 0;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "추가 메뉴판";
             // 
             // btn_addmenu_update
             // 
-            this.btn_addmenu_update.Location = new System.Drawing.Point(426, 352);
+            this.btn_addmenu_update.Location = new System.Drawing.Point(373, 282);
             this.btn_addmenu_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_addmenu_update.Name = "btn_addmenu_update";
-            this.btn_addmenu_update.Size = new System.Drawing.Size(85, 25);
+            this.btn_addmenu_update.Size = new System.Drawing.Size(74, 20);
             this.btn_addmenu_update.TabIndex = 36;
             this.btn_addmenu_update.Text = "주문 수정";
             this.btn_addmenu_update.UseVisualStyleBackColor = true;
@@ -2957,235 +3000,235 @@
             // addmenu8
             // 
             this.addmenu8.AutoSize = true;
-            this.addmenu8.Location = new System.Drawing.Point(437, 188);
+            this.addmenu8.Location = new System.Drawing.Point(382, 150);
             this.addmenu8.Name = "addmenu8";
-            this.addmenu8.Size = new System.Drawing.Size(74, 15);
+            this.addmenu8.Size = new System.Drawing.Size(64, 12);
             this.addmenu8.TabIndex = 35;
             this.addmenu8.Text = "addmenu8";
             // 
             // addmenu7
             // 
             this.addmenu7.AutoSize = true;
-            this.addmenu7.Location = new System.Drawing.Point(314, 188);
+            this.addmenu7.Location = new System.Drawing.Point(275, 150);
             this.addmenu7.Name = "addmenu7";
-            this.addmenu7.Size = new System.Drawing.Size(74, 15);
+            this.addmenu7.Size = new System.Drawing.Size(64, 12);
             this.addmenu7.TabIndex = 34;
             this.addmenu7.Text = "addmenu7";
             // 
             // addmenu6
             // 
             this.addmenu6.AutoSize = true;
-            this.addmenu6.Location = new System.Drawing.Point(187, 188);
+            this.addmenu6.Location = new System.Drawing.Point(164, 150);
             this.addmenu6.Name = "addmenu6";
-            this.addmenu6.Size = new System.Drawing.Size(74, 15);
+            this.addmenu6.Size = new System.Drawing.Size(64, 12);
             this.addmenu6.TabIndex = 33;
             this.addmenu6.Text = "addmenu6";
             // 
             // addmenu5
             // 
             this.addmenu5.AutoSize = true;
-            this.addmenu5.Location = new System.Drawing.Point(69, 189);
+            this.addmenu5.Location = new System.Drawing.Point(60, 151);
             this.addmenu5.Name = "addmenu5";
-            this.addmenu5.Size = new System.Drawing.Size(74, 15);
+            this.addmenu5.Size = new System.Drawing.Size(64, 12);
             this.addmenu5.TabIndex = 32;
             this.addmenu5.Text = "addmenu5";
             // 
             // addmenu4
             // 
             this.addmenu4.AutoSize = true;
-            this.addmenu4.Location = new System.Drawing.Point(441, 38);
+            this.addmenu4.Location = new System.Drawing.Point(386, 30);
             this.addmenu4.Name = "addmenu4";
-            this.addmenu4.Size = new System.Drawing.Size(74, 15);
+            this.addmenu4.Size = new System.Drawing.Size(64, 12);
             this.addmenu4.TabIndex = 31;
             this.addmenu4.Text = "addmenu4";
             // 
             // addmenu3
             // 
             this.addmenu3.AutoSize = true;
-            this.addmenu3.Location = new System.Drawing.Point(318, 38);
+            this.addmenu3.Location = new System.Drawing.Point(278, 30);
             this.addmenu3.Name = "addmenu3";
-            this.addmenu3.Size = new System.Drawing.Size(74, 15);
+            this.addmenu3.Size = new System.Drawing.Size(64, 12);
             this.addmenu3.TabIndex = 30;
             this.addmenu3.Text = "addmenu3";
             // 
             // addmenu2
             // 
             this.addmenu2.AutoSize = true;
-            this.addmenu2.Location = new System.Drawing.Point(192, 38);
+            this.addmenu2.Location = new System.Drawing.Point(168, 30);
             this.addmenu2.Name = "addmenu2";
-            this.addmenu2.Size = new System.Drawing.Size(74, 15);
+            this.addmenu2.Size = new System.Drawing.Size(64, 12);
             this.addmenu2.TabIndex = 29;
             this.addmenu2.Text = "addmenu2";
             // 
             // addmenu1
             // 
             this.addmenu1.AutoSize = true;
-            this.addmenu1.Location = new System.Drawing.Point(72, 38);
+            this.addmenu1.Location = new System.Drawing.Point(63, 30);
             this.addmenu1.Name = "addmenu1";
-            this.addmenu1.Size = new System.Drawing.Size(74, 15);
+            this.addmenu1.Size = new System.Drawing.Size(64, 12);
             this.addmenu1.TabIndex = 28;
             this.addmenu1.Text = "addmenu1";
             // 
             // label_add_tablenum
             // 
             this.label_add_tablenum.AutoSize = true;
-            this.label_add_tablenum.Location = new System.Drawing.Point(187, 304);
+            this.label_add_tablenum.Location = new System.Drawing.Point(164, 243);
             this.label_add_tablenum.Name = "label_add_tablenum";
-            this.label_add_tablenum.Size = new System.Drawing.Size(15, 15);
+            this.label_add_tablenum.Size = new System.Drawing.Size(11, 12);
             this.label_add_tablenum.TabIndex = 27;
             this.label_add_tablenum.Text = "0";
             this.label_add_tablenum.Visible = false;
             // 
             // label51
             // 
-            this.label51.Location = new System.Drawing.Point(62, 304);
+            this.label51.Location = new System.Drawing.Point(54, 243);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(111, 22);
+            this.label51.Size = new System.Drawing.Size(97, 18);
             this.label51.TabIndex = 26;
             this.label51.Text = "선택된 테이블:";
             // 
             // textBox_addmenu8
             // 
-            this.textBox_addmenu8.Location = new System.Drawing.Point(443, 228);
+            this.textBox_addmenu8.Location = new System.Drawing.Point(388, 182);
             this.textBox_addmenu8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_addmenu8.Name = "textBox_addmenu8";
-            this.textBox_addmenu8.Size = new System.Drawing.Size(66, 25);
+            this.textBox_addmenu8.Size = new System.Drawing.Size(58, 21);
             this.textBox_addmenu8.TabIndex = 23;
             // 
             // textBox_addmenu7
             // 
-            this.textBox_addmenu7.Location = new System.Drawing.Point(321, 228);
+            this.textBox_addmenu7.Location = new System.Drawing.Point(281, 182);
             this.textBox_addmenu7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_addmenu7.Name = "textBox_addmenu7";
-            this.textBox_addmenu7.Size = new System.Drawing.Size(66, 25);
+            this.textBox_addmenu7.Size = new System.Drawing.Size(58, 21);
             this.textBox_addmenu7.TabIndex = 22;
             // 
             // textBox_addmenu6
             // 
-            this.textBox_addmenu6.Location = new System.Drawing.Point(192, 228);
+            this.textBox_addmenu6.Location = new System.Drawing.Point(168, 182);
             this.textBox_addmenu6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_addmenu6.Name = "textBox_addmenu6";
-            this.textBox_addmenu6.Size = new System.Drawing.Size(66, 25);
+            this.textBox_addmenu6.Size = new System.Drawing.Size(58, 21);
             this.textBox_addmenu6.TabIndex = 21;
             // 
             // textBox_addmenu5
             // 
-            this.textBox_addmenu5.Location = new System.Drawing.Point(72, 228);
+            this.textBox_addmenu5.Location = new System.Drawing.Point(63, 182);
             this.textBox_addmenu5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_addmenu5.Name = "textBox_addmenu5";
-            this.textBox_addmenu5.Size = new System.Drawing.Size(66, 25);
+            this.textBox_addmenu5.Size = new System.Drawing.Size(58, 21);
             this.textBox_addmenu5.TabIndex = 20;
             // 
             // textBox_addmenu4
             // 
-            this.textBox_addmenu4.Location = new System.Drawing.Point(443, 79);
+            this.textBox_addmenu4.Location = new System.Drawing.Point(388, 63);
             this.textBox_addmenu4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_addmenu4.Name = "textBox_addmenu4";
-            this.textBox_addmenu4.Size = new System.Drawing.Size(66, 25);
+            this.textBox_addmenu4.Size = new System.Drawing.Size(58, 21);
             this.textBox_addmenu4.TabIndex = 19;
             // 
             // textBox_addmenu3
             // 
-            this.textBox_addmenu3.Location = new System.Drawing.Point(321, 79);
+            this.textBox_addmenu3.Location = new System.Drawing.Point(281, 63);
             this.textBox_addmenu3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_addmenu3.Name = "textBox_addmenu3";
-            this.textBox_addmenu3.Size = new System.Drawing.Size(66, 25);
+            this.textBox_addmenu3.Size = new System.Drawing.Size(58, 21);
             this.textBox_addmenu3.TabIndex = 18;
             // 
             // textBox_addmenu2
             // 
-            this.textBox_addmenu2.Location = new System.Drawing.Point(192, 79);
+            this.textBox_addmenu2.Location = new System.Drawing.Point(168, 63);
             this.textBox_addmenu2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_addmenu2.Name = "textBox_addmenu2";
-            this.textBox_addmenu2.Size = new System.Drawing.Size(66, 25);
+            this.textBox_addmenu2.Size = new System.Drawing.Size(58, 21);
             this.textBox_addmenu2.TabIndex = 17;
             // 
             // textBox_addmenu1
             // 
-            this.textBox_addmenu1.Location = new System.Drawing.Point(72, 79);
+            this.textBox_addmenu1.Location = new System.Drawing.Point(63, 63);
             this.textBox_addmenu1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_addmenu1.Name = "textBox_addmenu1";
-            this.textBox_addmenu1.Size = new System.Drawing.Size(66, 25);
+            this.textBox_addmenu1.Size = new System.Drawing.Size(58, 21);
             this.textBox_addmenu1.TabIndex = 16;
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(395, 234);
+            this.label26.Location = new System.Drawing.Point(346, 187);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(42, 15);
+            this.label26.Size = new System.Drawing.Size(33, 12);
             this.label26.TabIndex = 15;
             this.label26.Text = "수량:";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(273, 234);
+            this.label27.Location = new System.Drawing.Point(239, 187);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(42, 15);
+            this.label27.Size = new System.Drawing.Size(33, 12);
             this.label27.TabIndex = 14;
             this.label27.Text = "수량:";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(144, 234);
+            this.label28.Location = new System.Drawing.Point(126, 187);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(42, 15);
+            this.label28.Size = new System.Drawing.Size(33, 12);
             this.label28.TabIndex = 13;
             this.label28.Text = "수량:";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(23, 234);
+            this.label29.Location = new System.Drawing.Point(20, 187);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(42, 15);
+            this.label29.Size = new System.Drawing.Size(33, 12);
             this.label29.TabIndex = 12;
             this.label29.Text = "수량:";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(395, 84);
+            this.label30.Location = new System.Drawing.Point(346, 67);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(42, 15);
+            this.label30.Size = new System.Drawing.Size(33, 12);
             this.label30.TabIndex = 11;
             this.label30.Text = "수량:";
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(144, 85);
+            this.label31.Location = new System.Drawing.Point(126, 68);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(42, 15);
+            this.label31.Size = new System.Drawing.Size(33, 12);
             this.label31.TabIndex = 10;
             this.label31.Text = "수량:";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(273, 85);
+            this.label32.Location = new System.Drawing.Point(239, 68);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(42, 15);
+            this.label32.Size = new System.Drawing.Size(33, 12);
             this.label32.TabIndex = 9;
             this.label32.Text = "수량:";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(23, 84);
+            this.label33.Location = new System.Drawing.Point(20, 67);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(42, 15);
+            this.label33.Size = new System.Drawing.Size(33, 12);
             this.label33.TabIndex = 8;
             this.label33.Text = "수량:";
             // 
             // btn_addmenu_add
             // 
-            this.btn_addmenu_add.Location = new System.Drawing.Point(425, 299);
+            this.btn_addmenu_add.Location = new System.Drawing.Point(372, 239);
             this.btn_addmenu_add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_addmenu_add.Name = "btn_addmenu_add";
-            this.btn_addmenu_add.Size = new System.Drawing.Size(87, 25);
+            this.btn_addmenu_add.Size = new System.Drawing.Size(76, 20);
             this.btn_addmenu_add.TabIndex = 7;
             this.btn_addmenu_add.Text = "추가";
             this.btn_addmenu_add.UseVisualStyleBackColor = true;
@@ -3193,10 +3236,10 @@
             // 
             // btn_addmenu_delete
             // 
-            this.btn_addmenu_delete.Location = new System.Drawing.Point(555, 300);
+            this.btn_addmenu_delete.Location = new System.Drawing.Point(486, 240);
             this.btn_addmenu_delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_addmenu_delete.Name = "btn_addmenu_delete";
-            this.btn_addmenu_delete.Size = new System.Drawing.Size(94, 26);
+            this.btn_addmenu_delete.Size = new System.Drawing.Size(82, 21);
             this.btn_addmenu_delete.TabIndex = 6;
             this.btn_addmenu_delete.Text = "주문 취소";
             this.btn_addmenu_delete.UseVisualStyleBackColor = true;
@@ -3208,9 +3251,9 @@
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(19, 11);
+            this.label9.Location = new System.Drawing.Point(17, 9);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(279, 68);
+            this.label9.Size = new System.Drawing.Size(244, 54);
             this.label9.TabIndex = 0;
             this.label9.Text = "계산대";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3246,10 +3289,10 @@
             this.panel_lab2.Controls.Add(this.btn_cal_table1);
             this.panel_lab2.Controls.Add(this.label9);
             this.panel_lab2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel_lab2.Location = new System.Drawing.Point(0, 120);
+            this.panel_lab2.Location = new System.Drawing.Point(0, 96);
             this.panel_lab2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_lab2.Name = "panel_lab2";
-            this.panel_lab2.Size = new System.Drawing.Size(1391, 764);
+            this.panel_lab2.Size = new System.Drawing.Size(1217, 611);
             this.panel_lab2.TabIndex = 4;
             this.panel_lab2.Visible = false;
             // 
@@ -3258,9 +3301,9 @@
             this.label56.AutoSize = true;
             this.label56.BackColor = System.Drawing.Color.Transparent;
             this.label56.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label56.Location = new System.Drawing.Point(818, 544);
+            this.label56.Location = new System.Drawing.Point(716, 435);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(23, 25);
+            this.label56.Size = new System.Drawing.Size(18, 20);
             this.label56.TabIndex = 25;
             this.label56.Text = "0";
             this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3270,9 +3313,9 @@
             this.label57.AutoSize = true;
             this.label57.BackColor = System.Drawing.Color.Transparent;
             this.label57.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label57.Location = new System.Drawing.Point(651, 544);
+            this.label57.Location = new System.Drawing.Point(570, 435);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(81, 25);
+            this.label57.Size = new System.Drawing.Size(63, 20);
             this.label57.TabIndex = 24;
             this.label57.Text = "총 결제:";
             // 
@@ -3281,9 +3324,9 @@
             this.label54.AutoSize = true;
             this.label54.BackColor = System.Drawing.Color.Transparent;
             this.label54.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label54.Location = new System.Drawing.Point(818, 441);
+            this.label54.Location = new System.Drawing.Point(716, 353);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(23, 25);
+            this.label54.Size = new System.Drawing.Size(18, 20);
             this.label54.TabIndex = 23;
             this.label54.Text = "0";
             this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3293,9 +3336,9 @@
             this.label52.AutoSize = true;
             this.label52.BackColor = System.Drawing.Color.Transparent;
             this.label52.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label52.Location = new System.Drawing.Point(818, 324);
+            this.label52.Location = new System.Drawing.Point(716, 259);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(23, 25);
+            this.label52.Size = new System.Drawing.Size(18, 20);
             this.label52.TabIndex = 22;
             this.label52.Text = "0";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -3305,9 +3348,9 @@
             this.label50.AutoSize = true;
             this.label50.BackColor = System.Drawing.Color.Transparent;
             this.label50.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label50.Location = new System.Drawing.Point(651, 441);
+            this.label50.Location = new System.Drawing.Point(570, 353);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(107, 25);
+            this.label50.Size = new System.Drawing.Size(83, 20);
             this.label50.TabIndex = 21;
             this.label50.Text = "카드 결제: ";
             // 
@@ -3316,28 +3359,26 @@
             this.label49.AutoSize = true;
             this.label49.BackColor = System.Drawing.Color.Transparent;
             this.label49.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label49.Location = new System.Drawing.Point(651, 325);
+            this.label49.Location = new System.Drawing.Point(570, 260);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(100, 25);
+            this.label49.Size = new System.Drawing.Size(78, 20);
             this.label49.TabIndex = 20;
             this.label49.Text = "현금 결제:";
             // 
             // button18
             // 
-            this.button18.Location = new System.Drawing.Point(185, 698);
-            this.button18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button18.Location = new System.Drawing.Point(162, 558);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(86, 29);
+            this.button18.Size = new System.Drawing.Size(75, 23);
             this.button18.TabIndex = 19;
             this.button18.Text = "카드 결제";
             this.button18.UseVisualStyleBackColor = true;
             // 
             // button17
             // 
-            this.button17.Location = new System.Drawing.Point(54, 699);
-            this.button17.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button17.Location = new System.Drawing.Point(47, 559);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(86, 29);
+            this.button17.Size = new System.Drawing.Size(75, 23);
             this.button17.TabIndex = 18;
             this.button17.Text = "현금 결제";
             this.button17.UseVisualStyleBackColor = true;
@@ -3347,13 +3388,12 @@
             this.dataGridView7.AllowUserToAddRows = false;
             this.dataGridView7.AllowUserToDeleteRows = false;
             this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Location = new System.Drawing.Point(5, 138);
-            this.dataGridView7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView7.Location = new System.Drawing.Point(4, 110);
             this.dataGridView7.Name = "dataGridView7";
             this.dataGridView7.ReadOnly = true;
             this.dataGridView7.RowHeadersWidth = 51;
             this.dataGridView7.RowTemplate.Height = 23;
-            this.dataGridView7.Size = new System.Drawing.Size(311, 539);
+            this.dataGridView7.Size = new System.Drawing.Size(272, 431);
             this.dataGridView7.TabIndex = 17;
             // 
             // btn_cal_table16
@@ -3361,10 +3401,9 @@
             this.btn_cal_table16.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table16.FlatAppearance.BorderSize = 0;
             this.btn_cal_table16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table16.Location = new System.Drawing.Point(1299, 699);
-            this.btn_cal_table16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table16.Location = new System.Drawing.Point(1137, 559);
             this.btn_cal_table16.Name = "btn_cal_table16";
-            this.btn_cal_table16.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table16.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table16.TabIndex = 16;
             this.btn_cal_table16.Text = "테이블 16";
             this.btn_cal_table16.UseVisualStyleBackColor = false;
@@ -3375,10 +3414,9 @@
             this.btn_cal_table15.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table15.FlatAppearance.BorderSize = 0;
             this.btn_cal_table15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table15.Location = new System.Drawing.Point(1168, 700);
-            this.btn_cal_table15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table15.Location = new System.Drawing.Point(1022, 560);
             this.btn_cal_table15.Name = "btn_cal_table15";
-            this.btn_cal_table15.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table15.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table15.TabIndex = 15;
             this.btn_cal_table15.Text = "테이블 15";
             this.btn_cal_table15.UseVisualStyleBackColor = false;
@@ -3389,10 +3427,9 @@
             this.btn_cal_table14.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table14.FlatAppearance.BorderSize = 0;
             this.btn_cal_table14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table14.Location = new System.Drawing.Point(1299, 620);
-            this.btn_cal_table14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table14.Location = new System.Drawing.Point(1137, 496);
             this.btn_cal_table14.Name = "btn_cal_table14";
-            this.btn_cal_table14.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table14.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table14.TabIndex = 14;
             this.btn_cal_table14.Text = "테이블 14";
             this.btn_cal_table14.UseVisualStyleBackColor = false;
@@ -3403,10 +3440,9 @@
             this.btn_cal_table13.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table13.FlatAppearance.BorderSize = 0;
             this.btn_cal_table13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table13.Location = new System.Drawing.Point(1168, 620);
-            this.btn_cal_table13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table13.Location = new System.Drawing.Point(1022, 496);
             this.btn_cal_table13.Name = "btn_cal_table13";
-            this.btn_cal_table13.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table13.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table13.TabIndex = 13;
             this.btn_cal_table13.Text = "테이블 13";
             this.btn_cal_table13.UseVisualStyleBackColor = false;
@@ -3417,10 +3453,9 @@
             this.btn_cal_table12.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table12.FlatAppearance.BorderSize = 0;
             this.btn_cal_table12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table12.Location = new System.Drawing.Point(1299, 545);
-            this.btn_cal_table12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table12.Location = new System.Drawing.Point(1137, 436);
             this.btn_cal_table12.Name = "btn_cal_table12";
-            this.btn_cal_table12.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table12.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table12.TabIndex = 12;
             this.btn_cal_table12.Text = "테이블 12";
             this.btn_cal_table12.UseVisualStyleBackColor = false;
@@ -3431,10 +3466,9 @@
             this.btn_cal_table11.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table11.FlatAppearance.BorderSize = 0;
             this.btn_cal_table11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table11.Location = new System.Drawing.Point(1167, 545);
-            this.btn_cal_table11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table11.Location = new System.Drawing.Point(1021, 436);
             this.btn_cal_table11.Name = "btn_cal_table11";
-            this.btn_cal_table11.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table11.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table11.TabIndex = 11;
             this.btn_cal_table11.Text = "테이블 11";
             this.btn_cal_table11.UseVisualStyleBackColor = false;
@@ -3445,10 +3479,9 @@
             this.btn_cal_table10.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table10.FlatAppearance.BorderSize = 0;
             this.btn_cal_table10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table10.Location = new System.Drawing.Point(1299, 470);
-            this.btn_cal_table10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table10.Location = new System.Drawing.Point(1137, 376);
             this.btn_cal_table10.Name = "btn_cal_table10";
-            this.btn_cal_table10.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table10.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table10.TabIndex = 10;
             this.btn_cal_table10.Text = "테이블 10";
             this.btn_cal_table10.UseVisualStyleBackColor = false;
@@ -3459,10 +3492,9 @@
             this.btn_cal_table9.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table9.FlatAppearance.BorderSize = 0;
             this.btn_cal_table9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table9.Location = new System.Drawing.Point(1168, 470);
-            this.btn_cal_table9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table9.Location = new System.Drawing.Point(1022, 376);
             this.btn_cal_table9.Name = "btn_cal_table9";
-            this.btn_cal_table9.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table9.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table9.TabIndex = 9;
             this.btn_cal_table9.Text = "테이블 9";
             this.btn_cal_table9.UseVisualStyleBackColor = false;
@@ -3473,10 +3505,9 @@
             this.btn_cal_table8.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table8.FlatAppearance.BorderSize = 0;
             this.btn_cal_table8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table8.Location = new System.Drawing.Point(1299, 390);
-            this.btn_cal_table8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table8.Location = new System.Drawing.Point(1137, 312);
             this.btn_cal_table8.Name = "btn_cal_table8";
-            this.btn_cal_table8.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table8.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table8.TabIndex = 8;
             this.btn_cal_table8.Text = "테이블 8";
             this.btn_cal_table8.UseVisualStyleBackColor = false;
@@ -3487,10 +3518,9 @@
             this.btn_cal_table7.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table7.FlatAppearance.BorderSize = 0;
             this.btn_cal_table7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table7.Location = new System.Drawing.Point(1168, 390);
-            this.btn_cal_table7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table7.Location = new System.Drawing.Point(1022, 312);
             this.btn_cal_table7.Name = "btn_cal_table7";
-            this.btn_cal_table7.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table7.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table7.TabIndex = 7;
             this.btn_cal_table7.Text = "테이블 7";
             this.btn_cal_table7.UseVisualStyleBackColor = false;
@@ -3501,10 +3531,9 @@
             this.btn_cal_table6.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table6.FlatAppearance.BorderSize = 0;
             this.btn_cal_table6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table6.Location = new System.Drawing.Point(1299, 305);
-            this.btn_cal_table6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table6.Location = new System.Drawing.Point(1137, 244);
             this.btn_cal_table6.Name = "btn_cal_table6";
-            this.btn_cal_table6.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table6.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table6.TabIndex = 6;
             this.btn_cal_table6.Text = "테이블 6";
             this.btn_cal_table6.UseVisualStyleBackColor = false;
@@ -3515,10 +3544,9 @@
             this.btn_cal_table5.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table5.FlatAppearance.BorderSize = 0;
             this.btn_cal_table5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table5.Location = new System.Drawing.Point(1168, 305);
-            this.btn_cal_table5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table5.Location = new System.Drawing.Point(1022, 244);
             this.btn_cal_table5.Name = "btn_cal_table5";
-            this.btn_cal_table5.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table5.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table5.TabIndex = 5;
             this.btn_cal_table5.Text = "테이블 5";
             this.btn_cal_table5.UseVisualStyleBackColor = false;
@@ -3529,10 +3557,9 @@
             this.btn_cal_table4.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table4.FlatAppearance.BorderSize = 0;
             this.btn_cal_table4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table4.Location = new System.Drawing.Point(1299, 228);
-            this.btn_cal_table4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table4.Location = new System.Drawing.Point(1137, 182);
             this.btn_cal_table4.Name = "btn_cal_table4";
-            this.btn_cal_table4.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table4.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table4.TabIndex = 4;
             this.btn_cal_table4.Text = "테이블 4";
             this.btn_cal_table4.UseVisualStyleBackColor = false;
@@ -3543,10 +3570,9 @@
             this.btn_cal_table3.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table3.FlatAppearance.BorderSize = 0;
             this.btn_cal_table3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table3.Location = new System.Drawing.Point(1167, 228);
-            this.btn_cal_table3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table3.Location = new System.Drawing.Point(1021, 182);
             this.btn_cal_table3.Name = "btn_cal_table3";
-            this.btn_cal_table3.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table3.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table3.TabIndex = 3;
             this.btn_cal_table3.Text = "테이블 3";
             this.btn_cal_table3.UseVisualStyleBackColor = false;
@@ -3557,10 +3583,9 @@
             this.btn_cal_table2.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table2.FlatAppearance.BorderSize = 0;
             this.btn_cal_table2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table2.Location = new System.Drawing.Point(1299, 150);
-            this.btn_cal_table2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table2.Location = new System.Drawing.Point(1137, 120);
             this.btn_cal_table2.Name = "btn_cal_table2";
-            this.btn_cal_table2.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table2.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table2.TabIndex = 2;
             this.btn_cal_table2.Text = "테이블 2";
             this.btn_cal_table2.UseVisualStyleBackColor = false;
@@ -3571,43 +3596,13 @@
             this.btn_cal_table1.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table1.FlatAppearance.BorderSize = 0;
             this.btn_cal_table1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table1.Location = new System.Drawing.Point(1168, 150);
-            this.btn_cal_table1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cal_table1.Location = new System.Drawing.Point(1022, 120);
             this.btn_cal_table1.Name = "btn_cal_table1";
-            this.btn_cal_table1.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table1.Size = new System.Drawing.Size(52, 46);
             this.btn_cal_table1.TabIndex = 1;
             this.btn_cal_table1.Text = "테이블 1";
             this.btn_cal_table1.UseVisualStyleBackColor = false;
             this.btn_cal_table1.Click += new System.EventHandler(this.btn_cal_table1_Click);
-            // 
-            // btn_time_p_search
-            // 
-            this.btn_time_p_search.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_time_p_search.Location = new System.Drawing.Point(451, 308);
-            this.btn_time_p_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_time_p_search.Name = "btn_time_p_search";
-            this.btn_time_p_search.Size = new System.Drawing.Size(75, 29);
-            this.btn_time_p_search.TabIndex = 28;
-            this.btn_time_p_search.Text = "검색";
-            this.btn_time_p_search.UseVisualStyleBackColor = true;
-            this.btn_time_p_search.Click += new System.EventHandler(this.btn_time_p_search_Click);
-            // 
-            // dateTimePicker_parking
-            // 
-            this.dateTimePicker_parking.Location = new System.Drawing.Point(237, 309);
-            this.dateTimePicker_parking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker_parking.Name = "dateTimePicker_parking";
-            this.dateTimePicker_parking.Size = new System.Drawing.Size(201, 25);
-            this.dateTimePicker_parking.TabIndex = 26;
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(237, 283);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(187, 15);
-            this.label60.TabIndex = 29;
-            this.label60.Text = "해당 날짜의 주차기록 검색";
             // 
             // carNameDataGridViewTextBoxColumn
             // 
@@ -3640,29 +3635,13 @@
             // 
             this.parkingBindingSource.DataSource = typeof(CSharp_Project.Parking);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.Location = new System.Drawing.Point(1179, -45);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 114);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "주차";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btn_parking_Click);
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.ClientSize = new System.Drawing.Size(1391, 885);
+            this.ClientSize = new System.Drawing.Size(1217, 708);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel_lab4);
             this.Controls.Add(this.panel_addmenu);

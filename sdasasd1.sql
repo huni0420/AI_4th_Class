@@ -20,6 +20,10 @@ drop sequence mp_board_seq;
 --게시판 테스트용 입력쿼리
 INSERT INTO MP_BOARD(BNO, TITLE, CONTENT, WRITER)
      VALUES (MP_BOARD_SEQ.NEXTVAL, '이제그만', '내용입니다', 'MELONPEACH');
+INSERT INTO MP_BOARD(BNO, TITLE, CONTENT, WRITER)
+     VALUES (MP_BOARD_SEQ.NEXTVAL, '데이터를넣어보자', '그렇습니다', 'APPLEPEACH');
+INSERT INTO MP_BOARD(BNO, TITLE, CONTENT, WRITER)
+     VALUES (MP_BOARD_SEQ.NEXTVAL, '이제그만', '내용입니다', 'GOOGLEPEACH');
 
 SELECT * FROM MP_BOARD;
 
@@ -58,6 +62,8 @@ create table mp_reply (
     regdate date default sysdate,
     primary key(bno, rno)
 );
+
+drop table mp_reply;
 
 --foreign키 만들기
 alter table mp_reply add constraint mp_reply_bno foreign key(bno)

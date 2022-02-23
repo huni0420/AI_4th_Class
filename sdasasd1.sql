@@ -72,6 +72,8 @@ references mp_board(bno);
 --댓글 게시판 시퀀스
 create sequence mp_reply_seq START WITH 1 MINVALUE 0;
 
+DROP SEQUENCE mp_reply_seq;
+
 commit;
 
 --게시판 테스트용 입력쿼리

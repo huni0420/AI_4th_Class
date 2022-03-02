@@ -18,6 +18,7 @@ namespace CSharp_Project
             InitializeComponent();
             Application.Run(new Form2());
             DataManager.selectQuery(int.Parse(label_main_tablenum.Text));
+            this.SetStyle(ControlStyles.DoubleBuffer | ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint, true);
             refreshScreen();
         }
         void insert_null()
@@ -1518,6 +1519,15 @@ namespace CSharp_Project
             string record = dateTimePicker_parking.Value.ToString();
             string[] records = record.Split(' ');
             DataManager.selectQuery_p(records[0]);
+            dataGridView5.DataSource = null;
+            dataGridView5.DataSource = DataManager.parkings;
+        }
+        //차량 번호로 삭제 하기--------------------------------------------------------------------------
+        private void btn_parking_del_Click(object sender, EventArgs e)
+        {
+            DataManager.executeQuery_p("delete", textBox_store.Text,"", "");
+            string mm = DateTime.Now.ToString("yyyy-MM-dd");
+            DataManager.selectQuery_p(mm);
             dataGridView5.DataSource = null;
             dataGridView5.DataSource = DataManager.parkings;
         }

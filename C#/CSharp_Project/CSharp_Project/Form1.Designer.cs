@@ -44,6 +44,10 @@
             this.panel_lab4 = new System.Windows.Forms.Panel();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.carNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.parkingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker_cal = new System.Windows.Forms.DateTimePicker();
             this.label46 = new System.Windows.Forms.Label();
@@ -58,7 +62,7 @@
             this.btn_time_p_search = new System.Windows.Forms.Button();
             this.label59 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
-            this.button79 = new System.Windows.Forms.Button();
+            this.btn_parking_del = new System.Windows.Forms.Button();
             this.button78 = new System.Windows.Forms.Button();
             this.button77 = new System.Windows.Forms.Button();
             this.label41 = new System.Windows.Forms.Label();
@@ -310,15 +314,12 @@
             this.btn_cal_table3 = new System.Windows.Forms.Button();
             this.btn_cal_table2 = new System.Windows.Forms.Button();
             this.btn_cal_table1 = new System.Windows.Forms.Button();
-            this.carNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.parkingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_lab4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parkingBindingSource)).BeginInit();
             this.groupBox12.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.panel_lab3.SuspendLayout();
@@ -341,7 +342,6 @@
             this.groupBox10.SuspendLayout();
             this.panel_lab2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -569,6 +569,37 @@
             this.dataGridView5.Size = new System.Drawing.Size(696, 182);
             this.dataGridView5.TabIndex = 2;
             // 
+            // carNameDataGridViewTextBoxColumn
+            // 
+            this.carNameDataGridViewTextBoxColumn.DataPropertyName = "CarName";
+            this.carNameDataGridViewTextBoxColumn.HeaderText = "CarName";
+            this.carNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.carNameDataGridViewTextBoxColumn.Name = "carNameDataGridViewTextBoxColumn";
+            this.carNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.carNameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // timeDataGridViewTextBoxColumn
+            // 
+            this.timeDataGridViewTextBoxColumn.DataPropertyName = "Time";
+            this.timeDataGridViewTextBoxColumn.HeaderText = "Time";
+            this.timeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
+            this.timeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.timeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
+            this.statusDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // parkingBindingSource
+            // 
+            this.parkingBindingSource.DataSource = typeof(CSharp_Project.Parking);
+            // 
             // groupBox12
             // 
             this.groupBox12.BackColor = System.Drawing.Color.Transparent;
@@ -610,7 +641,7 @@
             // label47
             // 
             this.label47.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label47.Location = new System.Drawing.Point(208, 74);
+            this.label47.Location = new System.Drawing.Point(208, 72);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(67, 18);
             this.label47.TabIndex = 23;
@@ -665,7 +696,7 @@
             this.groupBox11.Controls.Add(this.btn_time_p_search);
             this.groupBox11.Controls.Add(this.label59);
             this.groupBox11.Controls.Add(this.label58);
-            this.groupBox11.Controls.Add(this.button79);
+            this.groupBox11.Controls.Add(this.btn_parking_del);
             this.groupBox11.Controls.Add(this.button78);
             this.groupBox11.Controls.Add(this.button77);
             this.groupBox11.Controls.Add(this.label41);
@@ -744,16 +775,17 @@
             this.label58.Text = "0";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // button79
+            // btn_parking_del
             // 
-            this.button79.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button79.Location = new System.Drawing.Point(78, 257);
-            this.button79.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button79.Name = "button79";
-            this.button79.Size = new System.Drawing.Size(66, 23);
-            this.button79.TabIndex = 18;
-            this.button79.Text = "삭제";
-            this.button79.UseVisualStyleBackColor = true;
+            this.btn_parking_del.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_parking_del.Location = new System.Drawing.Point(78, 257);
+            this.btn_parking_del.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_parking_del.Name = "btn_parking_del";
+            this.btn_parking_del.Size = new System.Drawing.Size(66, 23);
+            this.btn_parking_del.TabIndex = 18;
+            this.btn_parking_del.Text = "삭제";
+            this.btn_parking_del.UseVisualStyleBackColor = true;
+            this.btn_parking_del.Click += new System.EventHandler(this.btn_parking_del_Click);
             // 
             // button78
             // 
@@ -3604,37 +3636,6 @@
             this.btn_cal_table1.UseVisualStyleBackColor = false;
             this.btn_cal_table1.Click += new System.EventHandler(this.btn_cal_table1_Click);
             // 
-            // carNameDataGridViewTextBoxColumn
-            // 
-            this.carNameDataGridViewTextBoxColumn.DataPropertyName = "CarName";
-            this.carNameDataGridViewTextBoxColumn.HeaderText = "CarName";
-            this.carNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.carNameDataGridViewTextBoxColumn.Name = "carNameDataGridViewTextBoxColumn";
-            this.carNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.carNameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // timeDataGridViewTextBoxColumn
-            // 
-            this.timeDataGridViewTextBoxColumn.DataPropertyName = "Time";
-            this.timeDataGridViewTextBoxColumn.HeaderText = "Time";
-            this.timeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
-            this.timeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.timeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
-            this.statusDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.statusDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // parkingBindingSource
-            // 
-            this.parkingBindingSource.DataSource = typeof(CSharp_Project.Parking);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -3661,6 +3662,7 @@
             this.panel_lab4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.parkingBindingSource)).EndInit();
             this.groupBox12.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
@@ -3689,7 +3691,6 @@
             this.panel_lab2.ResumeLayout(false);
             this.panel_lab2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3833,7 +3834,7 @@
         private System.Windows.Forms.Button button75;
         private System.Windows.Forms.Button btn_checkout;
         private System.Windows.Forms.Button btn_checkin;
-        private System.Windows.Forms.Button button79;
+        private System.Windows.Forms.Button btn_parking_del;
         private System.Windows.Forms.Button button78;
         private System.Windows.Forms.Button button77;
         private System.Windows.Forms.Label label41;

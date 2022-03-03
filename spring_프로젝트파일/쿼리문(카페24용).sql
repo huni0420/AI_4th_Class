@@ -6,10 +6,11 @@ CREATE TABLE MP_BOARD(
     WRITER VARCHAR(100) NOT NULL,
     REGDATE TIMESTAMP DEFAULT NOW()
 );
+SET @rownum:=0;
 
-drop table mp_board;
+drop table MP_BOARD;
 
-SELECT * FROM mp_board;
+SELECT * FROM MP_BOARD;
 
 #테이블 값 삽입
 INSERT INTO  MP_BOARD(TITLE, CONTENT, WRITER) VALUES('이제그만', '내용입니다', '사용자');
@@ -22,21 +23,22 @@ SELECT  BNO,
         TITLE, 
 		CONTENT,
         WRITER, 
-	    regdate mp_board
+	    REGDATE MP_BOARD
  FROM ( 
-        SELECT BNO, 
+        	SELECT BNO, 
                TITLE, 
                CONTENT, 
                WRITER, 
                REGDATE,
-               ROW_NUMBER() OVER(ORDER BY BNO DESC) AS RNUM
-         FROM MP_BOARD 
-                       ) MP
+               @rownum:=@rownum+1 AS RNUM
+         FROM MP_BOARD  , (SELECT @rownum:=0) TMP
+               ORDER BY BNO DESC        ) MP
 WHERE RNUM BETWEEN 1 AND 10
 ORDER BY BNO DESC;
 
+
 #리플테이블 생성
-create table mp_reply (
+create table MP_REPLY (
 	bno INT NOT NULL,
     rno INT  AUTO_INCREMENT not NULL,
     content varchar(1000) not null,
@@ -47,10 +49,10 @@ create table mp_reply (
 
 drop table mp_reply;
 
-SELECT * FROM mp_reply;
+SELECT * FROM MP_REPLY;
 
 #foreign키 만들기
-alter table mp_reply add constraint mp_reply_bno foreign key(bno) references mp_board(bno);
+alter table MP_REPLY add constraint mp_reply_bno foreign key(bno) references MP_BOARD(bno);
 
 insert into mp_reply(bno, rno, content, writer)
     VALUES(1, rno, '테스트댓글', '테스트 작성자');
@@ -68,6 +70,6 @@ select * from MP_MEMBER;
 
 DROP TABLE mp_member;
 
-commit;
+COMMIT;
 
 SHOW VARIABLES LIKE 'version';

@@ -12,7 +12,7 @@ namespace CSharp_Project
     {
         const string ORADB = "Data Source=(DESCRIPTION=(ADDRESS_LIST=" +
                   "(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))" +
-                  "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=orcl)));" +
+                  "(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=xe)));" +
                   "User Id=system;Password=1234;";
         public static OracleConnection OraConn = new OracleConnection(ORADB);
 
@@ -177,7 +177,7 @@ namespace CSharp_Project
                     query = $"insert into {TABLE1} values('{carname}','{time}','{status}')";
                     break;
                 case "update":
-                    query = $"update {TABLE1} set status = '{status}' where carname = '{carname}'";
+                    query = $"update {TABLE1} set time = '{time}', status = '{status}' where carname = '{carname}'";
                     break;
                 case "delete":
                     query = $"delete from {TABLE1} where carname = '{carname}'";

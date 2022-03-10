@@ -1531,6 +1531,168 @@ namespace CSharp_Project
             dataGridView5.DataSource = null;
             dataGridView5.DataSource = DataManager.parkings;
         }
+        private void btn_parking_update_Click(object sender, EventArgs e)
+        {
+            DataManager.executeQuery_p("update", textBox_store.Text, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "");
+            string mm = DateTime.Now.ToString("yyyy-MM-dd");
+            DataManager.selectQuery_p(mm);
+            dataGridView5.DataSource = null;
+            dataGridView5.DataSource = DataManager.parkings;
+        }
+        private void dataGridView5_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            String carnum = dataGridView5.Rows[e.RowIndex].Cells[0].Value.ToString();
+            textBox_store.Text = carnum.ToString();
+        }
+
+        //테이블 값
+        static int alnum;
+        //메뉴 현금결제 버튼
+        private void btn_menu_cashpay_Click(object sender, EventArgs e)
+        {
+            List<int> all_add = new List<int>();
+            MenuCalculate mc = new MenuCalculate();
+            for (int i = 0; i < dataGridView7.Rows.Count; i++)
+            {
+                for(int j = 1; j<9; j++)
+                {
+                    if (dataGridView7.Rows[i].Cells[0].Value.ToString().Contains($"mainmenu{j}"))
+                    {
+                        switch (j)
+                        {
+                            case 1:
+                                all_add.Add(mc.maincal1(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 2:
+                                all_add.Add(mc.maincal2(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 3:
+                                all_add.Add(mc.maincal3(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 4:
+                                all_add.Add(mc.maincal4(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 5:
+                                all_add.Add(mc.maincal5(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 6:
+                                all_add.Add(mc.maincal6(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 7:
+                                all_add.Add(mc.maincal7(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 8:
+                                all_add.Add(mc.maincal8(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                    else if (dataGridView7.Rows[i].Cells[0].Value.ToString().Contains($"sidemenu{j}"))
+                    {
+                        switch (j)
+                        {
+                            case 1:
+                                all_add.Add(mc.sidecal1(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 2:
+                                all_add.Add(mc.sidecal2(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 3:
+                                all_add.Add(mc.sidecal3(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 4:
+                                all_add.Add(mc.sidecal4(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 5:
+                                all_add.Add(mc.sidecal5(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 6:
+                                all_add.Add(mc.sidecal6(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 7:
+                                all_add.Add(mc.sidecal7(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 8:
+                                all_add.Add(mc.sidecal8(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                    else if (dataGridView7.Rows[i].Cells[0].Value.ToString().Contains($"bavemenu{j}"))
+                    {
+                        switch (j)
+                        {
+                            case 1:
+                                all_add.Add(mc.bevecal1(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 2:
+                                all_add.Add(mc.bevecal2(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 3:
+                                all_add.Add(mc.bevecal3(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 4:
+                                all_add.Add(mc.bevecal4(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 5:
+                                all_add.Add(mc.bevecal5(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 6:
+                                all_add.Add(mc.bevecal6(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 7:
+                                all_add.Add(mc.bevecal7(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 8:
+                                all_add.Add(mc.bevecal8(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                    else if (dataGridView7.Rows[i].Cells[0].Value.ToString().Contains($"addmenu{j}"))
+                    {
+                        switch (j)
+                        {
+                            case 1:
+                                all_add.Add(mc.addcal1(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 2:
+                                all_add.Add(mc.addcal2(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 3:
+                                all_add.Add(mc.addcal3(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 4:
+                                all_add.Add(mc.addcal4(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 5:
+                                all_add.Add(mc.addcal5(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 6:
+                                all_add.Add(mc.addcal6(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 7:
+                                all_add.Add(mc.addcal7(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 8:
+                                all_add.Add(mc.addcal8(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+            }
+            for(int i=0; i<all_add.Count; i++)
+            {
+                alnum += all_add[i];
+            }
+            label_cash_pay.Text = (alnum).ToString();
+            alnum = 0;
+        }
     }
 }
 

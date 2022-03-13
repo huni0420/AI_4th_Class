@@ -1479,6 +1479,8 @@ namespace CSharp_Project
             refreshScreen();
         }
 
+        //주차번호
+        static int parkingnum;
         // 주차 입고 & 출고 버튼---------------------------------------------------------------------------
         private void btn_checkin_Click(object sender, EventArgs e)
         {
@@ -1489,10 +1491,18 @@ namespace CSharp_Project
             }
             else if (textBox_store.Text != null )
             {
-                DataManager.executeQuery_p("insert", textBox_store.Text, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "입고");
-                DataManager.selectQuery_p(mm);
-                dataGridView5.DataSource = null;
-                dataGridView5.DataSource = DataManager.parkings;
+                if (parkingnum < 19)
+                {
+                    parkingnum++;
+                    DataManager.executeQuery_p("insert", textBox_store.Text, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "입고",parkingnum.ToString());
+                    DataManager.selectQuery_p(mm);
+                    dataGridView5.DataSource = null;
+                    dataGridView5.DataSource = DataManager.parkings;
+                }
+                else if(parkingnum >= 19)
+                {
+                    parkingnum = 1;
+                }
             }
 
         }
@@ -1500,16 +1510,34 @@ namespace CSharp_Project
         private void btn_checkout_Click(object sender, EventArgs e)
         {
             string mm = DateTime.Now.ToString("yyyy-MM-dd");
-            if (textBox_store.Text == null)
+            DataManager.selectQuery_p(mm);
+            dataGridView5.DataSource = null;
+            dataGridView5.DataSource = DataManager.parkings;
+
+            if (textBox_release.Text == null)
             {
                 MessageBox.Show("차번호를 입력하세요");
             }
-            else if (textBox_store.Text != null)
+            else if (textBox_release.Text != null)
             {
-                DataManager.executeQuery_p("insert", textBox_store.Text, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "출고");
-                DataManager.selectQuery_p(mm);
-                dataGridView5.DataSource = null;
-                dataGridView5.DataSource = DataManager.parkings;
+                for(int i = 0; i < dataGridView5.Rows.Count; i++)
+                {
+                    if (dataGridView5.Rows[i].Cells[0].Value.ToString().Contains(textBox_release.Text))
+                    {
+                        if (dataGridView5.Rows[i].Cells[2].Value.ToString().Contains("출고"))
+                        {
+                            return;
+                        }
+                        else if (!(dataGridView5.Rows[i].Cells[2].Value.ToString().Contains("출고")))
+                        {
+                            DataManager.executeQuery_p("insert", textBox_release.Text, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "출고", parkingnum.ToString());
+                            DataManager.selectQuery_p(mm);
+                            dataGridView5.DataSource = null;
+                            dataGridView5.DataSource = DataManager.parkings;
+                            return;
+                        }
+                    }
+                }
             }
         }
 
@@ -1525,15 +1553,16 @@ namespace CSharp_Project
         //차량 번호로 삭제 하기--------------------------------------------------------------------------
         private void btn_parking_del_Click(object sender, EventArgs e)
         {
-            DataManager.executeQuery_p("delete", textBox_store.Text,"", "");
+            DataManager.executeQuery_p("delete", textBox_store.Text,"", "","");
             string mm = DateTime.Now.ToString("yyyy-MM-dd");
             DataManager.selectQuery_p(mm);
             dataGridView5.DataSource = null;
             dataGridView5.DataSource = DataManager.parkings;
         }
+        //차량 번호로 수정 하기-----------------------------------------------------------------------
         private void btn_parking_update_Click(object sender, EventArgs e)
         {
-            DataManager.executeQuery_p("update", textBox_store.Text, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "");
+            DataManager.executeQuery_p("update", textBox_store.Text, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "","");
             string mm = DateTime.Now.ToString("yyyy-MM-dd");
             DataManager.selectQuery_p(mm);
             dataGridView5.DataSource = null;

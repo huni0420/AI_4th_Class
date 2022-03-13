@@ -817,7 +817,7 @@ namespace CSharp_Project
                     {
                         for(int j =0; j<8; j++)
                         {
-                            if (tbox_mainmenus[j] != "")
+                            if (!(String.IsNullOrWhiteSpace(tbox_mainmenus[j])))
                             {
                                 //DataManager.executeQuery("delete", mainmenus[j],tbox_mainmenus[j], i.ToString());
                                 DataManager.executeQuery("insert",$"{i} - "+mainmenus[j],tbox_mainmenus[j] ,i.ToString());
@@ -866,7 +866,7 @@ namespace CSharp_Project
                     {
                         for (int j = 0; j < 8; j++)
                         {
-                            if (tbox_mainmenus[j] != "")
+                            if (!(String.IsNullOrWhiteSpace(tbox_mainmenus[j])))
                             {
                                 DataManager.executeQuery("delete", $"{i} - " + mainmenus[j],tbox_mainmenus[j], i.ToString());
                             }
@@ -915,7 +915,7 @@ namespace CSharp_Project
                     {
                         for (int j = 0; j < 8; j++)
                         {
-                            if (tbox_mainmenus[j] != "")
+                            if (!(String.IsNullOrWhiteSpace(tbox_mainmenus[j])))
                             {
                                 DataManager.executeQuery("update", $"{i} - " + mainmenus[j], tbox_mainmenus[j], i.ToString());
                             }
@@ -966,7 +966,7 @@ namespace CSharp_Project
                     {
                         for (int j = 0; j < 8; j++)
                         {
-                            if (tbox_sidemenus[j] != "")
+                            if (!(String.IsNullOrWhiteSpace(tbox_sidemenus[j])))
                             {
                                 DataManager.executeQuery("insert", $"{i} - " + sidemenus[j], tbox_sidemenus[j],i.ToString());
                             }
@@ -1015,7 +1015,7 @@ namespace CSharp_Project
                     {
                         for (int j = 0; j < 8; j++)
                         {
-                            if (tbox_sidemenus[j] != "")
+                            if (!(String.IsNullOrWhiteSpace(tbox_sidemenus[j])))
                             {
                                 DataManager.executeQuery("delete", $"{i} - " + sidemenus[j], tbox_sidemenus[j], i.ToString());
                             }
@@ -1065,7 +1065,7 @@ namespace CSharp_Project
                     {
                         for (int j = 0; j < 8; j++)
                         {
-                            if (tbox_sidemenus[j] != "")
+                            if (!(String.IsNullOrWhiteSpace(tbox_sidemenus[j])))
                             {
                                 DataManager.executeQuery("update", $"{i} - " + sidemenus[j], tbox_sidemenus[j], i.ToString());
                             }
@@ -1116,7 +1116,7 @@ namespace CSharp_Project
                     {
                         for (int j = 0; j < 8; j++)
                         {
-                            if (tbox_bavemenus[j] != "")
+                            if (!(String.IsNullOrWhiteSpace(tbox_bavemenus[j])))
                             {
                                 DataManager.executeQuery("insert", $"{i} - " + bavemenus[j], tbox_bavemenus[j], i.ToString());
                             }
@@ -1165,7 +1165,7 @@ namespace CSharp_Project
                     {
                         for (int j = 0; j < 8; j++)
                         {
-                            if (tbox_bavemenus[j] != "")
+                            if (!(String.IsNullOrWhiteSpace(tbox_bavemenus[j])))
                             {
                                 DataManager.executeQuery("delete", $"{i} - " + bavemenus[j], tbox_bavemenus[j], i.ToString());
                             }
@@ -1215,7 +1215,7 @@ namespace CSharp_Project
                     {
                         for (int j = 0; j < 8; j++)
                         {
-                            if (tbox_bavemenus[j] != "")
+                            if (!(String.IsNullOrWhiteSpace(tbox_bavemenus[j])))
                             {
                                 DataManager.executeQuery("update", $"{i} - " + bavemenus[j], tbox_bavemenus[j], i.ToString());
                             }
@@ -1266,7 +1266,7 @@ namespace CSharp_Project
                     {
                         for (int j = 0; j < 8; j++)
                         {
-                            if (tbox_addmenus[j] != "")
+                            if (!(String.IsNullOrWhiteSpace(tbox_addmenus[j])))
                             {
                                 DataManager.executeQuery("insert", $"{i} - " + addmenus[j], tbox_addmenus[j], i.ToString());
                             }
@@ -1315,7 +1315,7 @@ namespace CSharp_Project
                     {
                         for (int j = 0; j < 8; j++)
                         {
-                            if (tbox_addmenus[j] != "")
+                            if (!(String.IsNullOrWhiteSpace(tbox_addmenus[j])))
                             {
                                 DataManager.executeQuery("delete", $"{i} - " + addmenus[j], tbox_addmenus[j], i.ToString());
                             }
@@ -1365,7 +1365,7 @@ namespace CSharp_Project
                     {
                         for (int j = 0; j < 8; j++)
                         {
-                            if (tbox_addmenus[j] != "")
+                            if (!(String.IsNullOrWhiteSpace(tbox_addmenus[j])))
                             {
                                 DataManager.executeQuery("update", $"{i} - " + addmenus[j], tbox_addmenus[j], i.ToString());
                             }
@@ -1485,11 +1485,11 @@ namespace CSharp_Project
         private void btn_checkin_Click(object sender, EventArgs e)
         {
             string mm = DateTime.Now.ToString("yyyy-MM-dd");
-            if (textBox_store.Text == null)
+            if (String.IsNullOrWhiteSpace(textBox_store.Text))
             {
-                MessageBox.Show("차번호를 입력하세요");
+                MessageBox.Show("차량번호를 입력하세요");
             }
-            else if (textBox_store.Text != null )
+            else if (!(String.IsNullOrWhiteSpace(textBox_store.Text)))
             {
                 if (parkingnum < 19)
                 {
@@ -1514,11 +1514,11 @@ namespace CSharp_Project
             dataGridView5.DataSource = null;
             dataGridView5.DataSource = DataManager.parkings;
 
-            if (textBox_release.Text == null)
+            if (String.IsNullOrWhiteSpace(textBox_release.Text))
             {
-                MessageBox.Show("차번호를 입력하세요");
+                MessageBox.Show("차량번호를 입력하세요");
             }
-            else if (textBox_release.Text != null)
+            else if (!(String.IsNullOrWhiteSpace(textBox_release.Text)))
             {
                 for(int i = 0; i < dataGridView5.Rows.Count; i++)
                 {

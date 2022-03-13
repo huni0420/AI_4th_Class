@@ -117,6 +117,7 @@ namespace CSharp_Project
             }
             OraConn.Close();
         }
+
         public static void selectQuery_p(string MM)
         {
             ConnectDB();

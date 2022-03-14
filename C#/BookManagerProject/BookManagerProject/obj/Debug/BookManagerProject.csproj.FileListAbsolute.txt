@@ -1,0 +1,11 @@
+C:\Users\mysky\Desktop\Github\C#\BookManagerProject\BookManagerProject\bin\Debug\BookManagerProject.exe.config
+C:\Users\mysky\Desktop\Github\C#\BookManagerProject\BookManagerProject\bin\Debug\BookManagerProject.exe
+C:\Users\mysky\Desktop\Github\C#\BookManagerProject\BookManagerProject\bin\Debug\BookManagerProject.pdb
+C:\Users\mysky\Desktop\Github\C#\BookManagerProject\BookManagerProject\obj\Debug\BookManagerProject.csproj.AssemblyReference.cache
+C:\Users\mysky\Desktop\Github\C#\BookManagerProject\BookManagerProject\obj\Debug\BookManagerProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\mysky\Desktop\Github\C#\BookManagerProject\BookManagerProject\obj\Debug\BookManagerProject.MainForm.resources
+C:\Users\mysky\Desktop\Github\C#\BookManagerProject\BookManagerProject\obj\Debug\BookManagerProject.Properties.Resources.resources
+C:\Users\mysky\Desktop\Github\C#\BookManagerProject\BookManagerProject\obj\Debug\BookManagerProject.csproj.GenerateResource.cache
+C:\Users\mysky\Desktop\Github\C#\BookManagerProject\BookManagerProject\obj\Debug\BookManagerProject.csproj.CoreCompileInputs.cache
+C:\Users\mysky\Desktop\Github\C#\BookManagerProject\BookManagerProject\obj\Debug\BookManagerProject.exe
+C:\Users\mysky\Desktop\Github\C#\BookManagerProject\BookManagerProject\obj\Debug\BookManagerProject.pdb

@@ -310,10 +310,11 @@
             this.btn_cal_table3 = new System.Windows.Forms.Button();
             this.btn_cal_table2 = new System.Windows.Forms.Button();
             this.btn_cal_table1 = new System.Windows.Forms.Button();
+            this.parkingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.carNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.parkingBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.parkingNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_lab4.SuspendLayout();
@@ -560,7 +561,8 @@
             this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.carNameDataGridViewTextBoxColumn,
             this.timeDataGridViewTextBoxColumn,
-            this.statusDataGridViewTextBoxColumn});
+            this.statusDataGridViewTextBoxColumn,
+            this.parkingNumDataGridViewTextBoxColumn});
             this.dataGridView5.DataSource = this.parkingBindingSource;
             this.dataGridView5.Location = new System.Drawing.Point(63, 470);
             this.dataGridView5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -3629,6 +3631,10 @@
             this.btn_cal_table1.UseVisualStyleBackColor = false;
             this.btn_cal_table1.Click += new System.EventHandler(this.btn_cal_table1_Click);
             // 
+            // parkingBindingSource
+            // 
+            this.parkingBindingSource.DataSource = typeof(CSharp_Project.Parking);
+            // 
             // carNameDataGridViewTextBoxColumn
             // 
             this.carNameDataGridViewTextBoxColumn.DataPropertyName = "CarName";
@@ -3656,9 +3662,14 @@
             this.statusDataGridViewTextBoxColumn.ReadOnly = true;
             this.statusDataGridViewTextBoxColumn.Width = 125;
             // 
-            // parkingBindingSource
+            // parkingNumDataGridViewTextBoxColumn
             // 
-            this.parkingBindingSource.DataSource = typeof(CSharp_Project.Parking);
+            this.parkingNumDataGridViewTextBoxColumn.DataPropertyName = "ParkingNum";
+            this.parkingNumDataGridViewTextBoxColumn.HeaderText = "ParkingNum";
+            this.parkingNumDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.parkingNumDataGridViewTextBoxColumn.Name = "parkingNumDataGridViewTextBoxColumn";
+            this.parkingNumDataGridViewTextBoxColumn.ReadOnly = true;
+            this.parkingNumDataGridViewTextBoxColumn.Width = 125;
             // 
             // Form1
             // 
@@ -3668,14 +3679,14 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1391, 885);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel_lab2);
-            this.Controls.Add(this.panel_lab3);
-            this.Controls.Add(this.panel_lab1);
             this.Controls.Add(this.panel_lab4);
             this.Controls.Add(this.panel_addmenu);
             this.Controls.Add(this.panel_baverage);
             this.Controls.Add(this.panel_sidemenu);
             this.Controls.Add(this.panel_mainmenu);
+            this.Controls.Add(this.panel_lab2);
+            this.Controls.Add(this.panel_lab3);
+            this.Controls.Add(this.panel_lab1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
@@ -4002,11 +4013,12 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker_parking;
         private System.Windows.Forms.Button btn_time_p_search;
         private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn carNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn parkingNumDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource parkingBindingSource;
-        private System.Windows.Forms.Button button1;
     }
 }
 

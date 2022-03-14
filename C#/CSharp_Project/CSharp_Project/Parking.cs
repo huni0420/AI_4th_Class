@@ -11,5 +11,6 @@ namespace CSharp_Project
         public string CarName { get; set; }
         public string Time { get; set; }
         public string Status { get; set; }
+        public string ParkingNum { get; set; }
     }
 }

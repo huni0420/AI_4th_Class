@@ -109,6 +109,7 @@ namespace CSharp_Project
                 parking.CarName = item["carname"].ToString();
                 parking.Time = item["time"].ToString();
                 parking.Status = item["status"].ToString();
+                parking.ParkingNum = item["parkingnum"].ToString();
                 /*parking.Cash = int.Parse(item["Cash"].ToString());
                 parking.Credit = int.Parse(item["Credit"].ToString());
                 parking.Discount = int.Parse(item["Discount"].ToString());*/
@@ -140,6 +141,7 @@ namespace CSharp_Project
                 parking.CarName = item["carname"].ToString();
                 parking.Time = item["time"].ToString();
                 parking.Status = item["status"].ToString();
+                parking.ParkingNum = item["parkingnum"].ToString();
                 /*parking.Cash = int.Parse(item["Cash"].ToString());
                 parking.Credit = int.Parse(item["Credit"].ToString());
                 parking.Discount = int.Parse(item["Discount"].ToString());*/
@@ -169,13 +171,13 @@ namespace CSharp_Project
             return query;
         }
 
-        static string Query_p(string menu, string carname, string time, string status)
+        static string Query_p(string menu, string carname, string time, string status, string parkingnum)
         {
             string query = "";
             switch (menu)
             {
                 case "insert":
-                    query = $"insert into {TABLE1} values('{carname}','{time}','{status}')";
+                    query = $"insert into {TABLE1} values('{carname}','{time}','{status}','{parkingnum}')";
                     break;
                 case "update":
                     query = $"update {TABLE1} set time = '{time}', status = '{status}' where carname = '{carname}'";
@@ -212,7 +214,7 @@ namespace CSharp_Project
 
             selectQuery();
         }
-        public static void executeQuery_p(string menu, string carname, string time, string status)
+        public static void executeQuery_p(string menu, string carname, string time, string status, string parkingnum)
         {
             ConnectDB();
             string query = "";
@@ -220,7 +222,7 @@ namespace CSharp_Project
             {
                 OracleCommand cmd = new OracleCommand();
                 cmd.Connection = OraConn;
-                query = Query_p(menu, carname, time, status);
+                query = Query_p(menu, carname, time, status, parkingnum);
                 cmd.CommandText = query;
                 cmd.ExecuteNonQuery();
             }

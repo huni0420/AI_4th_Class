@@ -20,6 +20,11 @@ namespace CSharp_Project
             DataManager.selectQuery(int.Parse(label_main_tablenum.Text));
             this.SetStyle(ControlStyles.DoubleBuffer | ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint, true);
             refreshScreen();
+
+            string record = dateTimePicker1.Value.ToString();
+            string[] records = record.Split(' ');
+            DataManager.selectQuery_mtotal(records[0]);
+            dataGridView5.DataSource = DataManager.totalCals;
         }
         void insert_null()
         {
@@ -128,13 +133,12 @@ namespace CSharp_Project
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
 
 
-        //메인 버튼부 -------------------------------------------------------------
+        //메인 버튼부 -------------------------------------------------------------( btn_parking_close_Click  주석풀어주기)
         private void btn_order_Click(object sender, EventArgs e)
         {
             //버튼교체
@@ -149,8 +153,6 @@ namespace CSharp_Project
 
             //켜져있는 다른 판넬 끄기
             panel_lab2.Visible = false;
-            panel_lab3.Visible = false;
-            panel_lab4.Visible = false;
 
             //주문창의 판넬끄기
             btn_mainmenu_close_Click(sender, e);
@@ -161,6 +163,9 @@ namespace CSharp_Project
 
         private void btn_table_Click(object sender, EventArgs e)
         {
+            //내부의 데이타그리드뷰 초기화
+            dataGridView7.DataSource = null;
+
             //버튼교체
             btn_table.Visible = false;
             btn_table_close.Visible = true;
@@ -173,8 +178,6 @@ namespace CSharp_Project
 
             //켜져있는 다른 판넬 끄기
             panel_lab1.Visible = false;
-            panel_lab3.Visible = false;
-            panel_lab4.Visible = false;
 
             //주문창의 판넬끄기
             btn_mainmenu_close_Click(sender, e);
@@ -187,10 +190,10 @@ namespace CSharp_Project
         private void btn_calculate_Click(object sender, EventArgs e)
         {
             //버튼교체
-            btn_calculate.Visible = false;
-            btn_calculate_close.Visible = true;
-            panel_lab3.Visible = true;
+            Form3 form3 = new Form3();
+            form3.ShowDialog();
 
+            /*
             //다른 버튼 실행 끄기
             btn_order_close_Click(sender, e);
             btn_table_close_Click(sender, e);
@@ -206,14 +209,12 @@ namespace CSharp_Project
             btn_sidemenu_close_Click(sender, e);
             btn_beverage_close_Click(sender, e);
             btn_addmenu_close_Click(sender, e);
+            */
         }
 
         private void btn_parking_Click(object sender, EventArgs e)
         {
             //버튼교체
-            btn_parking.Visible = false;
-            btn_parking_close.Visible = true;
-            panel_lab4.Visible = true;
 
             //다른 버튼 실행 끄기
             btn_order_close_Click(sender, e);
@@ -223,7 +224,6 @@ namespace CSharp_Project
             //켜져있는 다른 판넬 끄기
             panel_lab1.Visible = false;
             panel_lab2.Visible = false;
-            panel_lab3.Visible = false;
 
             //주문창의 판넬끄기
             btn_mainmenu_close_Click(sender, e);
@@ -256,14 +256,13 @@ namespace CSharp_Project
         {
             btn_calculate_close.Visible = false;
             btn_calculate.Visible = true;
-            panel_lab3.Visible = false;
         }
 
         private void btn_parking_close_Click(object sender, EventArgs e)
         {
-            btn_parking_close.Visible = false;
+            /*btn_parking_close.Visible = false;
             btn_parking.Visible = true;
-            panel_lab4.Visible = false;
+            panel_lab4.Visible = false;*/
         }
 
 
@@ -1479,104 +1478,9 @@ namespace CSharp_Project
             refreshScreen();
         }
 
-        //주차번호
-        static int parkingnum;
-        // 주차 입고 & 출고 버튼---------------------------------------------------------------------------
-        private void btn_checkin_Click(object sender, EventArgs e)
-        {
-            string mm = DateTime.Now.ToString("yyyy-MM-dd");
-            if (String.IsNullOrWhiteSpace(textBox_store.Text))
-            {
-                MessageBox.Show("차량번호를 입력하세요");
-            }
-            else if (!(String.IsNullOrWhiteSpace(textBox_store.Text)))
-            {
-                if (parkingnum < 19)
-                {
-                    parkingnum++;
-                    DataManager.executeQuery_p("insert", textBox_store.Text, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "입고",parkingnum.ToString());
-                    DataManager.selectQuery_p(mm);
-                    dataGridView5.DataSource = null;
-                    dataGridView5.DataSource = DataManager.parkings;
-                }
-                else if(parkingnum >= 19)
-                {
-                    parkingnum = 1;
-                }
-            }
-
-        }
-
-        private void btn_checkout_Click(object sender, EventArgs e)
-        {
-            string mm = DateTime.Now.ToString("yyyy-MM-dd");
-            DataManager.selectQuery_p(mm);
-            dataGridView5.DataSource = null;
-            dataGridView5.DataSource = DataManager.parkings;
-
-            if (String.IsNullOrWhiteSpace(textBox_release.Text))
-            {
-                MessageBox.Show("차량번호를 입력하세요");
-            }
-            else if (!(String.IsNullOrWhiteSpace(textBox_release.Text)))
-            {
-                for(int i = 0; i < dataGridView5.Rows.Count; i++)
-                {
-                    if (dataGridView5.Rows[i].Cells[0].Value.ToString().Contains(textBox_release.Text))
-                    {
-                        if (dataGridView5.Rows[i].Cells[2].Value.ToString().Contains("출고"))
-                        {
-                            return;
-                        }
-                        else if (!(dataGridView5.Rows[i].Cells[2].Value.ToString().Contains("출고")))
-                        {
-                            DataManager.executeQuery_p("insert", textBox_release.Text, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "출고", parkingnum.ToString());
-                            DataManager.selectQuery_p(mm);
-                            dataGridView5.DataSource = null;
-                            dataGridView5.DataSource = DataManager.parkings;
-                            return;
-                        }
-                    }
-                }
-            }
-        }
-
-        // 주차 날짜별 입출고 기록 보기------------------------------------------------------------------
-        private void btn_time_p_search_Click(object sender, EventArgs e)
-        {
-            string record = dateTimePicker_parking.Value.ToString();
-            string[] records = record.Split(' ');
-            DataManager.selectQuery_p(records[0]);
-            dataGridView5.DataSource = null;
-            dataGridView5.DataSource = DataManager.parkings;
-        }
-        //차량 번호로 삭제 하기--------------------------------------------------------------------------
-        private void btn_parking_del_Click(object sender, EventArgs e)
-        {
-            DataManager.executeQuery_p("delete", textBox_store.Text,"", "","");
-            string mm = DateTime.Now.ToString("yyyy-MM-dd");
-            DataManager.selectQuery_p(mm);
-            dataGridView5.DataSource = null;
-            dataGridView5.DataSource = DataManager.parkings;
-        }
-        //차량 번호로 수정 하기-----------------------------------------------------------------------
-        private void btn_parking_update_Click(object sender, EventArgs e)
-        {
-            DataManager.executeQuery_p("update", textBox_store.Text, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), "","");
-            string mm = DateTime.Now.ToString("yyyy-MM-dd");
-            DataManager.selectQuery_p(mm);
-            dataGridView5.DataSource = null;
-            dataGridView5.DataSource = DataManager.parkings;
-        }
-        private void dataGridView5_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            String carnum = dataGridView5.Rows[e.RowIndex].Cells[0].Value.ToString();
-            textBox_store.Text = carnum.ToString();
-        }
-
         //테이블 값
         static int alnum;
-        //메뉴 현금결제 버튼
+        //메뉴 현금결제 버튼----------------------------------------------------------------------------------------------------
         private void btn_menu_cashpay_Click(object sender, EventArgs e)
         {
             List<int> all_add = new List<int>();
@@ -1719,8 +1623,203 @@ namespace CSharp_Project
             {
                 alnum += all_add[i];
             }
-            label_cash_pay.Text = (alnum).ToString();
+            if (dataGridView5.RowCount == 0)
+            {
+                DataManager.executeQuery_mtotal("insert", alnum.ToString(), DateTime.Now.ToString("yyyy-MM-dd"));
+            }
+            else if (dataGridView5.RowCount > 0)
+            {
+                DataManager.executeQuery_mtotal("update", alnum.ToString(), DateTime.Now.ToString("yyyy-MM-dd"));
+            }
+            DataManager.executeQuery_cal_tb("delete", dataGridView7.Rows[0].Cells[2].Value.ToString());
+
+            label_cash_pay.Text = alnum.ToString();
+            
             alnum = 0;
+            dataGridView7.DataSource = null;
+            string mm = DateTime.Now.ToString("yyyy-MM-dd");
+            DataManager.selectQuery_mtotal(mm);
+
+            label_total_pay.Text = (int.Parse(label_total_pay.Text) + int.Parse(label_cash_pay.Text)).ToString();
+
+            label_card_pay.Text = "0";
+
+            string record = dateTimePicker1.Value.ToString();
+            string[] records = record.Split(' ');
+            DataManager.selectQuery_mtotal(records[0]);
+            dataGridView5.DataSource = null;
+            dataGridView5.DataSource = DataManager.totalCals;
+        }
+
+        //메뉴 카드결제 부분--------------------------------------------------------------------------------------------------------
+        private void btn_menu_cardpay_Click(object sender, EventArgs e)
+        {
+            List<int> all_add = new List<int>();
+            MenuCalculate mc = new MenuCalculate();
+            for (int i = 0; i < dataGridView7.Rows.Count; i++)
+            {
+                for (int j = 1; j < 9; j++)
+                {
+                    if (dataGridView7.Rows[i].Cells[0].Value.ToString().Contains($"mainmenu{j}"))
+                    {
+                        switch (j)
+                        {
+                            case 1:
+                                all_add.Add(mc.maincal1(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 2:
+                                all_add.Add(mc.maincal2(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 3:
+                                all_add.Add(mc.maincal3(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 4:
+                                all_add.Add(mc.maincal4(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 5:
+                                all_add.Add(mc.maincal5(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 6:
+                                all_add.Add(mc.maincal6(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 7:
+                                all_add.Add(mc.maincal7(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 8:
+                                all_add.Add(mc.maincal8(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                    else if (dataGridView7.Rows[i].Cells[0].Value.ToString().Contains($"sidemenu{j}"))
+                    {
+                        switch (j)
+                        {
+                            case 1:
+                                all_add.Add(mc.sidecal1(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 2:
+                                all_add.Add(mc.sidecal2(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 3:
+                                all_add.Add(mc.sidecal3(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 4:
+                                all_add.Add(mc.sidecal4(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 5:
+                                all_add.Add(mc.sidecal5(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 6:
+                                all_add.Add(mc.sidecal6(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 7:
+                                all_add.Add(mc.sidecal7(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 8:
+                                all_add.Add(mc.sidecal8(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                    else if (dataGridView7.Rows[i].Cells[0].Value.ToString().Contains($"bavemenu{j}"))
+                    {
+                        switch (j)
+                        {
+                            case 1:
+                                all_add.Add(mc.bevecal1(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 2:
+                                all_add.Add(mc.bevecal2(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 3:
+                                all_add.Add(mc.bevecal3(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 4:
+                                all_add.Add(mc.bevecal4(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 5:
+                                all_add.Add(mc.bevecal5(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 6:
+                                all_add.Add(mc.bevecal6(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 7:
+                                all_add.Add(mc.bevecal7(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 8:
+                                all_add.Add(mc.bevecal8(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                    else if (dataGridView7.Rows[i].Cells[0].Value.ToString().Contains($"addmenu{j}"))
+                    {
+                        switch (j)
+                        {
+                            case 1:
+                                all_add.Add(mc.addcal1(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 2:
+                                all_add.Add(mc.addcal2(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 3:
+                                all_add.Add(mc.addcal3(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 4:
+                                all_add.Add(mc.addcal4(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 5:
+                                all_add.Add(mc.addcal5(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 6:
+                                all_add.Add(mc.addcal6(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 7:
+                                all_add.Add(mc.addcal7(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            case 8:
+                                all_add.Add(mc.addcal8(int.Parse(dataGridView7.Rows[i].Cells[1].Value.ToString())));
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                }
+            }
+            for (int i = 0; i < all_add.Count; i++)
+            {
+                alnum += all_add[i];
+            }
+            if (dataGridView5.RowCount == 0)
+            {
+                DataManager.executeQuery_mtotal("insert", alnum.ToString(), DateTime.Now.ToString("yyyy-MM-dd"));
+            }
+            else if(dataGridView5.RowCount > 0)
+            {
+                DataManager.executeQuery_mtotal("update", alnum.ToString(), DateTime.Now.ToString("yyyy-MM-dd"));
+            }
+            DataManager.executeQuery_cal_tb("delete", dataGridView7.Rows[0].Cells[2].Value.ToString());
+            
+            label_card_pay.Text = alnum.ToString();
+
+            alnum = 0;
+            dataGridView7.DataSource = null;
+            string mm = DateTime.Now.ToString("yyyy-MM-dd");
+            DataManager.selectQuery_mtotal(mm);
+            
+            label_total_pay.Text = (int.Parse(label_total_pay.Text) + int.Parse(label_cash_pay.Text)).ToString();
+
+            label_cash_pay.Text = "0";
+
+            string record = dateTimePicker1.Value.ToString();
+            string[] records = record.Split(' ');
+            DataManager.selectQuery_mtotal(records[0]);
+            dataGridView5.DataSource = null;
+            dataGridView5.DataSource = DataManager.totalCals;
         }
     }
 }

@@ -36,48 +36,8 @@
             this.btn_calculate = new System.Windows.Forms.Button();
             this.btn_order_close = new System.Windows.Forms.Button();
             this.btn_calculate_close = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btn_parking = new System.Windows.Forms.Button();
             this.btn_table = new System.Windows.Forms.Button();
             this.btn_table_close = new System.Windows.Forms.Button();
-            this.btn_parking_close = new System.Windows.Forms.Button();
-            this.panel_lab4 = new System.Windows.Forms.Panel();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker_cal = new System.Windows.Forms.DateTimePicker();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.label60 = new System.Windows.Forms.Label();
-            this.dateTimePicker_parking = new System.Windows.Forms.DateTimePicker();
-            this.btn_time_p_search = new System.Windows.Forms.Button();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.btn_parking_del = new System.Windows.Forms.Button();
-            this.btn_parking_update = new System.Windows.Forms.Button();
-            this.button77 = new System.Windows.Forms.Button();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.textBox_release = new System.Windows.Forms.TextBox();
-            this.textBox_store = new System.Windows.Forms.TextBox();
-            this.button76 = new System.Windows.Forms.Button();
-            this.button75 = new System.Windows.Forms.Button();
-            this.btn_checkout = new System.Windows.Forms.Button();
-            this.btn_checkin = new System.Windows.Forms.Button();
-            this.panel_lab3 = new System.Windows.Forms.Panel();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel_lab1 = new System.Windows.Forms.Panel();
             this.btn_mainmenu = new System.Windows.Forms.Button();
             this.btn_sidemenu = new System.Windows.Forms.Button();
@@ -285,13 +245,14 @@
             this.btn_addmenu_delete = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.panel_lab2 = new System.Windows.Forms.Panel();
-            this.label56 = new System.Windows.Forms.Label();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.label_total_pay = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
+            this.label_card_pay = new System.Windows.Forms.Label();
             this.label_cash_pay = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
-            this.button18 = new System.Windows.Forms.Button();
+            this.btn_menu_cardpay = new System.Windows.Forms.Button();
             this.btn_menu_cashpay = new System.Windows.Forms.Button();
             this.dataGridView7 = new System.Windows.Forms.DataGridView();
             this.btn_cal_table16 = new System.Windows.Forms.Button();
@@ -310,19 +271,12 @@
             this.btn_cal_table3 = new System.Windows.Forms.Button();
             this.btn_cal_table2 = new System.Windows.Forms.Button();
             this.btn_cal_table1 = new System.Windows.Forms.Button();
-            this.parkingBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.carNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.parkingNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalCalBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel_lab4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            this.groupBox12.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.panel_lab3.SuspendLayout();
             this.panel_lab1.SuspendLayout();
             this.panel_mainmenu.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -341,8 +295,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.groupBox10.SuspendLayout();
             this.panel_lab2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.totalCalBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -354,11 +309,8 @@
             this.panel1.Controls.Add(this.btn_calculate);
             this.panel1.Controls.Add(this.btn_order_close);
             this.panel1.Controls.Add(this.btn_calculate_close);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.btn_parking);
             this.panel1.Controls.Add(this.btn_table);
             this.panel1.Controls.Add(this.btn_table_close);
-            this.panel1.Controls.Add(this.btn_parking_close);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -444,38 +396,6 @@
             this.btn_calculate_close.UseVisualStyleBackColor = false;
             this.btn_calculate_close.Click += new System.EventHandler(this.btn_calculate_close_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.button1.Location = new System.Drawing.Point(368, 4);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 111);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "주차";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btn_parking_Click);
-            // 
-            // btn_parking
-            // 
-            this.btn_parking.BackColor = System.Drawing.Color.Transparent;
-            this.btn_parking.FlatAppearance.BorderSize = 0;
-            this.btn_parking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_parking.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_parking.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_parking.Location = new System.Drawing.Point(367, 2);
-            this.btn_parking.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_parking.Name = "btn_parking";
-            this.btn_parking.Size = new System.Drawing.Size(123, 114);
-            this.btn_parking.TabIndex = 9;
-            this.btn_parking.Text = "주차";
-            this.btn_parking.UseVisualStyleBackColor = false;
-            this.btn_parking.Click += new System.EventHandler(this.btn_parking_Click);
-            // 
             // btn_table
             // 
             this.btn_table.BackColor = System.Drawing.Color.Transparent;
@@ -509,462 +429,6 @@
             this.btn_table_close.Text = "테이블";
             this.btn_table_close.UseVisualStyleBackColor = false;
             this.btn_table_close.Click += new System.EventHandler(this.btn_table_close_Click);
-            // 
-            // btn_parking_close
-            // 
-            this.btn_parking_close.BackColor = System.Drawing.Color.Transparent;
-            this.btn_parking_close.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
-            this.btn_parking_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_parking_close.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_parking_close.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_parking_close.Location = new System.Drawing.Point(367, 2);
-            this.btn_parking_close.Margin = new System.Windows.Forms.Padding(0);
-            this.btn_parking_close.Name = "btn_parking_close";
-            this.btn_parking_close.Size = new System.Drawing.Size(123, 114);
-            this.btn_parking_close.TabIndex = 13;
-            this.btn_parking_close.Text = "주차";
-            this.btn_parking_close.UseVisualStyleBackColor = false;
-            this.btn_parking_close.Click += new System.EventHandler(this.btn_parking_close_Click);
-            // 
-            // panel_lab4
-            // 
-            this.panel_lab4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
-            this.panel_lab4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_lab4.BackgroundImage")));
-            this.panel_lab4.Controls.Add(this.dataGridView6);
-            this.panel_lab4.Controls.Add(this.dataGridView5);
-            this.panel_lab4.Controls.Add(this.groupBox12);
-            this.panel_lab4.Controls.Add(this.groupBox11);
-            this.panel_lab4.Location = new System.Drawing.Point(0, 120);
-            this.panel_lab4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel_lab4.Name = "panel_lab4";
-            this.panel_lab4.Size = new System.Drawing.Size(1391, 764);
-            this.panel_lab4.TabIndex = 5;
-            this.panel_lab4.Visible = false;
-            // 
-            // dataGridView6
-            // 
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(941, 470);
-            this.dataGridView6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.RowHeadersWidth = 51;
-            this.dataGridView6.RowTemplate.Height = 23;
-            this.dataGridView6.Size = new System.Drawing.Size(422, 226);
-            this.dataGridView6.TabIndex = 3;
-            // 
-            // dataGridView5
-            // 
-            this.dataGridView5.AllowUserToAddRows = false;
-            this.dataGridView5.AllowUserToDeleteRows = false;
-            this.dataGridView5.AutoGenerateColumns = false;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.carNameDataGridViewTextBoxColumn,
-            this.timeDataGridViewTextBoxColumn,
-            this.statusDataGridViewTextBoxColumn,
-            this.parkingNumDataGridViewTextBoxColumn});
-            this.dataGridView5.DataSource = this.parkingBindingSource;
-            this.dataGridView5.Location = new System.Drawing.Point(63, 470);
-            this.dataGridView5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.ReadOnly = true;
-            this.dataGridView5.RowHeadersWidth = 51;
-            this.dataGridView5.RowTemplate.Height = 23;
-            this.dataGridView5.Size = new System.Drawing.Size(795, 228);
-            this.dataGridView5.TabIndex = 2;
-            this.dataGridView5.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellContentClick);
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox12.Controls.Add(this.dateTimePicker_cal);
-            this.groupBox12.Controls.Add(this.label46);
-            this.groupBox12.Controls.Add(this.label47);
-            this.groupBox12.Controls.Add(this.label45);
-            this.groupBox12.Controls.Add(this.label44);
-            this.groupBox12.Controls.Add(this.label43);
-            this.groupBox12.Controls.Add(this.label42);
-            this.groupBox12.ForeColor = System.Drawing.Color.Black;
-            this.groupBox12.Location = new System.Drawing.Point(941, 34);
-            this.groupBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox12.Size = new System.Drawing.Size(424, 405);
-            this.groupBox12.TabIndex = 1;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "groupBox12";
-            // 
-            // dateTimePicker_cal
-            // 
-            this.dateTimePicker_cal.Location = new System.Drawing.Point(37, 258);
-            this.dateTimePicker_cal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker_cal.Name = "dateTimePicker_cal";
-            this.dateTimePicker_cal.Size = new System.Drawing.Size(201, 25);
-            this.dateTimePicker_cal.TabIndex = 25;
-            // 
-            // label46
-            // 
-            this.label46.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label46.Location = new System.Drawing.Point(323, 92);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(40, 22);
-            this.label46.TabIndex = 24;
-            this.label46.Text = "0";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label47
-            // 
-            this.label47.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label47.Location = new System.Drawing.Point(238, 90);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(77, 22);
-            this.label47.TabIndex = 23;
-            this.label47.Text = "총 결제액:";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label45
-            // 
-            this.label45.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label45.Location = new System.Drawing.Point(238, 30);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(77, 22);
-            this.label45.TabIndex = 22;
-            this.label45.Text = "현금결제:";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label44
-            // 
-            this.label44.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label44.Location = new System.Drawing.Point(139, 30);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(40, 22);
-            this.label44.TabIndex = 21;
-            this.label44.Text = "0";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label43
-            // 
-            this.label43.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label43.Location = new System.Drawing.Point(321, 30);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(40, 22);
-            this.label43.TabIndex = 20;
-            this.label43.Text = "0";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label42
-            // 
-            this.label42.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label42.Location = new System.Drawing.Point(55, 30);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(77, 22);
-            this.label42.TabIndex = 19;
-            this.label42.Text = "카드결제:";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox11.Controls.Add(this.label60);
-            this.groupBox11.Controls.Add(this.dateTimePicker_parking);
-            this.groupBox11.Controls.Add(this.btn_time_p_search);
-            this.groupBox11.Controls.Add(this.label59);
-            this.groupBox11.Controls.Add(this.label58);
-            this.groupBox11.Controls.Add(this.btn_parking_del);
-            this.groupBox11.Controls.Add(this.btn_parking_update);
-            this.groupBox11.Controls.Add(this.button77);
-            this.groupBox11.Controls.Add(this.label41);
-            this.groupBox11.Controls.Add(this.label40);
-            this.groupBox11.Controls.Add(this.label39);
-            this.groupBox11.Controls.Add(this.label38);
-            this.groupBox11.Controls.Add(this.label37);
-            this.groupBox11.Controls.Add(this.label36);
-            this.groupBox11.Controls.Add(this.label35);
-            this.groupBox11.Controls.Add(this.label34);
-            this.groupBox11.Controls.Add(this.textBox_release);
-            this.groupBox11.Controls.Add(this.textBox_store);
-            this.groupBox11.Controls.Add(this.button76);
-            this.groupBox11.Controls.Add(this.button75);
-            this.groupBox11.Controls.Add(this.btn_checkout);
-            this.groupBox11.Controls.Add(this.btn_checkin);
-            this.groupBox11.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox11.ForeColor = System.Drawing.Color.Black;
-            this.groupBox11.Location = new System.Drawing.Point(32, 34);
-            this.groupBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox11.Size = new System.Drawing.Size(858, 405);
-            this.groupBox11.TabIndex = 0;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "groupBox11";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(237, 282);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(187, 15);
-            this.label60.TabIndex = 29;
-            this.label60.Text = "해당 날짜의 주차기록 검색";
-            // 
-            // dateTimePicker_parking
-            // 
-            this.dateTimePicker_parking.Location = new System.Drawing.Point(237, 309);
-            this.dateTimePicker_parking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker_parking.Name = "dateTimePicker_parking";
-            this.dateTimePicker_parking.Size = new System.Drawing.Size(201, 25);
-            this.dateTimePicker_parking.TabIndex = 26;
-            // 
-            // btn_time_p_search
-            // 
-            this.btn_time_p_search.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_time_p_search.Location = new System.Drawing.Point(451, 308);
-            this.btn_time_p_search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_time_p_search.Name = "btn_time_p_search";
-            this.btn_time_p_search.Size = new System.Drawing.Size(75, 29);
-            this.btn_time_p_search.TabIndex = 28;
-            this.btn_time_p_search.Text = "검색";
-            this.btn_time_p_search.UseVisualStyleBackColor = true;
-            this.btn_time_p_search.Click += new System.EventHandler(this.btn_time_p_search_Click);
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label59.Location = new System.Drawing.Point(585, 111);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(15, 15);
-            this.label59.TabIndex = 27;
-            this.label59.Text = "0";
-            this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label58.Location = new System.Drawing.Point(278, 111);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(15, 15);
-            this.label58.TabIndex = 26;
-            this.label58.Text = "0";
-            this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // btn_parking_del
-            // 
-            this.btn_parking_del.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_parking_del.Location = new System.Drawing.Point(89, 321);
-            this.btn_parking_del.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_parking_del.Name = "btn_parking_del";
-            this.btn_parking_del.Size = new System.Drawing.Size(75, 29);
-            this.btn_parking_del.TabIndex = 18;
-            this.btn_parking_del.Text = "삭제";
-            this.btn_parking_del.UseVisualStyleBackColor = true;
-            this.btn_parking_del.Click += new System.EventHandler(this.btn_parking_del_Click);
-            // 
-            // btn_parking_update
-            // 
-            this.btn_parking_update.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_parking_update.Location = new System.Drawing.Point(89, 270);
-            this.btn_parking_update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_parking_update.Name = "btn_parking_update";
-            this.btn_parking_update.Size = new System.Drawing.Size(75, 29);
-            this.btn_parking_update.TabIndex = 17;
-            this.btn_parking_update.Text = "수정";
-            this.btn_parking_update.UseVisualStyleBackColor = true;
-            this.btn_parking_update.Click += new System.EventHandler(this.btn_parking_update_Click);
-            // 
-            // button77
-            // 
-            this.button77.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button77.Location = new System.Drawing.Point(635, 362);
-            this.button77.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button77.Name = "button77";
-            this.button77.Size = new System.Drawing.Size(193, 29);
-            this.button77.TabIndex = 16;
-            this.button77.Text = "식당이용고객결제";
-            this.button77.UseVisualStyleBackColor = true;
-            // 
-            // label41
-            // 
-            this.label41.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label41.Location = new System.Drawing.Point(690, 266);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(138, 22);
-            this.label41.TabIndex = 15;
-            this.label41.Text = "0";
-            this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label40
-            // 
-            this.label40.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label40.Location = new System.Drawing.Point(690, 222);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(138, 22);
-            this.label40.TabIndex = 14;
-            this.label40.Text = "0";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label39
-            // 
-            this.label39.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label39.Location = new System.Drawing.Point(607, 266);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(77, 22);
-            this.label39.TabIndex = 13;
-            this.label39.Text = "요 금:";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label38
-            // 
-            this.label38.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label38.Location = new System.Drawing.Point(607, 222);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(77, 22);
-            this.label38.TabIndex = 12;
-            this.label38.Text = "주차시간:";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label37
-            // 
-            this.label37.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label37.Location = new System.Drawing.Point(354, 111);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(77, 22);
-            this.label37.TabIndex = 11;
-            this.label37.Text = "출고시간:";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label36
-            // 
-            this.label36.ForeColor = System.Drawing.Color.Black;
-            this.label36.Location = new System.Drawing.Point(46, 112);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(77, 22);
-            this.label36.TabIndex = 10;
-            this.label36.Text = "입고시간:";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label35
-            // 
-            this.label35.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label35.Location = new System.Drawing.Point(354, 49);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(77, 22);
-            this.label35.TabIndex = 9;
-            this.label35.Text = "출고차량:";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label34
-            // 
-            this.label34.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label34.Location = new System.Drawing.Point(46, 49);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(77, 22);
-            this.label34.TabIndex = 8;
-            this.label34.Text = "입고차량:";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // textBox_release
-            // 
-            this.textBox_release.Location = new System.Drawing.Point(441, 46);
-            this.textBox_release.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox_release.Name = "textBox_release";
-            this.textBox_release.Size = new System.Drawing.Size(156, 25);
-            this.textBox_release.TabIndex = 5;
-            // 
-            // textBox_store
-            // 
-            this.textBox_store.Location = new System.Drawing.Point(139, 48);
-            this.textBox_store.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox_store.Name = "textBox_store";
-            this.textBox_store.Size = new System.Drawing.Size(156, 25);
-            this.textBox_store.TabIndex = 4;
-            // 
-            // button76
-            // 
-            this.button76.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button76.Location = new System.Drawing.Point(753, 294);
-            this.button76.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button76.Name = "button76";
-            this.button76.Size = new System.Drawing.Size(75, 29);
-            this.button76.TabIndex = 3;
-            this.button76.Text = "현금결제";
-            this.button76.UseVisualStyleBackColor = true;
-            // 
-            // button75
-            // 
-            this.button75.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button75.Location = new System.Drawing.Point(635, 294);
-            this.button75.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button75.Name = "button75";
-            this.button75.Size = new System.Drawing.Size(75, 29);
-            this.button75.TabIndex = 2;
-            this.button75.Text = "카드결제";
-            this.button75.UseVisualStyleBackColor = true;
-            // 
-            // btn_checkout
-            // 
-            this.btn_checkout.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_checkout.Location = new System.Drawing.Point(459, 175);
-            this.btn_checkout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_checkout.Name = "btn_checkout";
-            this.btn_checkout.Size = new System.Drawing.Size(136, 29);
-            this.btn_checkout.TabIndex = 1;
-            this.btn_checkout.Text = "출고체크아웃";
-            this.btn_checkout.UseVisualStyleBackColor = true;
-            this.btn_checkout.Click += new System.EventHandler(this.btn_checkout_Click);
-            // 
-            // btn_checkin
-            // 
-            this.btn_checkin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_checkin.Location = new System.Drawing.Point(157, 175);
-            this.btn_checkin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_checkin.Name = "btn_checkin";
-            this.btn_checkin.Size = new System.Drawing.Size(136, 29);
-            this.btn_checkin.TabIndex = 0;
-            this.btn_checkin.Text = "입고체크인";
-            this.btn_checkin.UseVisualStyleBackColor = true;
-            this.btn_checkin.Click += new System.EventHandler(this.btn_checkin_Click);
-            // 
-            // panel_lab3
-            // 
-            this.panel_lab3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel_lab3.Controls.Add(this.groupBox3);
-            this.panel_lab3.Controls.Add(this.groupBox2);
-            this.panel_lab3.Location = new System.Drawing.Point(0, 120);
-            this.panel_lab3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel_lab3.Name = "panel_lab3";
-            this.panel_lab3.Size = new System.Drawing.Size(1391, 764);
-            this.panel_lab3.TabIndex = 4;
-            this.panel_lab3.Visible = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.groupBox3.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox3.Location = new System.Drawing.Point(13, 430);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(1353, 298);
-            this.groupBox3.TabIndex = 3;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.groupBox2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBox2.Location = new System.Drawing.Point(13, 20);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(1353, 392);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
             // 
             // panel_lab1
             // 
@@ -3258,7 +2722,7 @@
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(19, 11);
+            this.label9.Location = new System.Drawing.Point(515, 11);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(279, 68);
             this.label9.TabIndex = 0;
@@ -3268,14 +2732,15 @@
             // panel_lab2
             // 
             this.panel_lab2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel_lab2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_lab2.BackgroundImage")));
-            this.panel_lab2.Controls.Add(this.label56);
+            this.panel_lab2.Controls.Add(this.dateTimePicker1);
+            this.panel_lab2.Controls.Add(this.dataGridView5);
+            this.panel_lab2.Controls.Add(this.label_total_pay);
             this.panel_lab2.Controls.Add(this.label57);
-            this.panel_lab2.Controls.Add(this.label54);
+            this.panel_lab2.Controls.Add(this.label_card_pay);
             this.panel_lab2.Controls.Add(this.label_cash_pay);
             this.panel_lab2.Controls.Add(this.label50);
             this.panel_lab2.Controls.Add(this.label49);
-            this.panel_lab2.Controls.Add(this.button18);
+            this.panel_lab2.Controls.Add(this.btn_menu_cardpay);
             this.panel_lab2.Controls.Add(this.btn_menu_cashpay);
             this.panel_lab2.Controls.Add(this.dataGridView7);
             this.panel_lab2.Controls.Add(this.btn_cal_table16);
@@ -3303,47 +2768,63 @@
             this.panel_lab2.TabIndex = 4;
             this.panel_lab2.Visible = false;
             // 
-            // label56
+            // dataGridView5
             // 
-            this.label56.AutoSize = true;
-            this.label56.BackColor = System.Drawing.Color.Transparent;
-            this.label56.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label56.Location = new System.Drawing.Point(707, 577);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(23, 25);
-            this.label56.TabIndex = 25;
-            this.label56.Text = "0";
-            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dataGridView5.AutoGenerateColumns = false;
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.totalDataGridViewTextBoxColumn,
+            this.timeDataGridViewTextBoxColumn});
+            this.dataGridView5.DataSource = this.totalCalBindingSource;
+            this.dataGridView5.Location = new System.Drawing.Point(545, 80);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.RowHeadersWidth = 51;
+            this.dataGridView5.RowTemplate.Height = 27;
+            this.dataGridView5.Size = new System.Drawing.Size(249, 150);
+            this.dataGridView5.TabIndex = 27;
+            this.dataGridView5.Visible = false;
+            // 
+            // label_total_pay
+            // 
+            this.label_total_pay.AutoSize = true;
+            this.label_total_pay.BackColor = System.Drawing.Color.Transparent;
+            this.label_total_pay.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label_total_pay.Location = new System.Drawing.Point(747, 497);
+            this.label_total_pay.Name = "label_total_pay";
+            this.label_total_pay.Size = new System.Drawing.Size(23, 25);
+            this.label_total_pay.TabIndex = 25;
+            this.label_total_pay.Text = "0";
+            this.label_total_pay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label57
             // 
             this.label57.AutoSize = true;
             this.label57.BackColor = System.Drawing.Color.Transparent;
             this.label57.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label57.Location = new System.Drawing.Point(545, 577);
+            this.label57.Location = new System.Drawing.Point(585, 497);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(81, 25);
             this.label57.TabIndex = 24;
             this.label57.Text = "총 결제:";
             // 
-            // label54
+            // label_card_pay
             // 
-            this.label54.AutoSize = true;
-            this.label54.BackColor = System.Drawing.Color.Transparent;
-            this.label54.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label54.Location = new System.Drawing.Point(707, 474);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(23, 25);
-            this.label54.TabIndex = 23;
-            this.label54.Text = "0";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label_card_pay.AutoSize = true;
+            this.label_card_pay.BackColor = System.Drawing.Color.Transparent;
+            this.label_card_pay.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label_card_pay.Location = new System.Drawing.Point(747, 394);
+            this.label_card_pay.Name = "label_card_pay";
+            this.label_card_pay.Size = new System.Drawing.Size(23, 25);
+            this.label_card_pay.TabIndex = 23;
+            this.label_card_pay.Text = "0";
+            this.label_card_pay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label_cash_pay
             // 
             this.label_cash_pay.AutoSize = true;
             this.label_cash_pay.BackColor = System.Drawing.Color.Transparent;
             this.label_cash_pay.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label_cash_pay.Location = new System.Drawing.Point(707, 357);
+            this.label_cash_pay.Location = new System.Drawing.Point(747, 277);
             this.label_cash_pay.Name = "label_cash_pay";
             this.label_cash_pay.Size = new System.Drawing.Size(23, 25);
             this.label_cash_pay.TabIndex = 22;
@@ -3355,7 +2836,7 @@
             this.label50.AutoSize = true;
             this.label50.BackColor = System.Drawing.Color.Transparent;
             this.label50.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label50.Location = new System.Drawing.Point(539, 474);
+            this.label50.Location = new System.Drawing.Point(579, 394);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(107, 25);
             this.label50.TabIndex = 21;
@@ -3366,25 +2847,26 @@
             this.label49.AutoSize = true;
             this.label49.BackColor = System.Drawing.Color.Transparent;
             this.label49.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label49.Location = new System.Drawing.Point(540, 358);
+            this.label49.Location = new System.Drawing.Point(580, 278);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(100, 25);
             this.label49.TabIndex = 20;
             this.label49.Text = "현금 결제:";
             // 
-            // button18
+            // btn_menu_cardpay
             // 
-            this.button18.Location = new System.Drawing.Point(185, 698);
-            this.button18.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(86, 29);
-            this.button18.TabIndex = 19;
-            this.button18.Text = "카드 결제";
-            this.button18.UseVisualStyleBackColor = true;
+            this.btn_menu_cardpay.Location = new System.Drawing.Point(1170, 697);
+            this.btn_menu_cardpay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_menu_cardpay.Name = "btn_menu_cardpay";
+            this.btn_menu_cardpay.Size = new System.Drawing.Size(86, 29);
+            this.btn_menu_cardpay.TabIndex = 19;
+            this.btn_menu_cardpay.Text = "카드 결제";
+            this.btn_menu_cardpay.UseVisualStyleBackColor = true;
+            this.btn_menu_cardpay.Click += new System.EventHandler(this.btn_menu_cardpay_Click);
             // 
             // btn_menu_cashpay
             // 
-            this.btn_menu_cashpay.Location = new System.Drawing.Point(54, 699);
+            this.btn_menu_cashpay.Location = new System.Drawing.Point(982, 699);
             this.btn_menu_cashpay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_menu_cashpay.Name = "btn_menu_cashpay";
             this.btn_menu_cashpay.Size = new System.Drawing.Size(86, 29);
@@ -3398,13 +2880,13 @@
             this.dataGridView7.AllowUserToAddRows = false;
             this.dataGridView7.AllowUserToDeleteRows = false;
             this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Location = new System.Drawing.Point(5, 138);
+            this.dataGridView7.Location = new System.Drawing.Point(927, 58);
             this.dataGridView7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView7.Name = "dataGridView7";
             this.dataGridView7.ReadOnly = true;
             this.dataGridView7.RowHeadersWidth = 51;
             this.dataGridView7.RowTemplate.Height = 23;
-            this.dataGridView7.Size = new System.Drawing.Size(311, 539);
+            this.dataGridView7.Size = new System.Drawing.Size(351, 621);
             this.dataGridView7.TabIndex = 17;
             // 
             // btn_cal_table16
@@ -3412,10 +2894,10 @@
             this.btn_cal_table16.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table16.FlatAppearance.BorderSize = 0;
             this.btn_cal_table16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table16.Location = new System.Drawing.Point(1299, 699);
+            this.btn_cal_table16.Location = new System.Drawing.Point(299, 655);
             this.btn_cal_table16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table16.Name = "btn_cal_table16";
-            this.btn_cal_table16.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table16.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table16.TabIndex = 16;
             this.btn_cal_table16.Text = "테이블 16";
             this.btn_cal_table16.UseVisualStyleBackColor = false;
@@ -3426,10 +2908,10 @@
             this.btn_cal_table15.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table15.FlatAppearance.BorderSize = 0;
             this.btn_cal_table15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table15.Location = new System.Drawing.Point(1168, 700);
+            this.btn_cal_table15.Location = new System.Drawing.Point(64, 656);
             this.btn_cal_table15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table15.Name = "btn_cal_table15";
-            this.btn_cal_table15.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table15.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table15.TabIndex = 15;
             this.btn_cal_table15.Text = "테이블 15";
             this.btn_cal_table15.UseVisualStyleBackColor = false;
@@ -3440,10 +2922,10 @@
             this.btn_cal_table14.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table14.FlatAppearance.BorderSize = 0;
             this.btn_cal_table14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table14.Location = new System.Drawing.Point(1299, 620);
+            this.btn_cal_table14.Location = new System.Drawing.Point(299, 576);
             this.btn_cal_table14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table14.Name = "btn_cal_table14";
-            this.btn_cal_table14.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table14.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table14.TabIndex = 14;
             this.btn_cal_table14.Text = "테이블 14";
             this.btn_cal_table14.UseVisualStyleBackColor = false;
@@ -3454,10 +2936,10 @@
             this.btn_cal_table13.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table13.FlatAppearance.BorderSize = 0;
             this.btn_cal_table13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table13.Location = new System.Drawing.Point(1168, 620);
+            this.btn_cal_table13.Location = new System.Drawing.Point(64, 576);
             this.btn_cal_table13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table13.Name = "btn_cal_table13";
-            this.btn_cal_table13.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table13.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table13.TabIndex = 13;
             this.btn_cal_table13.Text = "테이블 13";
             this.btn_cal_table13.UseVisualStyleBackColor = false;
@@ -3468,10 +2950,10 @@
             this.btn_cal_table12.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table12.FlatAppearance.BorderSize = 0;
             this.btn_cal_table12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table12.Location = new System.Drawing.Point(1299, 545);
+            this.btn_cal_table12.Location = new System.Drawing.Point(299, 501);
             this.btn_cal_table12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table12.Name = "btn_cal_table12";
-            this.btn_cal_table12.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table12.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table12.TabIndex = 12;
             this.btn_cal_table12.Text = "테이블 12";
             this.btn_cal_table12.UseVisualStyleBackColor = false;
@@ -3482,10 +2964,10 @@
             this.btn_cal_table11.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table11.FlatAppearance.BorderSize = 0;
             this.btn_cal_table11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table11.Location = new System.Drawing.Point(1167, 545);
+            this.btn_cal_table11.Location = new System.Drawing.Point(63, 501);
             this.btn_cal_table11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table11.Name = "btn_cal_table11";
-            this.btn_cal_table11.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table11.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table11.TabIndex = 11;
             this.btn_cal_table11.Text = "테이블 11";
             this.btn_cal_table11.UseVisualStyleBackColor = false;
@@ -3496,10 +2978,10 @@
             this.btn_cal_table10.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table10.FlatAppearance.BorderSize = 0;
             this.btn_cal_table10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table10.Location = new System.Drawing.Point(1299, 470);
+            this.btn_cal_table10.Location = new System.Drawing.Point(299, 426);
             this.btn_cal_table10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table10.Name = "btn_cal_table10";
-            this.btn_cal_table10.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table10.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table10.TabIndex = 10;
             this.btn_cal_table10.Text = "테이블 10";
             this.btn_cal_table10.UseVisualStyleBackColor = false;
@@ -3510,10 +2992,10 @@
             this.btn_cal_table9.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table9.FlatAppearance.BorderSize = 0;
             this.btn_cal_table9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table9.Location = new System.Drawing.Point(1168, 470);
+            this.btn_cal_table9.Location = new System.Drawing.Point(64, 426);
             this.btn_cal_table9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table9.Name = "btn_cal_table9";
-            this.btn_cal_table9.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table9.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table9.TabIndex = 9;
             this.btn_cal_table9.Text = "테이블 9";
             this.btn_cal_table9.UseVisualStyleBackColor = false;
@@ -3524,10 +3006,10 @@
             this.btn_cal_table8.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table8.FlatAppearance.BorderSize = 0;
             this.btn_cal_table8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table8.Location = new System.Drawing.Point(1299, 390);
+            this.btn_cal_table8.Location = new System.Drawing.Point(299, 346);
             this.btn_cal_table8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table8.Name = "btn_cal_table8";
-            this.btn_cal_table8.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table8.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table8.TabIndex = 8;
             this.btn_cal_table8.Text = "테이블 8";
             this.btn_cal_table8.UseVisualStyleBackColor = false;
@@ -3538,10 +3020,10 @@
             this.btn_cal_table7.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table7.FlatAppearance.BorderSize = 0;
             this.btn_cal_table7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table7.Location = new System.Drawing.Point(1168, 390);
+            this.btn_cal_table7.Location = new System.Drawing.Point(64, 346);
             this.btn_cal_table7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table7.Name = "btn_cal_table7";
-            this.btn_cal_table7.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table7.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table7.TabIndex = 7;
             this.btn_cal_table7.Text = "테이블 7";
             this.btn_cal_table7.UseVisualStyleBackColor = false;
@@ -3552,10 +3034,10 @@
             this.btn_cal_table6.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table6.FlatAppearance.BorderSize = 0;
             this.btn_cal_table6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table6.Location = new System.Drawing.Point(1299, 305);
+            this.btn_cal_table6.Location = new System.Drawing.Point(299, 261);
             this.btn_cal_table6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table6.Name = "btn_cal_table6";
-            this.btn_cal_table6.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table6.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table6.TabIndex = 6;
             this.btn_cal_table6.Text = "테이블 6";
             this.btn_cal_table6.UseVisualStyleBackColor = false;
@@ -3566,10 +3048,10 @@
             this.btn_cal_table5.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table5.FlatAppearance.BorderSize = 0;
             this.btn_cal_table5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table5.Location = new System.Drawing.Point(1168, 305);
+            this.btn_cal_table5.Location = new System.Drawing.Point(64, 261);
             this.btn_cal_table5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table5.Name = "btn_cal_table5";
-            this.btn_cal_table5.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table5.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table5.TabIndex = 5;
             this.btn_cal_table5.Text = "테이블 5";
             this.btn_cal_table5.UseVisualStyleBackColor = false;
@@ -3580,10 +3062,10 @@
             this.btn_cal_table4.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table4.FlatAppearance.BorderSize = 0;
             this.btn_cal_table4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table4.Location = new System.Drawing.Point(1299, 228);
+            this.btn_cal_table4.Location = new System.Drawing.Point(299, 184);
             this.btn_cal_table4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table4.Name = "btn_cal_table4";
-            this.btn_cal_table4.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table4.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table4.TabIndex = 4;
             this.btn_cal_table4.Text = "테이블 4";
             this.btn_cal_table4.UseVisualStyleBackColor = false;
@@ -3594,10 +3076,10 @@
             this.btn_cal_table3.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table3.FlatAppearance.BorderSize = 0;
             this.btn_cal_table3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table3.Location = new System.Drawing.Point(1167, 228);
+            this.btn_cal_table3.Location = new System.Drawing.Point(63, 184);
             this.btn_cal_table3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table3.Name = "btn_cal_table3";
-            this.btn_cal_table3.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table3.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table3.TabIndex = 3;
             this.btn_cal_table3.Text = "테이블 3";
             this.btn_cal_table3.UseVisualStyleBackColor = false;
@@ -3608,10 +3090,10 @@
             this.btn_cal_table2.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table2.FlatAppearance.BorderSize = 0;
             this.btn_cal_table2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table2.Location = new System.Drawing.Point(1299, 150);
+            this.btn_cal_table2.Location = new System.Drawing.Point(299, 106);
             this.btn_cal_table2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table2.Name = "btn_cal_table2";
-            this.btn_cal_table2.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table2.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table2.TabIndex = 2;
             this.btn_cal_table2.Text = "테이블 2";
             this.btn_cal_table2.UseVisualStyleBackColor = false;
@@ -3622,27 +3104,30 @@
             this.btn_cal_table1.BackColor = System.Drawing.Color.Bisque;
             this.btn_cal_table1.FlatAppearance.BorderSize = 0;
             this.btn_cal_table1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cal_table1.Location = new System.Drawing.Point(1168, 150);
+            this.btn_cal_table1.Location = new System.Drawing.Point(64, 106);
             this.btn_cal_table1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_cal_table1.Name = "btn_cal_table1";
-            this.btn_cal_table1.Size = new System.Drawing.Size(59, 58);
+            this.btn_cal_table1.Size = new System.Drawing.Size(123, 64);
             this.btn_cal_table1.TabIndex = 1;
             this.btn_cal_table1.Text = "테이블 1";
             this.btn_cal_table1.UseVisualStyleBackColor = false;
             this.btn_cal_table1.Click += new System.EventHandler(this.btn_cal_table1_Click);
             // 
-            // parkingBindingSource
+            // dateTimePicker1
             // 
-            this.parkingBindingSource.DataSource = typeof(CSharp_Project.Parking);
+            this.dateTimePicker1.Location = new System.Drawing.Point(543, 648);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 25);
+            this.dateTimePicker1.TabIndex = 28;
+            this.dateTimePicker1.Visible = false;
             // 
-            // carNameDataGridViewTextBoxColumn
+            // totalDataGridViewTextBoxColumn
             // 
-            this.carNameDataGridViewTextBoxColumn.DataPropertyName = "CarName";
-            this.carNameDataGridViewTextBoxColumn.HeaderText = "CarName";
-            this.carNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.carNameDataGridViewTextBoxColumn.Name = "carNameDataGridViewTextBoxColumn";
-            this.carNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.carNameDataGridViewTextBoxColumn.Width = 125;
+            this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
+            this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
+            this.totalDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
+            this.totalDataGridViewTextBoxColumn.Width = 125;
             // 
             // timeDataGridViewTextBoxColumn
             // 
@@ -3650,26 +3135,11 @@
             this.timeDataGridViewTextBoxColumn.HeaderText = "Time";
             this.timeDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
-            this.timeDataGridViewTextBoxColumn.ReadOnly = true;
             this.timeDataGridViewTextBoxColumn.Width = 125;
             // 
-            // statusDataGridViewTextBoxColumn
+            // totalCalBindingSource
             // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
-            this.statusDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.statusDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // parkingNumDataGridViewTextBoxColumn
-            // 
-            this.parkingNumDataGridViewTextBoxColumn.DataPropertyName = "ParkingNum";
-            this.parkingNumDataGridViewTextBoxColumn.HeaderText = "ParkingNum";
-            this.parkingNumDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.parkingNumDataGridViewTextBoxColumn.Name = "parkingNumDataGridViewTextBoxColumn";
-            this.parkingNumDataGridViewTextBoxColumn.ReadOnly = true;
-            this.parkingNumDataGridViewTextBoxColumn.Width = 125;
+            this.totalCalBindingSource.DataSource = typeof(CSharp_Project.TotalCal);
             // 
             // Form1
             // 
@@ -3679,13 +3149,11 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(116)))));
             this.ClientSize = new System.Drawing.Size(1391, 885);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel_lab4);
+            this.Controls.Add(this.panel_lab2);
             this.Controls.Add(this.panel_addmenu);
             this.Controls.Add(this.panel_baverage);
             this.Controls.Add(this.panel_sidemenu);
             this.Controls.Add(this.panel_mainmenu);
-            this.Controls.Add(this.panel_lab2);
-            this.Controls.Add(this.panel_lab3);
             this.Controls.Add(this.panel_lab1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -3694,13 +3162,6 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel_lab4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.panel_lab3.ResumeLayout(false);
             this.panel_lab1.ResumeLayout(false);
             this.panel_mainmenu.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -3724,8 +3185,9 @@
             this.groupBox10.PerformLayout();
             this.panel_lab2.ResumeLayout(false);
             this.panel_lab2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.parkingBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.totalCalBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3733,16 +3195,12 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel_lab4;
-        private System.Windows.Forms.Panel panel_lab3;
         private System.Windows.Forms.Button btn_order;
-        private System.Windows.Forms.Button btn_parking;
         private System.Windows.Forms.Button btn_calculate;
         private System.Windows.Forms.Button btn_table;
         private System.Windows.Forms.Button btn_order_close;
         private System.Windows.Forms.Button btn_calculate_close;
         private System.Windows.Forms.Button btn_table_close;
-        private System.Windows.Forms.Button btn_parking_close;
         private System.Windows.Forms.Panel panel_lab1;
         private System.Windows.Forms.Button btn_addmenu;
         private System.Windows.Forms.Button btn_beverage;
@@ -3770,8 +3228,6 @@
         private System.Windows.Forms.TextBox textBox_mainmenu3;
         private System.Windows.Forms.TextBox textBox_mainmenu2;
         private System.Windows.Forms.TextBox textBox_mainmenu1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btn_main_tablenum15;
         private System.Windows.Forms.Button btn_main_tablenum16;
@@ -3857,32 +3313,6 @@
         private System.Windows.Forms.Button btn_sidemenu_close;
         private System.Windows.Forms.Button btn_beverage_close;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox_release;
-        private System.Windows.Forms.TextBox textBox_store;
-        private System.Windows.Forms.Button button76;
-        private System.Windows.Forms.Button button75;
-        private System.Windows.Forms.Button btn_checkout;
-        private System.Windows.Forms.Button btn_checkin;
-        private System.Windows.Forms.Button btn_parking_del;
-        private System.Windows.Forms.Button btn_parking_update;
-        private System.Windows.Forms.Button button77;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.DateTimePicker dateTimePicker_cal;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Button btn_bave_tablenum15;
         private System.Windows.Forms.Button btn_bave_tablenum16;
         private System.Windows.Forms.Button btn_bave_tablenum13;
@@ -3981,13 +3411,13 @@
         private System.Windows.Forms.Button btn_addmenu_update;
         private System.Windows.Forms.Button btn_bavemenu_update;
         private System.Windows.Forms.Button btn_sidemenu_update;
-        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label_total_pay;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label_card_pay;
         private System.Windows.Forms.Label label_cash_pay;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button btn_menu_cardpay;
         private System.Windows.Forms.Button btn_menu_cashpay;
         private System.Windows.Forms.DataGridView dataGridView7;
         private System.Windows.Forms.Button btn_cal_table16;
@@ -4006,19 +3436,11 @@
         private System.Windows.Forms.Button btn_cal_table3;
         private System.Windows.Forms.Button btn_cal_table2;
         private System.Windows.Forms.Button btn_cal_table1;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.DataGridView dataGridView6;
         private System.Windows.Forms.DataGridView dataGridView5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker_parking;
-        private System.Windows.Forms.Button btn_time_p_search;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn carNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn parkingNumDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource parkingBindingSource;
+        private System.Windows.Forms.BindingSource totalCalBindingSource;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
